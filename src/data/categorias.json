@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "titulo": "Contextualización",
+    "descripcion": "Contexto institucional, social y educativo en el que se desarrolla la incorporación de las TIC.",
+    "color": "cyan",
+    "subcategorias": [
+      "Contexto institucional",
+      "Contexto social",
+      "Comunidad educativa"
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "Rol de la gestión directiva en la promoción de las TIC",
+    "descripcion": "El papel de la gestión directiva en la orientación y promoción de las tecnologías.",
+    "color": "violet",
+    "subcategorias": [
+      "Liderazgo directivo",
+      "Toma de decisiones",
+      "Promoción de las TIC"
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "Estrategias de la gestión directiva para la incorporación de las TIC",
+    "descripcion": "Estrategias y acciones desarrolladas por la gestión para favorecer la incorporación de las TIC.",
+    "color": "emerald",
+    "subcategorias": [
+      "Estrategias de gestión",
+      "Acompañamiento docente",
+      "Uso de recursos disponibles"
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "Desafíos y oportunidades de la gestión directiva en la integración de las TIC",
+    "descripcion": "Dificultades, posibilidades y respuestas institucionales frente a la integración de las TIC.",
+    "color": "cyan",
+    "subcategorias": [
+      "Desafíos tecnológicos",
+      "Limitaciones de recursos",
+      "Oportunidades y resiliencia"
+    ]
+  }
+]

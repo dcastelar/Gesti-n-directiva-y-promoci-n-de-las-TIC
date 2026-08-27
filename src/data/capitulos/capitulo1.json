@@ -1,0 +1,161 @@
+{
+  "id": "capitulo-1",
+  "numero": "Capítulo 1",
+  "titulo": "Contextualización",
+  "introduccion": "La presente investigación tuvo como objeto de estudio el rol de la gestión directiva en la promoción del uso de las Tecnologías de la Información y la Comunicación (TIC) en la Escuela Primaria N.° 4774 “General Juan José Valle”, ubicada en el Barrio Libertad, en la zona sudeste de la ciudad de Salta.",
+  "secciones": [
+    {
+      "id": "1.1",
+      "titulo": "Contexto socioterritorial",
+      "parrafos": [
+        "Este sector urbano se caracteriza por su conformación popular y presenta diversos grados de vulnerabilidad social y económica; en sus alrededores predominan viviendas de construcción mixta, muchas de ellas de tipo precario, junto con áreas que corresponden a asentamientos informales. Las principales vías de acceso se encuentran pavimentadas, mientras que las calles internas son mayormente de tierra o ripio, lo que evidencia un proceso de urbanización aún en desarrollo."
+      ],
+      "figuras": [
+        {
+          "numero": "Figura 1",
+          "titulo": "Mapa de ubicación geográfica de la Escuela Primaria N.° 4774 “General Juan José Valle”, Barrio Libertad, Salta Capital.",
+          "imagen": "/documentos/contexto/figura-1-mapa.jpg",
+          "fuente": "Elaboración propia."
+        }
+      ]
+    },
+    {
+      "id": "1.2",
+      "titulo": "Caracterización histórica e institucional",
+      "parrafos": [
+        "Según el Proyecto Educativo Institucional (PEI, 2015), la escuela inició sus actividades en el año 2006, incorporando desde sus comienzos el nivel inicial dentro de la estructura organizativa de la escuela primaria.",
+        "Durante los primeros años, el equipo directivo enfrentó importantes desafíos derivados del contexto social, donde la violencia, el vandalismo y la desconfianza hacia la institución educativa eran frecuentes; ante esta situación, la gestión directiva implementó acciones centradas en la mejora de la convivencia, la promoción del respeto mutuo y el fortalecimiento del vínculo con las familias, logrando con el tiempo un clima institucional más favorable y propicio para los aprendizajes."
+      ]
+    },
+    {
+      "id": "1.3",
+      "titulo": "Matrícula y características de la comunidad educativa",
+      "parrafos": [
+        "En la actualidad, la escuela cuenta con dos secciones por grado y una matrícula que supera los 1150 alumnos, provenientes mayoritariamente de barrios cercanos, entre ellos Libertad, Solís Pizarro y San Justo; la mayoría de los estudiantes pertenecen a familias de clase media baja o trabajadora, con empleos informales o de subsistencia."
+      ],
+      "citas": [
+        {
+          "texto": "La escuela cumple una función social importante. Cuando hay que tomar decisiones e incorporar recursos tecnológicos, siempre pensamos en la realidad de las familias y los estudiantes; estamos atravesados por el contexto, y eso marca cómo acompañamos a los docentes.",
+          "fuente": "Entrevista a la vicedirectora, párr. 5."
+        }
+      ]
+    },
+    {
+      "id": "1.4",
+      "titulo": "Infraestructura y condiciones tecnológicas",
+      "parrafos": [
+        "La infraestructura del establecimiento incluye 21 aulas, dirección, vicedirección, secretaría, biblioteca, cocina y sanitarios diferenciados para primer ciclo, segundo ciclo y personal docente (con separación por género); además, cuenta con patio interno y un playón deportivo que se comparte con la comunidad en actividades escolares y barriales.",
+        "Si bien las condiciones edilicias son adecuadas para el funcionamiento, existen limitaciones en cuanto a equipamiento tecnológico y conectividad, lo que condiciona el uso sostenido de las TIC."
+      ],
+      "datos": [
+        {
+          "valor": "46,7 %",
+          "descripcion": "del personal docente manifestó que la escuela cuenta con pocos recursos tecnológicos disponibles.",
+          "fuente": "Encuesta a docentes, ítem 3."
+        },
+        {
+          "valor": "40 %",
+          "descripcion": "señaló que “a veces” la gestión directiva toma decisiones vinculadas a las TIC considerando las características del contexto.",
+          "fuente": "Encuesta a docentes, ítem 4."
+        }
+      ],
+      "figuras": [
+        {
+          "numero": "Figura 2",
+          "titulo": "Fachada principal de la Escuela Primaria N.° 4774 “General Juan José Valle”, Barrio Libertad, Salta Capital.",
+          "imagen": "/documentos/contexto/figura-2-fachada.jpg",
+          "fuente": "Fotografía propia (2025)."
+        }
+      ]
+    },
+    {
+      "id": "1.5",
+      "titulo": "Planta funcional y características del equipo docente",
+      "parrafos": [
+        "La planta funcional está compuesta por un equipo directivo integrado por una directora y cuatro vicedirectoras: dos asignadas al turno mañana y dos al turno tarde; el cuerpo docente está integrado por 62 docentes; algunos de los mismos residen en barrios cercanos, mientras que otros provienen de distintas zonas de Salta Capital."
+      ],
+      "datos": [
+        {
+          "valor": "70 %",
+          "descripcion": "de los docentes expresan compromiso con la mejora institucional.",
+          "fuente": "Encuesta a docentes, ítem 6."
+        },
+        {
+          "valor": "60 %",
+          "descripcion": "señalan la necesidad de mayor acompañamiento y capacitación en el uso pedagógico de las TIC.",
+          "fuente": "Encuesta a docentes, ítems 7 y 8."
+        }
+      ],
+      "citas": [
+        {
+          "texto": "No todos los docentes tienen la misma formación tecnológica, pero se nota una gran voluntad de aprender por parte del equipo docente; buscan incorporar en las planificaciones y en la práctica pedagógica aquello que resulta posible con los recursos disponibles en la escuela.",
+          "fuente": "Entrevista a vicedirectora, párr. 22."
+        }
+      ]
+    },
+    {
+      "id": "1.6",
+      "titulo": "Misión, visión e identidad institucional",
+      "parrafos": [
+        "Desde su misión institucional, como se cita en el Proyecto Educativo Institucional (PEI, 2015), la escuela propone garantizar la inclusión, permanencia y acompañamiento de los alumnos en su trayectoria educativa, brindando contención y favoreciendo su desarrollo integral mediante estrategias adaptadas al contexto social; en cuanto a su visión, menciona que se orienta a optimizar el tiempo pedagógico, promover aprendizajes significativos y asegurar la continuidad educativa en todos los niveles.",
+        "La escuela se configura como una institución educativa con fuerte arraigo comunitario, que ha transitado un proceso de transformación desde sus inicios, consolidando una gestión que busca equilibrar la inclusión social con la innovación pedagógica y tecnológica, en un contexto barrial de recursos limitados pero con alta participación familiar y compromiso docente."
+      ],
+      "figuras": [
+        {
+          "numero": "Figura 3",
+          "titulo": "Foto lateral de la Escuela Primaria N.° 4774 “General Juan José Valle”, Barrio Libertad, Salta Capital.",
+          "imagen": "/documentos/contexto/figura-3-lateral.jpg",
+          "fuente": "Fotografía propia (2025)."
+        }
+      ]
+    },
+    {
+      "id": "1.7",
+      "titulo": "Contextualización institucional y desafíos para la integración de las TIC",
+      "parrafos": [
+        "La contextualización institucional permite reconocer que la Escuela Primaria N.° 4774 “General Juan José Valle” desarrolla su tarea educativa en un entramado social atravesado por condiciones de vulnerabilidad socioeconómica, una matrícula numerosa y heterogénea, y limitaciones materiales que inciden directamente en las prácticas pedagógicas y organizacionales.",
+        "Estas condiciones configuran un escenario de tensiones permanentes entre las demandas educativas crecientes y los recursos disponibles, particularmente en lo que respecta a la incorporación y uso pedagógico de las Tecnologías de la Información y la Comunicación (TIC).",
+        "La elevada matrícula que supera los 1150 alumnos, sumada a la disponibilidad acotada de equipamiento tecnológico y a las dificultades de conectividad, plantea desafíos significativos para la gestión escolar.",
+        "La infraestructura edilicia, si bien resulta adecuada para el funcionamiento general de la institución, no siempre logra acompañar las exigencias que implica la integración sostenida de las TIC en las aulas.",
+        "Estas tensiones se traducen en decisiones de gestión que deben priorizar, seleccionar y adaptar estrategias, procurando garantizar la inclusión educativa sin profundizar desigualdades preexistentes en el acceso a la tecnología."
+      ]
+    },
+    {
+      "id": "1.8",
+      "titulo": "La gestión directiva frente al contexto",
+      "parrafos": [
+        "En este marco, la gestión directiva asume un rol central como mediadora entre las políticas educativas que promueven la integración de las TIC, las condiciones institucionales concretas y la realidad social de las familias.",
+        "Esta mediación implica acompañar a los docentes, redefinir prioridades y promover usos pedagógicos de las TIC que sean viables y significativos, aun en escenarios de escasez de recursos.",
+        "Estas demandas interpelan directamente a la gestión directiva, que debe equilibrar las expectativas de innovación con la necesidad de sostener prácticas pedagógicas inclusivas y contextualizadas, evitando enfoques tecnocéntricos desvinculados de la realidad institucional.",
+        "Lejos de constituirse únicamente como una limitación, este contexto tensionado ha impulsado a la institución a desarrollar formas de organización, planificación y acompañamiento que buscan sostener la inclusión educativa y promover innovaciones pedagógicas posibles.",
+        "En este sentido, la gestión directiva se estructura como un eje articulador que resignifica el uso de las TIC no como un fin en sí mismo, sino como herramientas al servicio del aprendizaje, la mejora institucional y la equidad educativa."
+      ],
+      "citas": [
+        {
+          "texto": "Las decisiones vinculadas a la incorporación de tecnologías digitales no se toman de manera aislada ni homogénea, sino que se encuentran fuertemente condicionadas por el contexto barrial y por las posibilidades reales de los docentes y los estudiantes.",
+          "fuente": "Entrevista a directora, párr. 6."
+        }
+      ],
+      "datos": [
+        {
+          "valor": "46,7 %",
+          "descripcion": "del personal docente manifestó insuficiencia de recursos tecnológicos.",
+          "fuente": "Encuesta a docentes, ítem 3."
+        },
+        {
+          "valor": "60 %",
+          "descripcion": "señala la necesidad de mayor acompañamiento y capacitación para el uso pedagógico de las TIC.",
+          "fuente": "Encuesta a docentes, ítems 7 y 8."
+        }
+      ]
+    },
+    {
+      "id": "1.9",
+      "titulo": "Síntesis del capítulo",
+      "parrafos": [
+        "Desde esta perspectiva, el análisis del rol de la gestión directiva en la promoción del uso de las TIC adquiere relevancia para comprender cómo, en contextos de vulnerabilidad y recursos limitados, se construyen decisiones situadas, estrategias de acompañamiento docente y prácticas pedagógicas que posibilitan una integración gradual y significativa de las tecnologías en la escuela primaria.",
+        "Este encuadre contextual sienta las bases para el desarrollo del Capítulo 2, en el cual se abordará el rol de la gestión directiva desde un marco que permita profundizar en sus dimensiones pedagógicas, estratégicas y organizacionales."
+      ]
+    }
+  ]
+}

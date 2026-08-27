@@ -1,0 +1,18 @@
+[
+  {
+    "codigo": "ROLDIRE1",
+    "actor": "Directora",
+    "categoria": "gestion-directiva",
+    "subcategoria": "Liderazgo pedagógico",
+    "cita": "Lo primero que tenemos en cuenta siempre es el contexto social.",
+    "fuente": "Entrevista a Directora, párr. 6"
+  },
+  {
+    "codigo": "ROLVICE1",
+    "actor": "Vicedirectora",
+    "categoria": "gestion-directiva",
+    "subcategoria": "Liderazgo pedagógico",
+    "cita": "La escuela cumple una función social importante.",
+    "fuente": "Entrevista a Vicedirectora, párr. 5"
+  }
+]
