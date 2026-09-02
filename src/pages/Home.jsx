@@ -690,7 +690,7 @@ export default function TesisDashboard() {
           <div className="grid md:grid-cols-3 gap-5">
 
             <Link
-              to="/capitulo/7"
+              to="/base-datos/entrevistas"
               className="rounded-3xl border border-slate-800 bg-slate-900 p-6 hover:bg-slate-800 hover:border-violet-400/30 transition-all"
             >
 
@@ -714,7 +714,7 @@ export default function TesisDashboard() {
             </Link>
 
             <Link
-              to="/capitulo/7"
+              to="/base-datos/encuestas"
               className="rounded-3xl border border-slate-800 bg-slate-900 p-6 hover:bg-slate-800 hover:border-violet-400/30 transition-all"
             >
 
@@ -738,7 +738,7 @@ export default function TesisDashboard() {
             </Link>
 
             <Link
-              to="/capitulo/8"
+              to="/base-datos/documental"
               className="rounded-3xl border border-slate-800 bg-slate-900 p-6 hover:bg-slate-800 hover:border-violet-400/30 transition-all"
             >
 
