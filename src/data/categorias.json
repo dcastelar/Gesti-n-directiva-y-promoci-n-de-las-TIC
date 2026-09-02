@@ -13,7 +13,7 @@
   {
     "id": 2,
     "titulo": "Rol de la gestión directiva en la promoción de las TIC",
-    "descripcion": "El papel de la gestión directiva en la orientación y promoción de las tecnologías.",
+    "descripcion": "El papel de la gestión directiva en la orientación, promoción y construcción de condiciones institucionales para el uso pedagógico de las TIC.",
     "color": "violet",
     "subcategorias": [
       "Liderazgo directivo",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "titulo": "Estrategias de la gestión directiva para la incorporación de las TIC",
-    "descripcion": "Estrategias y acciones desarrolladas por la gestión para favorecer la incorporación de las TIC.",
+    "descripcion": "Estrategias y acciones desarrolladas por la gestión directiva para favorecer la incorporación y el uso de las TIC en la institución.",
     "color": "emerald",
     "subcategorias": [
       "Estrategias de gestión",
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "titulo": "Desafíos y oportunidades de la gestión directiva en la integración de las TIC",
-    "descripcion": "Dificultades, posibilidades y respuestas institucionales frente a la integración de las TIC.",
+    "descripcion": "Dificultades, posibilidades y respuestas institucionales que surgen frente a la integración de las TIC en un contexto de recursos limitados.",
     "color": "cyan",
     "subcategorias": [
       "Desafíos tecnológicos",

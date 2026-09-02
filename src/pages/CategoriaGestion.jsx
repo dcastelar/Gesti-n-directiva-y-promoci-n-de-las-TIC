@@ -1,213 +1,360 @@
-import categorias from '../data/categorias.json'
-import entrevistas from '../data/entrevistas.json'
-import teoria from '../data/teoria.json'
-import triangulacion from '../data/triangulacion.json'
+import { Link, useParams } from "react-router-dom";
+import categorias from "../data/categorias.json";
+import entrevistas from "../data/entrevistas.json";
+import triangulacion from "../data/triangulacion.json";
+import teoria from "../data/teoria.json";
 
 export default function CategoriaGestion() {
-  const categoria = categorias.find(
-    (c) => c.id === 'gestion-directiva'
-  )
+  const { id } = useParams();
 
+  const categoria = categorias.find((c) => c.id === Number(id));
+
+  if (!categoria) {
+    return (
+      <div className="min-h-screen bg-slate-950 text-white p-8">
+        <h1 className="text-2xl font-bold">Categoría no encontrada</h1>
+
+        <Link
+          to="/"
+          className="inline-block mt-6 text-cyan-400 hover:text-cyan-300"
+        >
+          ← Volver al inicio
+        </Link>
+      </div>
+    );
+  }
+
+  /*
+   * Relación entre el ID de la categoría general
+   * y la categoría utilizada actualmente en la base
+   * de entrevistas.
+   */
+  const categoriasEntrevistas = {
+    1: "contextualizacion",
+    2: "gestion-directiva",
+    3: "estrategias",
+    4: "desafios-oportunidades",
+  };
+
+  const categoriaEntrevista = categoriasEntrevistas[categoria.id];
+
+  /*
+   * Recuperamos las entrevistas correspondientes
+   * a la categoría seleccionada.
+   */
   const entrevistasRelacionadas = entrevistas.filter(
-    (e) => e.categoria === 'gestion-directiva'
-  )
+    (e) => e.categoria === categoriaEntrevista
+  );
 
-  const triangulo = triangulacion[0]
+  /*
+   * Subcategorías reales provenientes de los datos.
+   * No las inventamos desde la interfaz.
+   */
+  const subcategoriasEntrevistas = [
+    ...new Set(
+      entrevistasRelacionadas
+        .map((e) => e.subcategoria)
+        .filter(Boolean)
+    ),
+  ];
+
+  /*
+   * También buscamos las categorías/unidades analíticas
+   * presentes en la triangulación.
+   */
+  const triangulacionesRelacionadas = triangulacion.filter((t) =>
+    subcategoriasEntrevistas.includes(t.categoria)
+  );
+
+  /*
+   * Unimos las subcategorías provenientes de entrevistas
+   * y triangulación.
+   */
+  const subcategoriasTriangulacion = triangulacion
+    .map((t) => t.categoria)
+    .filter(Boolean);
+
+  const subcategorias = [
+    ...new Set([
+      ...subcategoriasEntrevistas,
+      ...subcategoriasTriangulacion,
+    ]),
+  ];
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white p-6 md:p-10">
-      <div className="max-w-7xl mx-auto space-y-10">
+    <div className="min-h-screen bg-slate-950 text-white">
+      <main className="max-w-7xl mx-auto px-6 py-10">
 
-        {/* HERO */}
-        <section className="rounded-[32px] border border-slate-800 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 p-8 md:p-10 overflow-hidden relative">
-          <div className="absolute top-0 right-0 h-72 w-72 bg-cyan-500/10 blur-3xl rounded-full"></div>
+        {/* ENCABEZADO */}
+        <div className="mb-10">
+          <Link
+            to="/"
+            className="inline-block mb-6 text-cyan-400 hover:text-cyan-300"
+          >
+            ← Volver al inicio
+          </Link>
 
-          <div className="relative z-10">
-            <p className="text-cyan-300 uppercase tracking-[0.25em] text-sm mb-4">
-              Categoría principal
+          <div className="flex items-center gap-4 mb-4">
+            <div className="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-2xl">
+              {categoria.id}
+            </div>
+
+            <div>
+              <p className="text-sm text-cyan-400 uppercase tracking-wider">
+                Categoría {categoria.id}
+              </p>
+
+              <h1 className="text-3xl md:text-4xl font-bold">
+                {categoria.titulo}
+              </h1>
+            </div>
+          </div>
+
+          <p className="text-slate-300 max-w-4xl text-lg leading-relaxed">
+            {categoria.descripcion}
+          </p>
+        </div>
+
+        {/* RESUMEN DE DATOS */}
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+            <p className="text-sm text-slate-400">
+              Subcategorías / unidades analíticas
             </p>
 
-            <h1 className="text-4xl md:text-6xl font-black leading-tight max-w-5xl">
-              {categoria.titulo}
-            </h1>
-
-            <p className="mt-6 text-slate-300 text-lg max-w-3xl leading-relaxed">
-              {categoria.descripcion}
+            <p className="text-3xl font-bold mt-2 text-cyan-400">
+              {subcategorias.length}
             </p>
           </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+            <p className="text-sm text-slate-400">
+              Evidencias de entrevistas
+            </p>
+
+            <p className="text-3xl font-bold mt-2 text-violet-400">
+              {entrevistasRelacionadas.length}
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+            <p className="text-sm text-slate-400">
+              Triangulaciones
+            </p>
+
+            <p className="text-3xl font-bold mt-2 text-emerald-400">
+              {triangulacionesRelacionadas.length}
+            </p>
+          </div>
+
         </section>
 
         {/* SUBCATEGORÍAS */}
-        <section>
-          <h2 className="text-3xl font-black mb-6">
-            Subcategorías
-          </h2>
+        <section className="mb-12">
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
-            {categoria.subcategorias.map((sub, index) => (
-              <div
-                key={index}
-                className="rounded-3xl border border-slate-800 bg-slate-900 p-6 hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="h-3 w-3 rounded-full bg-cyan-400 mb-4"></div>
+          <div className="mb-6">
+            <p className="text-sm text-cyan-400 uppercase tracking-wider">
+              Reducción de datos
+            </p>
 
-                <h3 className="text-xl font-bold leading-snug">
-                  {sub}
-                </h3>
-              </div>
-            ))}
-          </div>
-        </section>
+            <h2 className="text-2xl font-bold mt-1">
+              Subcategorías y unidades de análisis
+            </h2>
 
-        {/* TEORÍA */}
-        <section>
-          <h2 className="text-3xl font-black mb-6">
-            Fundamentación teórica
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {teoria.map((item, index) => (
-              <div
-                key={index}
-                className="rounded-3xl border border-slate-800 bg-slate-900 p-6"
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-2xl font-black">
-                    {item.autor}
-                  </h3>
-
-                  <div className="rounded-full bg-cyan-500/10 border border-cyan-400/20 px-3 py-1 text-sm text-cyan-300">
-                    {item.anio}
-                  </div>
-                </div>
-
-                <p className="text-cyan-300 mb-3 font-semibold">
-                  {item.concepto}
-                </p>
-
-                <p className="text-slate-300 leading-relaxed">
-                  {item.descripcion}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* EVIDENCIAS */}
-        <section>
-          <h2 className="text-3xl font-black mb-6">
-            Evidencias empíricas
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {entrevistasRelacionadas.map((item, index) => (
-              <div
-                key={index}
-                className="rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-950 p-6"
-              >
-                <div className="text-5xl text-cyan-400 opacity-30 mb-4">
-                  “
-                </div>
-
-                <p className="text-lg leading-relaxed text-slate-200 min-h-[120px]">
-                  {item.cita}
-                </p>
-
-                <div className="mt-8 flex items-center justify-between">
-                  <div>
-                    <p className="font-bold">
-                      {item.actor}
-                    </p>
-
-                    <p className="text-sm text-slate-400">
-                      {item.codigo}
-                    </p>
-                  </div>
-
-                  <div className="rounded-full bg-slate-800 px-4 py-2 text-sm text-slate-300">
-                    {item.subcategoria}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* TRIANGULACIÓN */}
-        <section className="rounded-[32px] border border-slate-800 bg-slate-900 p-8">
-          <p className="text-cyan-300 uppercase tracking-[0.25em] text-sm mb-4">
-            Triangulación
-          </p>
-
-          <h2 className="text-4xl font-black mb-8">
-            Integración interpretativa
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
-
-            <div className="rounded-3xl bg-slate-950 border border-slate-800 p-6">
-              <h3 className="text-xl font-bold mb-4">
-                Teoría
-              </h3>
-
-              <div className="space-y-3">
-                {triangulo.teoria.map((t, idx) => (
-                  <div
-                    key={idx}
-                    className="rounded-2xl bg-slate-900 px-4 py-3 text-slate-300"
-                  >
-                    {t}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-3xl bg-slate-950 border border-slate-800 p-6">
-              <h3 className="text-xl font-bold mb-4">
-                Entrevistas
-              </h3>
-
-              <div className="space-y-3">
-                {triangulo.entrevistas.map((t, idx) => (
-                  <div
-                    key={idx}
-                    className="rounded-2xl bg-slate-900 px-4 py-3 text-slate-300"
-                  >
-                    {t}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-3xl bg-slate-950 border border-slate-800 p-6">
-              <h3 className="text-xl font-bold mb-4">
-                Encuestas
-              </h3>
-
-              <div className="space-y-3">
-                {triangulo.encuestas.map((t, idx) => (
-                  <div
-                    key={idx}
-                    className="rounded-2xl bg-slate-900 px-4 py-3 text-slate-300"
-                  >
-                    {t}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="rounded-3xl border border-cyan-400/20 bg-cyan-500/5 p-8">
-            <h3 className="text-2xl font-black mb-4">
-              Interpretación preliminar
-            </h3>
-
-            <p className="text-lg leading-relaxed text-slate-200">
-              {triangulo.interpretacion}
+            <p className="text-slate-400 mt-2">
+              Estas unidades se recuperan de los datos analizados y permiten
+              avanzar desde las evidencias empíricas hacia la interpretación.
             </p>
           </div>
+
+          {subcategorias.length === 0 ? (
+            <div className="rounded-2xl border border-dashed border-slate-700 bg-slate-900/50 p-8 text-center">
+              <p className="text-slate-400">
+                Todavía no hay subcategorías registradas para esta categoría.
+              </p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+              {subcategorias.map((subcategoria) => {
+
+                const evidencias = entrevistasRelacionadas.filter(
+                  (e) => e.subcategoria === subcategoria
+                );
+
+                const triangulacionItem = triangulacion.find(
+                  (t) => t.categoria === subcategoria
+                );
+
+                return (
+                 <Link
+                      key={subcategoria}
+                      to={`/analisis/${encodeURIComponent(subcategoria)}`}
+                      className="group block rounded-2xl border border-slate-800 bg-slate-900 p-6 hover:border-cyan-500/50 hover:bg-slate-900/80 transition"
+                    >
+
+                    <div className="flex items-start justify-between gap-4">
+
+                      <div>
+                        <p className="text-xs uppercase tracking-wider text-cyan-400">
+                          Unidad de análisis
+                        </p>
+
+                        <h3 className="text-xl font-semibold mt-2">
+                          {subcategoria}
+                        </h3>
+                      </div>
+
+                      <div className="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center">
+                        🔎
+                      </div>
+
+                    </div>
+
+                    <div className="mt-5 space-y-2 text-sm">
+
+                      <div className="flex justify-between">
+                        <span className="text-slate-400">
+                          Entrevistas
+                        </span>
+
+                        <span className="font-semibold text-white">
+                          {evidencias.length}
+                        </span>
+                      </div>
+
+                      <div className="flex justify-between">
+                        <span className="text-slate-400">
+                          Teoría
+                        </span>
+
+                        <span className="font-semibold text-white">
+                          {triangulacionItem?.teoria?.length || 0}
+                        </span>
+                      </div>
+
+                      <div className="flex justify-between">
+                        <span className="text-slate-400">
+                          Encuestas
+                        </span>
+
+                        <span className="font-semibold text-white">
+                          {triangulacionItem?.encuestas?.length || 0}
+                        </span>
+                      </div>
+
+                    </div>
+
+                    {/* EVIDENCIAS */}
+                    {evidencias.length > 0 && (
+                      <div className="mt-5 pt-5 border-t border-slate-800">
+
+                        <p className="text-xs uppercase tracking-wider text-slate-500 mb-3">
+                          Evidencias
+                        </p>
+
+                        <div className="space-y-3">
+
+                          {evidencias.map((evidencia) => (
+                            <div
+                              key={evidencia.codigo}
+                              className="rounded-xl bg-slate-950/70 p-3"
+                            >
+                              <div className="flex justify-between gap-3 mb-1">
+
+                                <span className="text-xs font-semibold text-violet-400">
+                                  {evidencia.codigo}
+                                </span>
+
+                                <span className="text-xs text-slate-500">
+                                  {evidencia.actor}
+                                </span>
+
+                              </div>
+
+                              <p className="text-sm text-slate-300 leading-relaxed">
+                                “{evidencia.cita}”
+                              </p>
+
+                              <p className="text-xs text-slate-600 mt-2">
+                                {evidencia.fuente}
+                              </p>
+                            </div>
+                          ))}
+
+                        </div>
+
+                      </div>
+                    )}
+
+                    {/* TRIANGULACIÓN */}
+                    {triangulacionItem && (
+                      <div className="mt-5 pt-5 border-t border-slate-800">
+
+                        <p className="text-xs uppercase tracking-wider text-emerald-400 mb-2">
+                          Interpretación
+                        </p>
+
+                        <p className="text-sm text-slate-300 leading-relaxed">
+                          {triangulacionItem.interpretacion}
+                        </p>
+
+                      </div>
+                    )}
+
+                 </Link>
+                );
+              })}
+
+            </div>
+          )}
+
         </section>
-      </div>
+
+        {/* TRAZABILIDAD */}
+        <section className="rounded-2xl border border-cyan-500/20 bg-cyan-500/5 p-6 md:p-8">
+
+          <p className="text-sm text-cyan-400 uppercase tracking-wider">
+            Trazabilidad del análisis
+          </p>
+
+          <h2 className="text-2xl font-bold mt-2 mb-6">
+            ¿Cómo se realizó la reducción de datos?
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
+
+            {[
+              ["01", "Datos", "Entrevistas y encuestas"],
+              ["02", "Codificación", "Categorías y subcategorías"],
+              ["03", "Contraste", "Teoría y documentos"],
+              ["04", "Triangulación", "Cruce de evidencias"],
+              ["05", "Hallazgo", "Interpretación"],
+            ].map(([numero, titulo, descripcion]) => (
+              <div
+                key={numero}
+                className="rounded-xl bg-slate-900 border border-slate-800 p-4"
+              >
+                <span className="text-xs text-cyan-400">
+                  {numero}
+                </span>
+
+                <h3 className="font-semibold mt-2">
+                  {titulo}
+                </h3>
+
+                <p className="text-xs text-slate-400 mt-1">
+                  {descripcion}
+                </p>
+              </div>
+            ))}
+
+          </div>
+
+        </section>
+
+      </main>
     </div>
-  )
+  );
 }

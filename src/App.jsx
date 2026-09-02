@@ -5,10 +5,24 @@ import Encuestas from "./pages/Encuestas";
 import Entrevistas from "./pages/Entrevistas";
 import Documental from "./pages/Documental";
 import Capitulo from "./pages/Capitulo";
+import { useEffect } from "react"
+import { useLocation } from "react-router-dom"
+import AnalisisSubcategoria from "./pages/AnalisisSubcategoria";
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}
 
 export default function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
 
@@ -32,6 +46,10 @@ export default function App() {
         <Route path="/capitulo/:numero" 
         element={<Capitulo />} 
         />
+        <Route
+        path="/analisis/:nombre"
+        element={<AnalisisSubcategoria />}
+      />
       </Routes>
 
       

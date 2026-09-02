@@ -1,0 +1,59 @@
+{
+  "id": "capitulo-6",
+  "numero": "",   
+  "titulo": "Referencias Bibliográficas",
+  "autores": [
+    {
+      "id": "anijovich-2010",
+      "cita": "Anijovich, R. (2010). Estrategias de enseñanza: otra mirada al quehacer en el aula. Aique Grupo Editor."
+    },
+    {
+      "id": "area-2012",
+      "cita": "Area, M. (2012). Sociedad de la información, tecnologías digitales y educación. Ediciones Pirámide."
+    },
+    {
+      "id": "azzerboni-y-harf-2003",
+      "cita": "Azzerboni, D., & Harf, R. (2003). Conducir la escuela: para una gestión con sentido y comunidad. Noveduc Libros."
+    },
+    {
+      "id": "badut-de-alvarez-2005",
+      "cita": "Badut de Álvarez, M., et al. (2005). El cambio educativo e institucional: tensiones y consensos. Editorial Universidad Nacional de Salta."
+    },
+    {
+      "id": "bauman-2003",
+      "cita": "Bauman, Z. (2003). Modernidad Líquida. Fondo de Cultura Económica."
+    },
+    {
+      "id": "blejmar-2005",
+      "cita": "Blejmar, B. (2005). Gestionar es hacer que las cosas sucedan: competencias, actitudes y dispositivos para diseñar instituciones educativas. Noveduc Libros."
+    },
+    {
+      "id": "coll-y-monereo-2008",
+      "cita": "Coll, C., & Monereo, C. (Eds.). (2008). Psicología de la educación virtual: aprender y enseñar con las tecnologías de la información y la comunicación. Morata."
+    },
+    {
+      "id": "dussel-2018",
+      "cita": "Dussel, I. (2018). Las tecnologías digitales y la escuela: reflexiones sobre los cambios en los soportes de la cultura. FLACSO."
+    },
+    {
+      "id": "hargreaves-y-shirley-2009",
+      "cita": "Hargreaves, A., & Shirley, D. (2009). La cuarta vía: el futuro del cambio educativo. Amorrortu."
+    },
+    {
+      "id": "imbernon-2017",
+      "cita": "Imbernón, F. (2017). Ser docente en una sociedad compleja: formación continua y desarrollo profesional. Graó."
+    },
+    {
+      "id": "jackson-2016",
+      "cita": "Jackson, P. W. (2016). La vida en las aulas. Morata."
+    },
+    {
+      "id": "kaplan-2015",
+      "cita": "Kaplan, C. V. (2015). Culturas escolares y subjetividades: la escucha pedagógica en contextos críticos. Novedades Educativas."
+    },
+    {
+      "id": "tedesco-2000",
+      "cita": "Tedesco, J. C. (2000). Educar en la sociedad del conocimiento. Fondo de Cultura Económica."
+    }
+  ]
+}

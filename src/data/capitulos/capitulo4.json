@@ -1,0 +1,16 @@
+{
+  "id": "capitulo-4",
+  "numero": "Capítulo4",
+  "titulo": "Desafíos y oportunidades de la gestión directiva en la integración de las TIC",
+  "descripcion": "Evaluación analítica de las limitaciones de infraestructura, las demandas de formación continua y las oportunidades de innovación emergente en contextos vulnerables.",
+  "secciones": [
+    {
+      "id": "desafios-infraestructura",
+      "titulo": "Tensiones entre Infraestructura y Justicia Curricular",
+      "parrafos": [
+        "El principal desafío detectado radica en las limitaciones materiales de conectividad y disponibilidad de dispositivos tecnológicos estables. Sin embargo, estas restricciones materiales actúan en ocasiones como dinamizadores de la creatividad pedagógica y el diseño didáctico flexible.",
+        "La gestión se posiciona así ante el reto de equilibrar las exigencias normativas del sistema educativo con la realidad socioeconómica del Barrio Libertad, priorizando la inclusión y la continuidad de las trayectorias escolares."
+      ]
+    }
+  ]
+}

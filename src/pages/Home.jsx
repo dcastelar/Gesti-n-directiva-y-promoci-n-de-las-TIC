@@ -3,12 +3,13 @@ import entrevistas from "../data/entrevistas.json"
 import { Link } from 'react-router-dom'
 import { useState } from "react";
 
+
 export default function TesisDashboard() {
 const [menuAbierto, setMenuAbierto] = useState(false);  
 const navegacion = [
   {
     titulo: 'Introducción',
-    href: '#introduccion',
+    href: '/capitulo/0',
   },
   {
     titulo: 'Capítulo 1: Contextualización',
@@ -16,31 +17,31 @@ const navegacion = [
   },
   {
     titulo: 'Capítulo 2: Rol de la gestión directiva en la promoción de las TIC',
-    href: '#capitulo-2',
+    href: "/capitulo/2",
   },
   {
     titulo: 'Capítulo 3: Estrategias de la gestión directiva para la incorporación de las TIC',
-    href: '#capitulo-3',
+    href: '/capitulo/3',
   },
   {
     titulo: 'Capítulo 4: Desafíos y oportunidades de la gestión directiva en la integración de las TIC',
-    href: '#capitulo-4',
+    href: '/capitulo/4',
   },
   {
     titulo: 'Conclusiones',
-    href: '#conclusiones',
+    href: '/capitulo/5',
   },
   {
     titulo: 'Referencias bibliográficas',
-    href: '#referencias',
+    href: '/capitulo/6',
   },
   {
     titulo: 'Anexo 1: Base de datos — Encuestas y entrevistas',
-    href: '#base-datos-encuestas',
+    href: '/capitulo/7',
   },
   {
     titulo: 'Anexo 2: Base de datos — Análisis documental',
-    href: '#base-datos-documental',
+    href: '/capitulo/8',
   },
 ];
 const citasDestacadas = entrevistas.slice(0, 3)
