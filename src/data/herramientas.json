@@ -1,0 +1,156 @@
+{
+  "categorias": [
+    {
+      "nombre": "Audio y transcripción",
+      "icono": "🎙️",
+      "herramientas": [
+        {
+          "nombre": "Convertir audio a MP3",
+          "descripcion": "Convierte archivos de audio a formato MP3.",
+          "url": "https://www.freeconvert.com/es/opus-to-mp3"
+        },
+        {
+          "nombre": "TurboScribe",
+          "descripcion": "Transcripción automática de audio a texto.",
+          "url": "https://turboscribe.ai/dashboard"
+        },
+        {
+          "nombre": "SpeechNotes",
+          "descripcion": "Herramienta para convertir audio en texto.",
+          "url": "https://speechnotes.co/transcribe/"
+        }
+      ]
+    },
+    {
+      "nombre": "Documentos y PDF",
+      "icono": "📄",
+      "herramientas": [
+        {
+          "nombre": "PDF2Go",
+          "descripcion": "Convertir PDF a Word y trabajar con documentos PDF.",
+          "url": "https://www.pdf2go.com/"
+        },
+        {
+          "nombre": "PopAI",
+          "descripcion": "Resumir y analizar documentos PDF mediante IA.",
+          "url": "https://www.popai.pro/"
+        }
+      ]
+    },
+    {
+      "nombre": "Video",
+      "icono": "🎬",
+      "herramientas": [
+        {
+          "nombre": "SaveFrom",
+          "descripcion": "Descargar videos de YouTube.",
+          "url": "https://es.savefrom.net/"
+        },
+        {
+          "nombre": "Camtasia Studio",
+          "descripcion": "Edición y producción de videos.",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "nombre": "Repositorios académicos",
+      "icono": "📚",
+      "herramientas": [
+        {
+          "nombre": "Google Académico",
+          "descripcion": "Buscar artículos, tesis y publicaciones académicas.",
+          "url": "https://scholar.google.es/"
+        },
+        {
+          "nombre": "DOAJ",
+          "descripcion": "Directorio de revistas científicas de acceso abierto.",
+          "url": "https://doaj.org/"
+        },
+        {
+          "nombre": "Dialnet",
+          "descripcion": "Base de datos de literatura científica hispana.",
+          "url": "https://dialnet.unirioja.es/"
+        },
+        {
+          "nombre": "ERIC",
+          "descripcion": "Repositorio especializado en investigación educativa.",
+          "url": "https://eric.ed.gov/"
+        },
+        {
+          "nombre": "Redalyc",
+          "descripcion": "Sistema de información científica de acceso abierto.",
+          "url": "https://www.redalyc.org/"
+        },
+        {
+          "nombre": "SciELO",
+          "descripcion": "Biblioteca científica electrónica de acceso abierto.",
+          "url": "https://scielo.org/es/"
+        },
+        {
+          "nombre": "RefSeek",
+          "descripcion": "Buscador especializado en recursos académicos.",
+          "url": "https://www.refseek.com/"
+        },
+        {
+          "nombre": "Latindex",
+          "descripcion": "Sistema de información sobre revistas científicas.",
+          "url": "https://www.latindex.org/"
+        }
+      ]
+    },
+    {
+      "nombre": "Inteligencia Artificial educativa",
+      "icono": "🤖",
+      "herramientas": [
+        {
+          "nombre": "Vertex AI / Gemini",
+          "descripcion": "Herramientas de IA generativa para investigación y educación.",
+          "url": "https://console.cloud.google.com/vertex-ai/"
+        }
+      ]
+    },
+    {
+      "nombre": "Organización de recursos",
+      "icono": "🔗",
+      "herramientas": [
+        {
+          "nombre": "Symbaloo",
+          "descripcion": "Organizar y guardar enlaces y recursos digitales.",
+          "url": "https://www.symbaloo.com/"
+        }
+      ]
+    },
+    {
+      "nombre": "Desarrollo y tecnología",
+      "icono": "💻",
+      "herramientas": [
+        {
+          "nombre": "GitHub",
+          "descripcion": "Repositorios y control de versiones.",
+          "url": "https://github.com/"
+        },
+        {
+          "nombre": "Node.js",
+          "descripcion": "Entorno de ejecución para JavaScript.",
+          "url": "https://nodejs.org/"
+        },
+        {
+          "nombre": "React",
+          "descripcion": "Biblioteca para construir interfaces web.",
+          "url": "https://react.dev/"
+        },
+        {
+          "nombre": "Visual Studio Code",
+          "descripcion": "Editor de código para desarrollo.",
+          "url": "https://code.visualstudio.com/"
+        },
+        {
+          "nombre": "Vercel",
+          "descripcion": "Plataforma para desplegar aplicaciones web.",
+          "url": "https://vercel.com/"
+        }
+      ]
+    }
+  ]
+}

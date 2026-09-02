@@ -1,0 +1,756 @@
+{
+  "autores": [
+    {
+      "nombre": "Antonio Bolívar",
+      "anio": "2012",
+      "tema": "Gestión y liderazgo pedagógico",
+      "capitulos": ["Capítulo 2", "Capítulo 3", "Capítulo 4"],
+      "aporte": "La gestión educativa debe crear condiciones para la mejora continua, articulando los recursos disponibles y construyendo un sentido pedagógico compartido.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Bolívar (2012) plantea que la toma de decisiones en contextos educativos debe orientarse a crear condiciones para la mejora continua, priorizando la participación y la sostenibilidad, articulando los recursos humanos, materiales y simbólicos disponibles."
+        }
+      ]
+    },
+    {
+      "nombre": "Bernardo Blejmar",
+      "anio": "2005",
+      "tema": "Gestión institucional y cambio",
+      "capitulos": ["Capítulo 3", "Capítulo 4"],
+      "aporte": "Gestionar implica intervenir sobre la realidad institucional y generar condiciones para que las acciones y proyectos puedan desarrollarse.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Como señala Blejmar (2005), la promoción e integración de las TIC se presenta como una oportunidad para canalizar propuestas pedagógicas basadas en el aprendizaje por proyectos, el aprender haciendo y la curaduría de contenidos digitales, siempre que dichas estrategias estén enmarcadas en decisiones de gestión situada."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Como sostiene Bernardo Blejmar (2005), gestionar hoy no es simplemente administrar lo existente, sino hacer que las cosas sucedan en contextos de alta complejidad."
+        }
+      ]
+    },
+    {
+      "nombre": "Carina Lion",
+      "anio": "2017",
+      "tema": "Tecnología e inclusión educativa",
+      "capitulos": ["Capítulo 2", "Capítulo 4"],
+      "aporte": "La integración de tecnologías debe considerar las desigualdades de acceso, los saberes previos y las condiciones concretas de los sujetos y las instituciones.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Lion (2017) advierte que, en contextos de desigualdad, la inclusión digital debe atender a criterios de justicia pedagógica, reconociendo la heterogeneidad de experiencias, saberes previos y accesos."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Lion (2006) plantea que la apropiación tecnológica implica que docentes y alumnos otorguen sentidos propios a las herramientas, integrándolas significativamente en las prácticas de enseñanza."
+        }
+      ]
+    },
+    {
+      "nombre": "Francisco Imbernón",
+      "anio": "2017",
+      "tema": "Formación y desarrollo profesional docente",
+      "capitulos": ["Capítulo 2", "Capítulo 3", "Capítulo 4"],
+      "aporte": "La formación docente debe comprenderse como un proceso permanente y colaborativo que permita responder a los cambios sociales, culturales y tecnológicos.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Como plantea Imbernón (2017), el acompañamiento docente debe centrarse en la formación continua y la creación de espacios colaborativos para el desarrollo profesional."
+        },
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Estas prácticas se inscriben en lo que Imbernón (2017) define como aprendizaje colaborativo entre pares, donde la reflexión conjunta sobre la práctica fortalece los procesos de mejora continua."
+        },
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "La formación docente en la actualidad debe comprenderse como un proceso permanente, ya que los cambios sociales, culturales y tecnológicos obligan a repensar continuamente las competencias profesionales necesarias para enseñar en contextos inciertos y cambiantes."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "La transformación digital no depende exclusivamente del acceso a tecnologías, sino del desarrollo profesional sostenido que permita resignificar su uso en clave pedagógica."
+        }
+      ]
+    },
+    {
+      "nombre": "Inés Dussel",
+      "anio": "2018",
+      "tema": "Cultura escolar y transformación digital",
+      "capitulos": ["Capítulo 2", "Capítulo 3", "Capítulo 4"],
+      "aporte": "Las transformaciones culturales y digitales interpelan las formas tradicionales de enseñar y gestionar, generando tensiones entre las prácticas escolares y los entornos contemporáneos.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Inés Dussel (2018) señala que las transformaciones culturales y digitales interpelan las formas tradicionales de enseñar y gestionar, generando nuevas tensiones entre las prácticas escolares y los entornos contemporáneos."
+        },
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Estas evidencias muestran cómo la gestión impulsa espacios de experimentación pedagógica y construcción colaborativa, donde el docente se posiciona como curador de experiencias digitales y analógicas (Dussel, 2018)."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Inés Dussel (2018) identifica una tensión entre las nuevas alfabetizaciones y las estructuras escolares tradicionales que aún no logran garantizar el soporte material necesario para la innovación."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "La perspectiva asumida por el equipo de conducción se orienta a evitar el uso cosmético o meramente instrumental de las tecnologías (Dussel, 2018)."
+        }
+      ]
+    },
+    {
+      "nombre": "Mariana Maggio",
+      "anio": "2012",
+      "tema": "Innovación y enseñanza poderosa",
+      "capitulos": ["Capítulo 3", "Capítulo 4"],
+      "aporte": "La innovación tecnológica adquiere sentido cuando permite crear propuestas originales, significativas y contextualizadas que transforman las experiencias de enseñanza y aprendizaje.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Maggio (2012) define una enseñanza poderosa como aquella donde la tecnología se utiliza para crear conocimiento original y trascender la mera repetición de contenidos."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Mariana Maggio (2012) plantea que la innovación no depende exclusivamente de la conexión a internet en tiempo real, sino de la creación de propuestas originales que permitan a los alumnos apropiarse del conocimiento en sus contextos reales."
+        },
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Maggio (2020) sostiene que las prácticas innovadoras con tecnologías amplían las formas de enseñar y aprender cuando se apoyan en preguntas didácticas genuinas y no en la simple incorporación de dispositivos."
+        }
+      ]
+    },
+    {
+      "nombre": "Michael Fullan",
+      "anio": "2015",
+      "tema": "Cambio y transformación educativa",
+      "capitulos": ["Capítulo 2", "Capítulo 4"],
+      "aporte": "El cambio educativo requiere una transformación cultural que modifique las creencias, las relaciones profesionales y las formas de colaboración de los actores institucionales.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Michael Fullan (2015) sostiene que los procesos de transformación requieren una reculturización institucional que modifique no solo las prácticas, sino también las creencias y formas de relación entre los actores."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "El cambio educativo no puede entenderse como la simple incorporación de nuevas políticas, programas o tecnologías; supone un proceso más profundo de reculturización, en el cual los docentes revisan sus creencias, sus supuestos y sus formas habituales de trabajo."
+        }
+      ]
+    },
+    {
+      "nombre": "Coll y Monereo",
+      "anio": "2008",
+      "tema": "Tecnología y aprendizaje",
+      "capitulos": ["Capítulo 2", "Capítulo 3", "Capítulo 4"],
+      "aporte": "Los entornos digitales transforman los procesos de aprendizaje y requieren nuevas formas de mediación pedagógica.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Como señalan Coll y Monereo (2008), los entornos digitales transforman los procesos de aprendizaje y requieren nuevas estrategias de mediación pedagógica."
+        },
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Coll y Monereo (2008) sugieren que el valor real de la tecnología emerge de la capacidad de la conducción para resignificarla como mediadora de aprendizajes activos."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Coll y Monereo (2008) señalan que las escuelas se ven convocadas a revisar sus modos tradicionales de enseñar y aprender frente a la expansión de entornos digitalizados."
+        }
+      ]
+    },
+    {
+      "nombre": "Area Moreira",
+      "anio": "2021",
+      "tema": "Tecnología y transformación pedagógica",
+      "capitulos": ["Capítulo 2", "Capítulo 3"],
+      "aporte": "Las tecnologías producen transformaciones significativas cuando se integran en proyectos institucionales y adquieren sentido pedagógico.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Area Moreira (2021) señala que las tecnologías solo producen transformaciones cuando se insertan en un proyecto institucional que las resignifica didácticamente, evitando usos fragmentados o meramente instrumentales."
+        },
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Area (2012) plantea que la tecnología se integra con lo analógico y transforma el entorno desde una perspectiva de alfabetización múltiple."
+        }
+      ]
+    },
+    {
+      "nombre": "Dolors Reig",
+      "anio": "2012",
+      "tema": "Tecnologías para el aprendizaje y la participación",
+      "capitulos": ["Capítulo 2", "Capítulo 3"],
+      "aporte": "Las tecnologías pueden favorecer procesos pedagógicos significativos, la autonomía y la participación colectiva.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Dolors Reig (2012) denomina TAC y TEP a las tecnologías orientadas al aprendizaje, el conocimiento, el empoderamiento y la participación."
+        },
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Reig (2012) plantea que las herramientas digitales pueden potenciar la autonomía y la construcción colectiva de conocimiento."
+        }
+      ]
+    },
+    {
+      "nombre": "Antonio Bolívar y Murillo",
+      "anio": "2006-2012",
+      "tema": "Liderazgo pedagógico y mejora escolar",
+      "capitulos": ["Capítulo 2", "Capítulo 3", "Capítulo 4"],
+      "aporte": "El liderazgo pedagógico orienta culturalmente a la institución, construye sentidos compartidos y favorece procesos de mejora y transformación.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "A partir de los aportes de Murillo (2006), esta concepción se asocia con un enfoque transformacional de la gestión, que promueve la socialización de aprendizajes, la construcción de acuerdos y el desarrollo de capacidades colectivas."
+        },
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Murillo (2007) sostiene que el cambio educativo debe comprenderse como un proceso colectivo que demanda tiempos de apropiación, construcción de consensos y fortalecimiento de las capacidades institucionales."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Murillo (2007) sostiene que el liderazgo pedagógico no se limita a la administración de recursos, sino que implica orientar culturalmente a la institución hacia metas comunes, construyendo sentidos y promoviendo acuerdos progresivos."
+        }
+      ]
+    },
+    {
+      "nombre": "Ronald Heifetz",
+      "anio": "1997",
+      "tema": "Desafíos adaptativos",
+      "capitulos": ["Capítulo 2", "Capítulo 4"],
+      "aporte": "Los desafíos adaptativos requieren transformar creencias, valores y prácticas, ya que no cuentan con soluciones técnicas predefinidas.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Ronald Heifetz (1997) distingue entre problemas técnicos y desafíos adaptativos, señalando que estos últimos no cuentan con soluciones predefinidas y exigen cambios profundos en los marcos de pensamiento y acción."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Heifetz (1997) plantea el paso del problema técnico, donde el directivo aplicaba una solución de manual, al desafío adaptativo, que exige un cambio de mentalidad en todos los actores."
+        }
+      ]
+    },
+    {
+      "nombre": "Peter Senge",
+      "anio": "1990",
+      "tema": "Organizaciones que aprenden",
+      "capitulos": ["Capítulo 2", "Capítulo 4"],
+      "aporte": "Las instituciones educativas pueden comprenderse como sistemas complejos capaces de aprender y construir colectivamente su futuro.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Senge (1990) plantea que las organizaciones deben comprenderse como sistemas complejos donde múltiples variables interconectadas inciden en los procesos educativos."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Senge (1990) sostiene que una organización que aprende es aquella que expande continuamente su capacidad para crear su futuro."
+        }
+      ]
+    },
+    {
+      "nombre": "Francisco Tenti Fanfani",
+      "anio": "2005",
+      "tema": "Contexto social y escuela",
+      "capitulos": ["Capítulo 3", "Capítulo 4"],
+      "aporte": "Los contextos sociales y las condiciones institucionales condicionan las posibilidades de innovación y requieren respuestas situadas.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Tenti Fanfani (2005) reconoce que los contextos de escasez pueden convertirse en escenarios de creatividad y compromiso colectivo."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Tenti Fanfani (2005) permite comprender los obstáculos como dimensiones históricas y relacionales que configuran la acción educativa y condicionan los procesos de innovación."
+        }
+      ]
+    },
+    {
+      "nombre": "Flavia Terigi",
+      "anio": "2010",
+      "tema": "Trayectorias escolares y diversidad",
+      "capitulos": ["Capítulo 2", "Capítulo 3"],
+      "aporte": "Las instituciones deben construir respuestas situadas frente a la diversidad de trayectorias escolares y las condiciones sociales de los estudiantes.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Terigi (2010) destaca que las instituciones educativas deben construir respuestas situadas frente a la diversidad de trayectorias escolares."
+        },
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Terigi (2010) plantea que las condiciones económicas y familiares inciden en la continuidad de las trayectorias escolares."
+        }
+      ]
+    },
+    {
+      "nombre": "Juan Carlos Tedesco",
+      "anio": "2000",
+      "tema": "Transformaciones de la escuela",
+      "capitulos": ["Capítulo 2", "Capítulo 4"],
+      "aporte": "La escuela ya no constituye el único espacio de producción y distribución del conocimiento, lo que exige repensar la conducción institucional.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Tedesco (2000) advierte que la escuela ha dejado de ser el único espacio de producción y distribución del conocimiento."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Tedesco (2000) señala que la escuela ya no es el único lugar de distribución del conocimiento, lo que obliga a repensar las formas tradicionales de gestión."
+        }
+      ]
+    },
+    {
+      "nombre": "Hargreaves",
+      "anio": "2003",
+      "tema": "Colaboración docente",
+      "capitulos": ["Capítulo 2", "Capítulo 3", "Capítulo 4"],
+      "aporte": "La mejora escolar depende de culturas de colaboración que permitan superar el aislamiento docente y sostener colectivamente los procesos de cambio.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Hargreaves (2003) enfatiza que la mejora escolar depende de la creación de culturas de colaboración que rompan el aislamiento docente."
+        },
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Hargreaves (2003) advierte sobre el riesgo de que la mejora educativa recaiga excesivamente en el compromiso individual de los docentes sin condiciones organizacionales que la sostengan."
+        }
+      ]
+    },
+    {
+      "nombre": "Hargreaves y Shirley",
+      "anio": "2009",
+      "tema": "Cambio educativo",
+      "capitulos": ["Capítulo 2"],
+      "aporte": "Las transformaciones educativas profundas requieren orientación estratégica y vínculos de confianza que favorezcan su continuidad.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Hargreaves y Shirley (2009) señalan que las transformaciones educativas profundas requieren no solo orientación estratégica, sino también vínculos de confianza que permitan su continuidad y apropiación institucional."
+        }
+      ]
+    },
+    {
+      "nombre": "Myriam Southwell",
+      "anio": "2015",
+      "tema": "Gestión y demandas sociales",
+      "capitulos": ["Capítulo 2"],
+      "aporte": "La escuela actual se encuentra atravesada por múltiples demandas sociales que complejizan la tarea directiva.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Southwell (2015) plantea que la escuela actual se encuentra atravesada por múltiples demandas sociales que complejizan la tarea directiva, requiriendo formas de gestión más abiertas, participativas y sensibles al contexto."
+        }
+      ]
+    },
+    {
+      "nombre": "Kaplan",
+      "anio": "2015-2016",
+      "tema": "Vínculos, diversidad y gestión",
+      "capitulos": ["Capítulo 2"],
+      "aporte": "La gestión debe reconocer la diversidad de subjetividades y promover la escucha, el cuidado, la solidaridad y la construcción colectiva.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Kaplan (2015) sostiene que la gestión debe reconocer la diversidad de subjetividades que atraviesan la cultura escolar y promover la escucha, el cuidado y la alteridad."
+        },
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Kaplan (2016) plantea que una gestión basada en vínculos solidarios habilita procesos de construcción colectiva y participación en la toma de decisiones."
+        }
+      ]
+    },
+    {
+      "nombre": "Edgar Morin",
+      "anio": "1990",
+      "tema": "Pensamiento complejo",
+      "capitulos": ["Capítulo 2"],
+      "aporte": "Los sistemas educativos deben comprenderse como entramados complejos donde diferentes dimensiones se encuentran interconectadas.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Morin (1990) plantea que los sistemas educativos no pueden comprenderse desde una lógica lineal o fragmentada, sino como entramados complejos donde múltiples dimensiones se encuentran interconectadas."
+        }
+      ]
+    },
+    {
+      "nombre": "Daniel Goleman et al.",
+      "anio": "2016",
+      "tema": "Liderazgo y vínculos institucionales",
+      "capitulos": ["Capítulo 2"],
+      "aporte": "Las formas de conducción inciden en la calidad de los vínculos institucionales y en la construcción de confianza y colaboración.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Goleman et al. (2016) señalan que las formas de conducción inciden directamente en la calidad de los vínculos institucionales, habilitando o limitando la construcción de climas de confianza, colaboración y compromiso colectivo."
+        }
+      ]
+    },
+    {
+      "nombre": "Carina Lion",
+      "anio": "2006-2017",
+      "tema": "Inclusión y apropiación tecnológica",
+      "capitulos": ["Capítulo 2", "Capítulo 4"],
+      "aporte": "La inclusión y apropiación tecnológica requieren considerar las desigualdades, los saberes y los sentidos que los actores construyen sobre las herramientas.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Lion (2017) advierte que, en contextos de desigualdad, la inclusión digital debe atender a criterios de justicia pedagógica."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Lion (2006) plantea que docentes y alumnos deben otorgar sentidos propios a las herramientas, integrándolas significativamente en las prácticas de enseñanza."
+        }
+      ]
+    },
+    {
+      "nombre": "Van Dijk",
+      "anio": "2016",
+      "tema": "Brecha y sociedad digital",
+      "capitulos": ["Capítulo 3", "Capítulo 4"],
+      "aporte": "La conectividad y el acceso tecnológico constituyen condiciones estructurantes para la participación y la apropiación del conocimiento.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Van Dijk (2016) advierte que la falta de infraestructura es una dificultad recurrente en los procesos de transformación digital, particularmente en instituciones públicas."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Van Dijk (2016) sostiene que, en el marco de la sociedad red, la conectividad constituye una condición estructurante para la producción, circulación y apropiación del conocimiento."
+        }
+      ]
+    },
+    {
+      "nombre": "Manuel Castells",
+      "anio": "2001-2006",
+      "tema": "Sociedad red y tecnología",
+      "capitulos": ["Capítulo 3", "Capítulo 4"],
+      "aporte": "Las tecnologías forman parte de entramados sociales y organizacionales que transforman las formas de comunicación, organización y producción del conocimiento.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Castells (2006) sostiene que las tecnologías son entramados que configuran nuevas formas de organización."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Castells (2001) describe la sociedad red como un escenario donde el acceso tecnológico se relaciona con la calidad y continuidad de la conexión."
+        }
+      ]
+    },
+    {
+      "nombre": "Burbules",
+      "anio": "2012",
+      "tema": "Aprendizaje ubicuo",
+      "capitulos": ["Capítulo 4"],
+      "aporte": "Las tecnologías amplían las posibilidades de aprender en diferentes momentos, lugares y contextos.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Burbules (2012) denomina aprendizaje ubicuo a aquel que puede suceder en cualquier momento y lugar, superando los límites tradicionales del aula."
+        }
+      ]
+    },
+    {
+      "nombre": "Mishra y Koehler",
+      "anio": "2006",
+      "tema": "Modelo TPACK",
+      "capitulos": ["Capítulo 4"],
+      "aporte": "La integración tecnológica significativa requiere articular conocimientos tecnológicos, pedagógicos y disciplinares.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Mishra y Koehler (2006) definen el modelo TPACK como una integración reflexiva del conocimiento tecnológico, pedagógico y disciplinar."
+        }
+      ]
+    },
+    {
+      "nombre": "Buckingham",
+      "anio": "2008",
+      "tema": "Cultura digital y educación",
+      "capitulos": ["Capítulo 3", "Capítulo 4"],
+      "aporte": "La educación digital requiere una mirada crítica que reconozca las tensiones entre cultura escolar, cultura mediática y prácticas juveniles.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Buckingham (2008) plantea la necesidad de evitar enfoques tecnocéntricos que desconozcan la realidad institucional."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Buckingham (2008) analiza la tensión entre la cultura del aula y la cultura mediática de los jóvenes."
+        }
+      ]
+    },
+    {
+      "nombre": "César Coll",
+      "anio": "2009",
+      "tema": "TIC y aprendizaje",
+      "capitulos": ["Capítulo 3"],
+      "aporte": "El impacto educativo de las TIC depende de las actividades y de los usos pedagógicos que los estudiantes realizan con ellas.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "César Coll (2009) sostiene que el impacto de las TIC en el aprendizaje no depende solo de la herramienta, sino de la naturaleza de las actividades que los estudiantes realizan con ellas."
+        }
+      ]
+    },
+    {
+      "nombre": "Díaz Barriga",
+      "anio": "2006",
+      "tema": "Aprendizaje situado",
+      "capitulos": ["Capítulo 3"],
+      "aporte": "El aprendizaje situado permite construir conocimiento en contextos reales y resolver problemas significativos.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Díaz Barriga (2006) sostiene que el aprendizaje situado permite que el conocimiento se construya en contextos reales, donde la tecnología puede actuar como andamio para resolver problemas genuinos."
+        }
+      ]
+    },
+    {
+      "nombre": "Adell",
+      "anio": "2004-2011",
+      "tema": "Integración pedagógica de las TIC",
+      "capitulos": ["Capítulo 3", "Capítulo 4"],
+      "aporte": "La integración tecnológica trasciende lo instrumental cuando favorece la participación activa y se vincula con decisiones didácticas reflexivas.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Adell (2004) sostiene que la integración tecnológica trasciende lo instrumental cuando las herramientas se convierten en soportes para la participación activa."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Adell (2011) denomina didáctica de las TIC a las construcciones reflexivas que se configuran frente a los desafíos educativos."
+        }
+      ]
+    },
+    {
+      "nombre": "Vivancos",
+      "anio": "2013",
+      "tema": "Innovación y tecnologías",
+      "capitulos": ["Capítulo 3", "Capítulo 4"],
+      "aporte": "Las tecnologías pueden diversificar las modalidades de enseñanza y aprendizaje y favorecer prácticas más inclusivas y creativas.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Vivancos (2013) sostiene que el valor de las TIC no radica en una incorporación acrítica, sino en su capacidad para favorecer nuevas formas de representación y participación activa."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Vivancos (2013) destaca que las tecnologías permiten diversificar las modalidades de enseñanza y aprendizaje, promoviendo prácticas más inclusivas y abiertas a la creatividad."
+        }
+      ]
+    },
+    {
+      "nombre": "Krichesky y Murillo",
+      "anio": "2018",
+      "tema": "Colaboración profesional docente",
+      "capitulos": ["Capítulo 3"],
+      "aporte": "La colaboración profesional implica indagación conjunta y transformación de las prácticas de enseñanza.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Krichesky y Murillo (2018) definen la colaboración profesional docente como un proceso que trasciende el intercambio de materiales para centrarse en la indagación conjunta y la transformación de la enseñanza."
+        }
+      ]
+    },
+    {
+      "nombre": "Vaillant",
+      "anio": "2019",
+      "tema": "Desarrollo profesional docente",
+      "capitulos": ["Capítulo 2", "Capítulo 3"],
+      "aporte": "El desarrollo profesional se fortalece en contextos colaborativos donde el aprendizaje se construye entre pares.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Vaillant (2019) destaca que el desarrollo profesional docente se fortalece en contextos colaborativos, donde el aprendizaje se construye entre pares y se sostiene en prácticas compartidas."
+        },
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Vaillant (2019) sostiene que el desarrollo profesional no se construye desde la imposición, sino desde procesos colectivos que promueven la confianza, la empatía y la inteligencia emocional."
+        }
+      ]
+    },
+    {
+      "nombre": "Anijovich",
+      "anio": "2010",
+      "tema": "Diversidad y enseñanza",
+      "capitulos": ["Capítulo 2"],
+      "aporte": "La escuela debe reconocer que los estudiantes están atravesados por múltiples contextos sociales, económicos y culturales que interpelan las prácticas de enseñanza.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 2",
+          "texto": "Anijovich (2010) plantea que los estudiantes están atravesados por tecnologías y también por contextos sociales, económicos, culturales y políticos diversos, lo que interpela a la escuela y a los docentes a revisar y resignificar sus prácticas."
+        }
+      ]
+    },
+    {
+      "nombre": "Anijovich y Cappelletti",
+      "anio": "2017",
+      "tema": "Aprendizaje auténtico",
+      "capitulos": ["Capítulo 3"],
+      "aporte": "Los proyectos de aprendizaje auténtico permiten construir conocimiento mediante la resolución de problemas reales.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Anijovich y Cappelletti (2017) definen los proyectos de aprendizaje auténtico como propuestas donde el conocimiento se construye mediante la resolución de problemas reales."
+        }
+      ]
+    },
+    {
+      "nombre": "Pierre Lévy",
+      "anio": "2004",
+      "tema": "Inteligencia colectiva",
+      "capitulos": ["Capítulo 3"],
+      "aporte": "El conocimiento se potencia cuando los saberes individuales se ponen en común mediante procesos colaborativos y soportes digitales.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Pierre Lévy (2004) denomina inteligencia colectiva al proceso mediante el cual el conocimiento se potencia al ponerse en común."
+        }
+      ]
+    },
+    {
+      "nombre": "Scolari",
+      "anio": "2018",
+      "tema": "Transalfabetización",
+      "capitulos": ["Capítulo 4"],
+      "aporte": "La transalfabetización implica producir, consumir y compartir contenidos en múltiples plataformas.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Scolari (2018) entiende la transalfabetización como la capacidad de producir, consumir y compartir contenidos en múltiples plataformas."
+        }
+      ]
+    },
+    {
+      "nombre": "Cobo y Moravec",
+      "anio": "2011",
+      "tema": "Aprendizaje invisible",
+      "capitulos": ["Capítulo 4"],
+      "aporte": "Las competencias digitales pueden integrarse de manera orgánica en el proyecto educativo y trascender los espacios formales de aprendizaje.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Cobo y Moravec (2011) denominan Aprendizaje Invisible a una concepción donde las competencias pueden integrarse de forma orgánica en el Proyecto Educativo."
+        }
+      ]
+    },
+    {
+      "nombre": "Schwartzman y Tarasow",
+      "anio": "2014",
+      "tema": "Escuela expandida",
+      "capitulos": ["Capítulo 4"],
+      "aporte": "Los recursos digitales permiten ampliar los límites físicos del aula y conectar la escuela con la realidad.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Schwartzman y Tarasow (2014) definen la Escuela Expandida como aquella que rompe los límites físicos del aula y el libro de texto para conectarse con la realidad mediante recursos digitales."
+        }
+      ]
+    },
+    {
+      "nombre": "Bruner",
+      "anio": "1976",
+      "tema": "Andamiaje y aprendizaje",
+      "capitulos": ["Capítulo 4"],
+      "aporte": "El acompañamiento permite que los actores educativos asuman riesgos y experimenten con nuevas formas de aprender y enseñar.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "La idea de Bruner (1976), aplicada a la gestión, permite comprender el rol del directivo como proveedor del soporte necesario para que los docentes asuman riesgos y experimenten con nuevas herramientas."
+        }
+      ]
+    },
+    {
+      "nombre": "Hernández",
+      "anio": "2000",
+      "tema": "Aprendizaje por proyectos",
+      "capitulos": ["Capítulo 4"],
+      "aporte": "El aprendizaje por proyectos organiza la enseñanza alrededor de problemas reales y preguntas relevantes que articulan diversos saberes.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Hernández (2000) plantea organizar la enseñanza a partir de problemas reales o preguntas relevantes que movilizan saberes diversos y requieren la articulación de múltiples áreas curriculares."
+        }
+      ]
+    },
+    {
+      "nombre": "Litwin",
+      "anio": "2005",
+      "tema": "Tecnología e innovación pedagógica",
+      "capitulos": ["Capítulo 4"],
+      "aporte": "La incorporación de recursos tecnológicos no garantiza por sí misma la innovación pedagógica, aunque su ausencia puede limitar las propuestas didácticas.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Litwin (2005) sostiene que la mera incorporación de recursos tecnológicos no garantiza procesos de innovación pedagógica, aunque su ausencia o disponibilidad intermitente puede condicionar significativamente las propuestas didácticas."
+        }
+      ]
+    },
+    {
+      "nombre": "Tyack y Cuban",
+      "anio": "2001",
+      "tema": "Gramática escolar",
+      "capitulos": ["Capítulo 4"],
+      "aporte": "Las prácticas y reglas arraigadas de la institución escolar pueden resistir las reformas y condicionan los procesos de cambio.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Tyack y Cuban (2001) denominan gramática escolar al conjunto de reglas y prácticas arraigadas que suelen resistir las reformas externas."
+        }
+      ]
+    },
+    {
+      "nombre": "Maggio",
+      "anio": "2012",
+      "tema": "Enseñanza poderosa",
+      "capitulos": ["Capítulo 3", "Capítulo 4"],
+      "aporte": "La enseñanza poderosa utiliza la tecnología para crear propuestas originales, significativas y capaces de generar nuevas formas de apropiación del conocimiento.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Maggio (2012) define la enseñanza poderosa como aquella que utiliza la tecnología para crear conocimiento original y trascender la mera repetición de contenidos."
+        },
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Maggio (2012) plantea que la innovación no depende exclusivamente de la conexión a internet en tiempo real, sino de la creación de propuestas originales y contextualizadas."
+        }
+      ]
+    },
+    {
+      "nombre": "Perkins",
+      "anio": "2010",
+      "tema": "Aprendizaje pleno",
+      "capitulos": ["Capítulo 4"],
+      "aporte": "La mejora ocurre cuando la comunidad educativa integra técnica, reflexión y colaboración dentro de una visión institucional compartida.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Perkins (2010) plantea que la verdadera oportunidad de mejora ocurre cuando la comunidad educativa integra la técnica, la reflexión y la colaboración."
+        }
+      ]
+    },
+    {
+      "nombre": "Dubet",
+      "anio": "2006",
+      "tema": "Justicia escolar",
+      "capitulos": ["Capítulo 3"],
+      "aporte": "La escuela debe evitar que las desigualdades sociales se transformen en desigualdades escolares legítimas o mecanismos de exclusión.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 3",
+          "texto": "Dubet (2006) plantea que la justicia escolar consiste en impedir que las desigualdades sociales se transformen en desigualdades legítimas y mecanismos de exclusión."
+        }
+      ]
+    },
+    {
+      "nombre": "Pérez Gómez",
+      "anio": "2009",
+      "tema": "Transformación educativa",
+      "capitulos": ["Capítulo 4"],
+      "aporte": "Las transformaciones sociales y digitales demandan revisar los modos tradicionales de enseñar y aprender.",
+      "citas": [
+        {
+          "capitulo": "Capítulo 4",
+          "texto": "Pérez Gómez (2009) plantea la necesidad de revisar los modos tradicionales de enseñar y aprender frente a las transformaciones de los entornos contemporáneos."
+        }
+      ]
+    }
+  ]
+}

@@ -2,10 +2,12 @@ import categorias from "../data/categorias.json"
 import entrevistas from "../data/entrevistas.json"
 import { Link } from 'react-router-dom'
 import { useState } from "react";
-
+import herramientasData from "../data/herramientas.json";
+import autoresData from "../data/autores.json";
 
 export default function TesisDashboard() {
 const [menuAbierto, setMenuAbierto] = useState(false);  
+const [autorSeleccionado, setAutorSeleccionado] = useState(null);
 const navegacion = [
   {
     titulo: 'Introducción',
@@ -101,9 +103,9 @@ const colores = {
       </p>
 
       <p className="text-sm text-slate-300 leading-relaxed">
-        Investigación cualitativa situada de corte transversal, orientada
-        a comprender el rol de la gestión directiva en la promoción de las
-        TIC dentro de un contexto institucional específico.
+       La investigación adopta un enfoque cualitativo, orientado a comprender el rol de la gestión directiva en la promoción del uso de las TIC, considerando las experiencias, percepciones y prácticas de los actores institucionales dentro de su contexto natural.
+      Se desarrolla mediante un estudio exploratorio-descriptivo de corte transversal, cuyo propósito es identificar y caracterizar las acciones, estrategias y condiciones institucionales que desarrolla el equipo directivo.
+        
       </p>
 
     </div>
@@ -228,58 +230,130 @@ const colores = {
     </p>
   </a>
 
-  <a
-    href="#tips-investigador"
-    className="rounded-2xl border border-slate-800 bg-slate-900 px-5 py-4 min-w-[150px] hover:bg-slate-800 hover:border-emerald-400/30 transition-all"
-  >
-    <p className="text-xs text-slate-500 uppercase tracking-widest">
-      Tips investigador
-    </p>
+ <a
+  href="#Herramientas-Investigador"
+  className="rounded-2xl border border-slate-800 bg-slate-900 px-5 py-4 min-w-[150px] hover:bg-slate-800 hover:border-emerald-400/30 transition-all"
+>
+  <p className="text-xs text-slate-500 uppercase tracking-widest">
+    Herramientas para el investigador
+  </p>
 
-    <h3 className="text-3xl font-black mt-2">
-      4
-    </h3>
+  <h3 className="text-3xl font-black mt-2">
+    {herramientasData.categorias.reduce(
+      (total, categoria) => total + categoria.herramientas.length,
+      0
+    )}
+  </h3>
 
-    <p className="text-xs text-emerald-300 mt-1">
-      Explorar →
-    </p>
-  </a>
+  <p className="text-xs text-emerald-300 mt-1">
+    Explorar →
+  </p>
+</a>
 
-  {/* TIPS PARA INVESTIGADOR */}
-  <a
-    href="#tips-investigador"
-    className="rounded-2xl border border-slate-800 bg-slate-900 px-5 py-4 min-w-[150px] hover:bg-slate-800 hover:border-emerald-400/30 transition-all"
-  >
-    <p className="text-xs text-slate-500 uppercase tracking-widest">
-      Tips investigador
-    </p>
 
-    <h3 className="text-3xl font-black mt-2">
-      3
-    </h3>
-
-    <p className="text-xs text-emerald-300 mt-1">
-      Explorar →
-    </p>
-  </a>
 
 </div>
-             <div className="rounded-3xl border border-slate-800 bg-slate-900/80 p-6 backdrop-blur-xl">
-                <p className="text-slate-500 text-sm uppercase tracking-widest mb-3">
-                  Autores principales
-                </p>
+<div className="rounded-3xl border border-slate-800 bg-slate-900/80 p-6 backdrop-blur-xl">
+  <p className="text-slate-500 text-sm uppercase tracking-widest mb-3">
+    Autores principales
+  </p>
+{autorSeleccionado && (
+  <div className="mt-6 rounded-3xl border border-cyan-400/20 bg-slate-900 p-6 shadow-2xl">
 
-                <div className="flex flex-wrap gap-3">
-                  {['Antonio Bolívar','Bernardo Blejmar', 'Carina Lion', 'Francisco Imbernón', 'Inés Dussel', 'Mariana Maggio', 'Michael Fullan'].map((autor, idx) => (
-                    <div
-                      key={idx}
-                      className="rounded-full bg-cyan-500/10 border border-cyan-400/20 px-4 py-2 text-sm text-cyan-300"
-                    >
-                      {autor}
-                    </div>
-                  ))}
-                </div>
-              </div>
+    <div className="flex items-start justify-between gap-4">
+      <div>
+        <p className="text-xs text-cyan-300 uppercase tracking-widest">
+          Autor seleccionado
+        </p>
+
+        <h3 className="text-2xl md:text-3xl font-black mt-1">
+          {autorSeleccionado.nombre}
+        </h3>
+
+        <p className="text-slate-400 mt-2">
+          {autorSeleccionado.tema}
+        </p>
+      </div>
+
+      <button
+        onClick={() => setAutorSeleccionado(null)}
+        className="text-slate-400 hover:text-white text-xl"
+        title="Cerrar"
+      >
+        ✕
+      </button>
+    </div>
+
+    <div className="mt-6 rounded-2xl bg-slate-950 border border-slate-800 p-5">
+      <p className="text-xs text-emerald-300 uppercase tracking-widest mb-2">
+        Aporte teórico
+      </p>
+
+      <p className="text-slate-300 leading-relaxed">
+        {autorSeleccionado.aporte}
+      </p>
+    </div>
+
+    <div className="mt-6">
+      <p className="text-xs text-cyan-300 uppercase tracking-widest mb-4">
+        Citas utilizadas en la tesis
+      </p>
+
+      <div className="space-y-4">
+        {autorSeleccionado.citas.map((cita, idx) => (
+          <div
+            key={idx}
+            className="rounded-2xl border border-slate-800 bg-slate-950 p-5"
+          >
+            <div className="flex items-center gap-2 mb-3">
+              <span>📘</span>
+
+              <span className="text-sm font-bold text-cyan-300">
+                {cita.capitulo}
+              </span>
+            </div>
+
+            <p className="text-slate-300 leading-relaxed">
+              {cita.texto}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+)}
+<div className="flex flex-wrap gap-3">
+  {[
+    "Antonio Bolívar",
+    "Bernardo Blejmar",
+    "Carina Lion",
+    "Francisco Imbernón",
+    "Inés Dussel",
+    "Mariana Maggio",
+    "Michael Fullan"
+  ].map((nombreAutor) => {
+    const autor = autoresData.autores.find(
+      (a) => a.nombre === nombreAutor
+    );
+
+    if (!autor) return null;
+
+    return (
+      <button
+        key={nombreAutor}
+        onClick={() => setAutorSeleccionado(autor)}
+        className="rounded-full bg-cyan-500/10 border border-cyan-400/20 px-4 py-2 text-sm text-cyan-300 hover:bg-cyan-500/20 hover:border-cyan-400/40 transition-all"
+      >
+        {autor.nombre}
+      </button>
+    );
+  })}
+</div>
+
+  <p className="text-xs text-slate-500 mt-4">
+    Seleccioná un autor para consultar sus aportes y citas.
+  </p>
+</div>
         </div>
             <div className="space-y-4">
            
@@ -289,14 +363,8 @@ const colores = {
                   Hallazgo central
                 </p>
 <p className="text-lg leading-relaxed text-slate-400">
-  La gestión directiva gestiona en la incertidumbre, adaptando las decisiones
-  sobre TIC al contexto de vulnerabilidad.
-
-  La falta de recursos tecnológicos obliga a repensar las estrategias y
-  movilizar los recursos disponibles.
-
-  En este escenario de crisis, la gestión transforma las dificultades en
-  oportunidades de aprendizaje, adaptación y resiliencia institucional.
+La gestión directiva gestiona en la incertidumbre, en un contexto de escasez y vulnerabilidad, transformando  las dificultades en oportunidades de aprendizaje, adaptación y resiliencia. En este camino, las TIC trascienden su dimensión instrumental y se convierten en medios de transformación digital, equidad y generación de oportunidades, favoreciendo nuevas formas de crear, construir, enseñar y aprender.
+Aun cuando escasean los recursos, no escasean las posibilidades.
 </p>
 </div>
 </div>
@@ -492,62 +560,85 @@ const colores = {
   </div>
 
 </section>
-{/* =========================================================
-    tips para el investigador 
-========================================================= */}
-<section id="tips-investigador" className="mb-12">
-  <div className="rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-950 p-8">
 
+{/* =========================================================
+    HERRAMIENTAS PARA EL INVESTIGADOR
+========================================================= */}
+
+<section
+  id="Herramientas-Investigador"
+  className="mb-12 scroll-mt-8"
+>
+  <div className="mb-6">
     <p className="text-emerald-300 text-sm uppercase tracking-[0.25em] mb-2">
-      Caja de herramientas
+      Recursos de investigación
     </p>
 
-    <h2 className="text-3xl md:text-4xl font-black">
-      Tips para investigadores
+    <h2 className="text-3xl md:text-4xl font-black tracking-tight">
+      Herramientas para el investigador
     </h2>
 
-    <div className="grid md:grid-cols-3 gap-6 mt-8">
+    <p className="text-slate-400 mt-3 max-w-3xl">
+      Recursos digitales para facilitar la búsqueda, organización,
+      procesamiento y análisis de información durante la investigación.
+    </p>
+  </div>
 
-      <div>
-        <h3 className="font-bold text-lg mb-2">
-      Cada capítulo en una hoja nueva
-        </h3>
-        <p className="text-slate-400 leading-relaxed">
-      No iniciar párrafos con citas bibliográficas
-        </p>
+  <div className="space-y-8">
+
+    {herramientasData.categorias.map((categoria, index) => (
+
+      <div
+        key={index}
+        className="rounded-3xl border border-slate-800 bg-slate-900/80 p-6"
+      >
+
+        {/* TÍTULO DE CATEGORÍA */}
+        <div className="flex items-center gap-3 mb-5">
+          <span className="text-2xl">
+            {categoria.icono}
+          </span>
+
+          <h3 className="text-xl font-bold">
+            {categoria.nombre}
+          </h3>
+        </div>
+
+        {/* HERRAMIENTAS */}
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+
+          {categoria.herramientas.map((herramienta, idx) => (
+
+            <a
+              key={idx}
+              href={herramienta.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group rounded-2xl border border-slate-800 bg-slate-950 p-5 hover:-translate-y-1 hover:border-emerald-400/40 transition-all"
+            >
+
+              <h4 className="font-bold text-lg group-hover:text-emerald-300 transition-colors">
+                {herramienta.nombre}
+              </h4>
+
+              <p className="text-sm text-slate-400 mt-2 leading-relaxed">
+                {herramienta.descripcion}
+              </p>
+
+              <div className="mt-4 text-sm text-emerald-300 font-semibold">
+                Abrir herramienta →
+              </div>
+
+            </a>
+
+          ))}
+
+        </div>
+
       </div>
 
-      <div>
-        <h3 className="font-bold text-lg mb-2">
-Cohesión / conexión entre un capitulo y otro 
-        </h3>
-        <p className="text-slate-400 leading-relaxed">
-          Las entrevistas y encuestas permiten recuperar las perspectivas
-          de quienes participan cotidianamente de la institución.
-        </p>
-      </div>
+    ))}
 
-      <div>
-        <h3 className="font-bold text-lg mb-2">
-Controlar citas bibliográficas Repetición y contexto 
-        </h3>
-        <p className="text-slate-400 leading-relaxed">
-          En contextos de incertidumbre y limitaciones, las dificultades
-          también pueden convertirse en oportunidades de aprendizaje y
-          transformación.
-        </p>
-      </div>
-      <div>
-        <h3 className="font-bold text-lg mb-2">
-      Controlar citas empíricas sobre datos recolectados repetición y contexto
-        </h3>
-        <p className="text-slate-400 leading-relaxed">
-          En contextos de incertidumbre y limitaciones, las dificultades
-          también pueden convertirse en oportunidades de aprendizaje y
-          transformación.
-        </p>
-      </div>
-    </div>
   </div>
 </section>
 {/* CITAS DESTACADAS */}
