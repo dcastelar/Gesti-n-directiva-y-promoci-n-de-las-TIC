@@ -1,0 +1,958 @@
+{
+  "version": "1.0",
+  "fuente_principal": "Base de Datos Entrevistas.docx",
+  "descripcion": "Matriz normalizada de análisis para la trazabilidad de la investigación. Los textos, códigos, fuentes e interpretaciones se conservan según la base original; los campos vacíos se mantienen como null o listas vacías.",
+  "categorias": [
+    {
+      "id": 2,
+      "nombre": "Rol de la gestión directiva",
+      "slug": "rol-gestion-directiva",
+      "unidades": [
+        {
+          "id": "rol-liderazgo-pedagogico",
+          "subcategoria": "Liderazgo pedagógico",
+          "pregunta": "¿Qué aspectos del contexto escolar se consideran en la toma de decisiones sobre TIC?",
+          "definicion_teorica": "La gestión contextualiza la incorporación de TIC evaluando viabilidad, sostenibilidad y condiciones sociales; el liderazgo pedagógico limita el tecnocentrismo (Fullan, 2015; Blejmar, 2005; Pozner, 2012 ).",
+          "entrevistas": [
+            {
+              "actor": "Directora",
+              "extracto": "Lo primero que tenemos en cuenta siempre es el contexto social… no podemos planificar el uso de recursos digitales pensando que todos los chicos o las familias van a tener acceso",
+              "codigo": "ROLDIRE1",
+              "fuente": "Entrevista a Directora, párr. 6"
+            },
+            {
+              "actor": "Vicedirectora",
+              "extracto": "La escuela cumple una función social importante… cuando hay que tomar decisiones e incorporar recursos tecnológicos… estamos atravesados por el contexto",
+              "codigo": "ROLVICE1",
+              "fuente": "Entrevista a Vicedirectora, párr. 5"
+            }
+          ],
+          "encuesta": [
+            {
+              "resultado": "Encuesta : 40% “a veces” toma en cuenta el contexto; 33,3% “casi siempre”",
+              "codigo": "ROLDOCE1",
+              "fuente": "Encuesta a docentes, ítems 3"
+            }
+          ],
+          "evidencias_adicionales": [
+            {
+              "resultado": "46.7% del personal docente manifestó que la escuela cuentan con pocos recursos tecnológico s",
+              "codigo": "ROLDOCE2",
+              "fuente": "Encuesta a docentes, ítems 4"
+            }
+          ],
+          "documentos": [],
+          "teoria": [
+            "Fullan",
+            "Blejmar",
+            "Pozner"
+          ],
+          "interpretacion": "Se evidencia un liderazgo pedagógico que evalúa el contexto, promoviendo decisiones ajustadas a la realidad de la escuela.",
+          "hallazgo": null
+        },
+        {
+          "id": "rol-toma-decisiones",
+          "subcategoria": "Toma de decisiones",
+          "pregunta": null,
+          "definicion_teorica": "La gestión estratégica implica seleccionar proyectos sostenibles y contextualizados (Pozner, 2012; Blejmar, 2005).",
+          "entrevistas": [
+            {
+              "actor": "Directora",
+              "extracto": "Tratamos de que los proyectos sean posibles de sostener… que no dependan de algo externo, sino que podamos mantenerlo con lo que tenemos",
+              "codigo": "ROLDIRE2",
+              "fuente": "Entrevista a Directora, párr. 9"
+            },
+            {
+              "actor": "Vicedirectora",
+              "extracto": "Priorizamos lo que podemos hacer con los recursos reales… Si el proyecto requiere mucha conectividad o dispositivos que no hay, buscamos adaptarlo",
+              "codigo": "ROLVICE2",
+              "fuente": "Entrevista a Vicedirectora, párr. 8"
+            }
+          ],
+          "encuesta": [
+            {
+              "resultado": "Encuesta: 53 % considera que los proyectos con TIC se eligen según la viabilidad y recursos disponibles",
+              "codigo": "ROLDOCE3",
+              "fuente": "Encuesta a docentes, ítems 6"
+            }
+          ],
+          "evidencias_adicionales": [],
+          "documentos": [],
+          "teoria": [
+            "Pozner",
+            "Blejmar"
+          ],
+          "interpretacion": "La selección de proyectos muestra planificación estratégica, considerando recursos y sostenibilidad.",
+          "hallazgo": null
+        },
+        {
+          "id": "rol-coordinacion-institucional",
+          "subcategoria": "Coordinación institucional",
+          "pregunta": null,
+          "definicion_teorica": "La gestión actúa como mediadora entre políticas y práctica docente (Blejmar, 2005).",
+          "entrevistas": [],
+          "encuesta": [
+            {
+              "resultado": "Encuesta: 80% manifestó que la dirección coordina acciones para integrar las TIC en las aulas",
+              "codigo": "ROLDOCE4",
+              "fuente": "Encuesta a docentes, ítems 8"
+            }
+          ],
+          "evidencias_adicionales": [],
+          "documentos": [],
+          "teoria": [
+            "Blejmar"
+          ],
+          "interpretacion": "La gestión coordina esfuerzos institucionales y asegura coherencia entre políticas y prácticas pedagógicas.",
+          "hallazgo": null
+        },
+        {
+          "id": "rol-empatia-acompanamiento",
+          "subcategoria": "Empatía y acompañamiento",
+          "pregunta": "¿Cómo acompaña la gestión a docentes con resistencia tecnológica?",
+          "definicion_teorica": "Liderazgo transformacional basado en empatía y andamiaje profesional; formación situada y pares pedagógicos facilitan apropiación (Murillo, 2007).",
+          "entrevistas": [
+            {
+              "actor": "Directora",
+              "extracto": "Dirección acompaña paso a paso y mediante pares pedagógicos informales",
+              "codigo": "ROLDIRE3",
+              "fuente": "Entrevista a Directora, párr. 14"
+            },
+            {
+              "actor": "Vicedirectora",
+              "extracto": "A los docentes que se resisten… los acompañamos de manera empática… preferimos hacerlo de forma amable y guiada",
+              "codigo": "ROLVICE3",
+              "fuente": "Entrevista a Vicedirectora, párr. 11"
+            }
+          ],
+          "encuesta": [
+            {
+              "resultado": "Encuesta: 86,7% valora la oferta formativa como “aceptable/suficiente”; persisten resistencias y heterogeneidad",
+              "codigo": "ROLDOCE5",
+              "fuente": "Encuesta a docentes, ítems 9"
+            }
+          ],
+          "evidencias_adicionales": [],
+          "documentos": [],
+          "teoria": [
+            "Murillo"
+          ],
+          "interpretacion": "La gestión acompaña empáticamente, respetando ritmos individuales y promoviendo la apropiación progresiva de TIC.",
+          "hallazgo": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Estrategias de incorporación",
+      "slug": "estrategias-incorporacion",
+      "unidades": [
+        {
+          "id": "est-capacitaciones-internas",
+          "subcategoria": "Capacitaciones internas",
+          "pregunta": "¿Cómo se comparte el aprendizaje entre docentes?",
+          "definicion_teorica": "Formación horizontal y aprendizaje colaborativo entre pares (Anijovich, 2010).",
+          "entrevistas": [
+            {
+              "actor": "Vicedirectora",
+              "extracto": "Tratamos de compartir entre colegas lo que aprendemos en las capacitaciones, así todos aplicamos algo nuevo",
+              "codigo": "ESTVICE4",
+              "fuente": "Entrevista a Vicedirectora, párr. 16"
+            }
+          ],
+          "encuesta": [],
+          "evidencias_adicionales": [],
+          "documentos": [],
+          "teoria": [
+            "Anijovich"
+          ],
+          "interpretacion": "Se promueve el aprendizaje colaborativo docente como estrategia de apropiación tecnológica.",
+          "hallazgo": null
+        },
+        {
+          "id": "est-uso-recursos-propios",
+          "subcategoria": "Uso de recursos propios",
+          "pregunta": "¿Cómo se resuelven limitaciones tecnológicas?",
+          "definicion_teorica": "Adaptación creativa frente a limitaciones tecnológicas (Becker; Castells, 2010).",
+          "entrevistas": [
+            {
+              "actor": "Vicedirectora",
+              "extracto": "A veces usamos nuestros celulares o notebooks porque los equipos de la escuela son viejos",
+              "codigo": "ESTVICE5",
+              "fuente": "Entrevista a Vicedirectora, párr. 18"
+            }
+          ],
+          "encuesta": [],
+          "evidencias_adicionales": [],
+          "documentos": [],
+          "teoria": [
+            "Becker",
+            "Castells"
+          ],
+          "interpretacion": "La falta de recursos impulsa alternativas individuales y compromiso docente.",
+          "hallazgo": null
+        },
+        {
+          "id": "est-apoyo-institucional",
+          "subcategoria": "Apoyo institucional",
+          "pregunta": "¿Qué proyectos gestiona la escuela para TIC?",
+          "definicion_teorica": "Curaduría institucional para gestión de recursos (Becker; Castells).",
+          "entrevistas": [],
+          "encuesta": [
+            {
+              "resultado": "Encuesta: 70% indicó que el equipo directivo gestiona proyectos para adquirir equipamiento",
+              "codigo": "ESTDOCE6",
+              "fuente": "Encuesta a docentes, ítems 11"
+            }
+          ],
+          "evidencias_adicionales": [],
+          "documentos": [],
+          "teoria": [
+            "Becker",
+            "Castells"
+          ],
+          "interpretacion": "La gestión asegura disponibilidad tecnológica mediante apoyo institucional y proyectos.",
+          "hallazgo": null
+        },
+        {
+          "id": "est-integracion-pedagogica",
+          "subcategoria": "Integración pedagógica",
+          "pregunta": "¿Cómo se incorporan las TIC en el aula?",
+          "definicion_teorica": "Uso de TIC como mediadores del aprendizaje significativo (Dussel, 2018).",
+          "entrevistas": [
+            {
+              "actor": "Vicedirectora",
+              "extracto": "Usamos el proyector para mostrar videos o presentaciones que acompañan la clase",
+              "codigo": "ESTVICE6",
+              "fuente": "Entrevista a Vicedirectora, párr. 20"
+            }
+          ],
+          "encuesta": [],
+          "evidencias_adicionales": [],
+          "documentos": [],
+          "teoria": [
+            "Dussel"
+          ],
+          "interpretacion": "Las TIC se integran pedagógicamente para potenciar la enseñanza y participación estudiantil.",
+          "hallazgo": null
+        },
+        {
+          "id": "est-acompanamiento-docente",
+          "subcategoria": "Acompañamiento docente",
+          "pregunta": "¿Cómo se acompaña a docentes inseguros o con poca formación?",
+          "definicion_teorica": "El acompañamiento es andamiaje profesional, aprendizaje entre pares y reflexión sobre la práctica (Anijovich, 2010; Goleman, 2000).",
+          "entrevistas": [
+            {
+              "actor": "Directora",
+              "extracto": "Siempre partimos de lo que el docente sabe… No obligamos, sino que invitamos. Acompañamos con paciencia y con ejemplos",
+              "codigo": "ESTDIRE4",
+              "fuente": "Entrevista a Directora, párr. 22"
+            },
+            {
+              "actor": "Vicedirectora",
+              "extracto": "A veces hacemos talleres internos… los mismos docentes que saben más ayudan a otros",
+              "codigo": "ESTVICE7",
+              "fuente": "Entrevista a Vicedirectora, párr. 24"
+            }
+          ],
+          "encuesta": [
+            {
+              "resultado": "El 73 % valoró las jornadas institucionales como instancias de intercambio; 60 % pidió más acompañamiento práctico",
+              "codigo": "ESTDOCE7",
+              "fuente": "Encuesta a docentes, ítems 13"
+            }
+          ],
+          "evidencias_adicionales": [],
+          "documentos": [],
+          "teoria": [
+            "Anijovich",
+            "Goleman"
+          ],
+          "interpretacion": "Se consolidan estrategias de acompañamiento gradual, con espacios de confianza y apoyo mutuo.",
+          "hallazgo": null
+        },
+        {
+          "id": "est-articulacion-pedagogica",
+          "subcategoria": "Articulación pedagógica / Ejemplos de proyectos TIC",
+          "pregunta": "¿Qué acciones concretas se desarrollaron?",
+          "definicion_teorica": "Articulación pedagógica con TIC requiere repensar el aula como entorno relacional; docente como curador de experiencias digitales y analógicas (Dussel, 2018).",
+          "entrevistas": [
+            {
+              "actor": "Directora",
+              "extracto": "Trabajamos con Ciencias Naturales un proyecto de reciclado, los alumnos hicieron afiches digitales y videos con los celulares de las familias",
+              "codigo": "ESTDIRE5",
+              "fuente": "Entrevista a Directora, párr. 26"
+            },
+            {
+              "actor": "Vicedirectora",
+              "extracto": "Los docentes de primer ciclo armaron una presentación en PowerPoint con dibujos de los chicos. Usaron lo que había, pero con mucha creatividad",
+              "codigo": "ESTVICE8",
+              "fuente": "Entrevista a Vicedirectora, párr. 28"
+            }
+          ],
+          "encuesta": [
+            {
+              "resultado": "Encuesta: 66,7 % manifestó que las TIC “facilitaron la motivación” y el trabajo en grupo",
+              "codigo": "ESTDOCE8",
+              "fuente": "Encuesta a docentes, ítems 15"
+            }
+          ],
+          "evidencias_adicionales": [],
+          "documentos": [],
+          "teoria": [
+            "Dussel"
+          ],
+          "interpretacion": "La articulación pedagógica integra recursos TIC y materiales concretos, estimulando creatividad y participación grupal.",
+          "hallazgo": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Desafíos y oportunidades",
+      "slug": "desafios-oportunidades",
+      "unidades": [
+        {
+          "id": "des-falta-recursos",
+          "subcategoria": "Falta de recursos tecnológicos",
+          "pregunta": null,
+          "definicion_teorica": "Limitaciones materiales y necesidad de autogestión (Tenti Fanfani, 2005; Fernández Sampieri, 2014).",
+          "entrevistas": [
+            {
+              "actor": "Directora",
+              "extracto": "Logramos comprar un proyector con recursos de la cooperadora y del Fondo Escolar",
+              "codigo": "DESDIRE6",
+              "fuente": "Entrevista a Directora, párr. 18"
+            },
+            {
+              "actor": "Vicedirectora",
+              "extracto": "No todos los docentes tienen la misma formación tecnológica, pero hay voluntad de aprender del equipo docente y aplicar e incorporar en las planificaciones y en la práctica pedagógica lo que se puede con los recursos que hay",
+              "codigo": "ESTVICE9",
+              "fuente": "Entrevista a Vicedirectora, párr. 32"
+            }
+          ],
+          "encuesta": [],
+          "evidencias_adicionales": [],
+          "documentos": [],
+          "teoria": [
+            "Tenti Fanfani",
+            "Fernández Sampieri"
+          ],
+          "interpretacion": "La escasez de recursos promueve estrategias solidarias y de autogestión comunitaria.",
+          "hallazgo": null
+        },
+        {
+          "id": "des-formacion-continua",
+          "subcategoria": "Formación docente continua",
+          "pregunta": null,
+          "definicion_teorica": "La actualización docente es condición para innovación (Anijovich, 2010).",
+          "entrevistas": [
+            {
+              "actor": "Vicedirectora",
+              "extracto": "Sí usamos herramientas tecnológicas como la inteligencia artificial para redactar proyectos institucionales, por ejemplo el de normas de convivencia. La IA ayudó a estructurar ideas, y luego adaptamos el contenido al contexto escolar. Actualmente estamos actualizando el PEI con ese apoyo.",
+              "codigo": "ESTVICE10",
+              "fuente": "Entrevista a la Vicedirectora, párr. 36"
+            }
+          ],
+          "encuesta": [
+            {
+              "resultado": "Encuesta: 65% considera necesaria mayor capacitación en herramientas digitales",
+              "codigo": "ESTDOCE9",
+              "fuente": "Encuesta a docentes, ítems 17"
+            }
+          ],
+          "evidencias_adicionales": [],
+          "documentos": [],
+          "teoria": [
+            "Anijovich"
+          ],
+          "interpretacion": "La formación continua sostiene la integración tecnológica en el aula.",
+          "hallazgo": null
+        },
+        {
+          "id": "des-oportunidades-innovacion",
+          "subcategoria": "Oportunidades de innovación",
+          "pregunta": null,
+          "definicion_teorica": "TIC como mediaciones culturales y creativas, evitando tecnocentrismo (Dussel, 2018).",
+          "entrevistas": [
+            {
+              "actor": "Directora",
+              "extracto": "Tratamos de no imponer… primero escuchamos y explicamos la utilidad",
+              "codigo": "DESDIRE7",
+              "fuente": "Entrevista a la Directora, párr. 19"
+            },
+            {
+              "actor": "Vicedirectora",
+              "extracto": "Consideramos como TIC lo tecnológico manual o de construcción… los chicos construyen, crean y experimentan",
+              "codigo": "DESVICE11",
+              "fuente": "Entrevista a la Vicedirectora, párr. 38"
+            }
+          ],
+          "encuesta": [
+            {
+              "resultado": "40 % reconoce resistencias leves; 26 % fuertes",
+              "codigo": "DESDOCE10",
+              "fuente": "Encuesta a docentes, ítems 19"
+            }
+          ],
+          "evidencias_adicionales": [
+            {
+              "actor": "Directora",
+              "extracto": "Cada obstáculo nos obliga a pensar otras estrategias… si no hay internet, usamos materiales impresos y luego compartimos fotos",
+              "codigo": "DESDIRE8",
+              "fuente": "Entrevista a la Directora, párr. 21"
+            }
+          ],
+          "documentos": [],
+          "teoria": [
+            "Dussel"
+          ],
+          "interpretacion": "Ampliación del concepto de TIC hacia recursos creativos y contextuales.",
+          "hallazgo": null
+        },
+        {
+          "id": "des-compromiso-institucional",
+          "subcategoria": "Compromiso institucional",
+          "pregunta": null,
+          "definicion_teorica": "Trabajo colectivo y cultura de apropiación tecnológica (Dussel, 2018).",
+          "entrevistas": [
+            {
+              "actor": "Directora",
+              "extracto": "No siempre hay acceso a una conexión de Internet estable, lo que limita significativamente el uso de los recursos digitales en las aulas",
+              "codigo": "DESDIRE9",
+              "fuente": "Entrevista a la Directora, párr. 23"
+            },
+            {
+              "actor": "Vicedirectora",
+              "extracto": "Siempre que hay una actividad digital, tratamos de que todos participen",
+              "codigo": "DESVICE12",
+              "fuente": "Entrevista a la Vicedirectora, párr. 40"
+            }
+          ],
+          "encuesta": [
+            {
+              "resultado": "56 % percibe que las dificultades se abordan “de manera colaborativa”",
+              "codigo": "DESDOCE11",
+              "fuente": "Encuesta a docentes, ítems 21"
+            }
+          ],
+          "evidencias_adicionales": [],
+          "documentos": [],
+          "teoria": [
+            "Dussel"
+          ],
+          "interpretacion": "La gestión fomenta la participación colectiva, consolidando la apropiación de TIC.",
+          "hallazgo": null
+        },
+        {
+          "id": "des-resistencias-cultura-docente",
+          "subcategoria": "Resistencias y cultura docente",
+          "pregunta": "¿Cómo se abordan resistencias frente a TIC?",
+          "definicion_teorica": "La resistencia se entiende como protección identitaria; el liderazgo debe transformarla en diálogo y aprendizaje (Jackson, 2016; Fullan, 2015).",
+          "entrevistas": [
+            {
+              "actor": "Directora",
+              "extracto": "Cada obstáculo nos obliga a pensar otras estrategias… si no hay internet, usamos materiales impresos y luego compartimos fotos",
+              "codigo": "DESDIRE10",
+              "fuente": "Entrevista a Directora, párr. 25"
+            },
+            {
+              "actor": "Vicedirectora",
+              "extracto": "Hay docentes que se sienten inseguros… entonces trabajamos desde la empatía y la ayuda entre pares",
+              "codigo": "DESVICE13",
+              "fuente": "Entrevista a la Vicedirectora, párr. 42"
+            }
+          ],
+          "encuesta": [
+            {
+              "resultado": "un 68 % expresó que la disponibilidad de recursos tecnológicos constituye un obstáculo frecuente para planificar actividades con TIC",
+              "codigo": "DESDOCE12",
+              "fuente": "Encuesta a docentes, ítems 23"
+            }
+          ],
+          "evidencias_adicionales": [],
+          "documentos": [],
+          "teoria": [
+            "Jackson",
+            "Fullan"
+          ],
+          "interpretacion": "La gestión enfrenta resistencias mediante diálogo, apoyo entre pares y estrategias de acompañamiento.",
+          "hallazgo": null
+        },
+        {
+          "id": "des-barreras-oportunidades",
+          "subcategoria": "Barreras y oportunidades",
+          "pregunta": "¿Cómo se transforman barreras en oportunidades?",
+          "definicion_teorica": "Los límites pueden ser motor de innovación si la escuela reflexiona y redefine vínculos (Dussel, 2018; Badut de Álvarez et al., 2005).",
+          "entrevistas": [
+            {
+              "actor": "Directora",
+              "extracto": "La mayoría de los docentes tiene disposición, pero no todos cuentan con las mismas oportunidades de capacitación",
+              "codigo": "DESDIRE11",
+              "fuente": "Entrevista a Directora, párr. 27"
+            },
+            {
+              "actor": "Vicedirectora",
+              "extracto": "Todavía hay docentes que prefieren trabajar con cuaderno y lámina, sienten que la tecnología distrae o no confían en los equipos",
+              "codigo": "DESVICE14",
+              "fuente": "Entrevista a la Vicedirectora, párr. 44"
+            }
+          ],
+          "encuesta": [],
+          "evidencias_adicionales": [
+            {
+              "actor": "Vicedirectora",
+              "extracto": "Me gustaría que los niños puedan aprender programación o robótica. Es algo que hoy parece lejano, pero sería una gran oportunidad para ellos.",
+              "codigo": "DESVICE15",
+              "fuente": "Entrevista a la Vicedirectora, párr. 46"
+            },
+            {
+              "actor": "Vicedirectora",
+              "extracto": "la conectividad es inestable y muchas veces eso frena actividades planificadas con los alumnos",
+              "codigo": "DESVICE16",
+              "fuente": "Entrevista a la Vicedirectora, párr. 48"
+            },
+            {
+              "actor": "Vicedirectora",
+              "extracto": "Sabemos que cuesta, pero creemos que vale la pena insistir; los chicos lo disfrutan y aprenden de otra manera",
+              "codigo": "DESVICE17",
+              "fuente": "Entrevista a la Vicedirectora, párr. 50"
+            },
+            {
+              "actor": "Vicedirectora",
+              "extracto": "Cuando no hay conexión, igual tratamos de usar los materiales descargados o planificar en torno a los recursos que ya tenemos; muchas veces recurrimos a actividades offline",
+              "codigo": "DESVICE18",
+              "fuente": "Entrevista a la Vicedirectora, párr. 52"
+            }
+          ],
+          "documentos": [],
+          "teoria": [
+            "Dussel",
+            "Badut de Álvarez et al."
+          ],
+          "interpretacion": "La gestión convierte barreras en oportunidades mediante creatividad, colaboración y articulación con la comunidad.",
+          "hallazgo": null
+        }
+      ]
+    }
+  ],
+  "documentos": [
+    {
+      "id": "doc-pei-2015",
+      "fuente": "PEI - Proyecto Educativo Institucional (versión 2015, aún vigente)",
+      "grado": "Institucional",
+      "area": "—",
+      "tema": "Misión y Visión Institucional",
+      "descripcion_desarrollo": "La escuela promueve una educación inclusiva, participativa y de compromiso comunitario, con el propósito de formar sujetos críticos, autónomos y solidarios. Se prioriza el fortalecimiento de los vínculos entre escuela y familia, y el acompañamiento de trayectorias escolares desde una perspectiva socioeducativa.",
+      "recursos": "No específicos",
+      "rol_gestion": "Orientación pedagógica y acompañamiento a las prácticas docentes; impulso de proyectos transversales (ROLPEI1).",
+      "estrategias_tic": "Promoción del uso de recursos digitales para fortalecer la comunicación institucional y el aprendizaje. (ESTPEI1)",
+      "desafios_oportunidades": "Actualizar el PEI a los desafíos tecnológicos y sociales actuales. Integrar las TIC a la cultura escolar y la gestión. (DESPEI1)",
+      "referencia_fuente": "Proyecto Educativo Institucional (PEI), versión 2015, Misión y Visión Institucional, párr. 2.",
+      "codigos": [
+        "ROLPEI1",
+        "ESTPEI1",
+        "DESPEI1"
+      ]
+    },
+    {
+      "id": "doc-pci-esi-2025",
+      "fuente": "Proyecto Curricular Institucional – Educación Sexual Integral (2025)",
+      "grado": "1.º a 7.º",
+      "area": "Educación Sexual Integral",
+      "tema": "Cuidado del cuerpo, vínculos y derechos",
+      "descripcion_desarrollo": "Actividades de reflexión y diálogo sobre respeto, identidad, afectividad y derechos. Se desarrollan talleres, campañas y producciones colectivas con enfoque de género y ciudadanía.",
+      "recursos": "Afiches digitales, videos educativos",
+      "rol_gestion": "La gestión impulsa espacios de diálogo, jornadas y acompañamiento docente. (ROLPCI2).",
+      "estrategias_tic": "Uso de TIC para la producción visual (afiches digitales, videos). (ESTPCI2)",
+      "desafios_oportunidades": "Desafío: formación docente continua en ESI. Oportunidad: transversalizar la ESI con apoyo de TIC. (DESPCI2)",
+      "referencia_fuente": "Proyecto Curricular Institucional – Educación Sexual Integral (2025), párr. 2.",
+      "codigos": [
+        "ROLPCI2",
+        "ESTPCI2",
+        "DESPCI2"
+      ]
+    },
+    {
+      "id": "doc-pci-tecnologica-2025",
+      "fuente": "Proyecto Curricular Institucional - Educación Tecnológica (2025)",
+      "grado": "1.º a 7.º",
+      "area": "Educación Tecnológica",
+      "tema": "Tecnología y vida cotidiana",
+      "descripcion_desarrollo": "Enfoque práctico y reflexivo sobre el uso de la tecnología en la vida cotidiana. Se articulan proyectos interdisciplinarios y se fomenta la inclusión digital.",
+      "recursos": "TIC, software, materiales cotidianos",
+      "rol_gestion": "Promoción del uso pedagógico de TIC, capacitación docente y mantenimiento de equipos. (ROLPCI3)",
+      "estrategias_tic": "Proyectos colaborativos digitales, uso de simulaciones, diseño de productos. (ESTPCI3)",
+      "desafios_oportunidades": "Desafío: sostenimiento de recursos tecnológicos; oportunidad de aprendizaje colaborativo e innovador. (DESPCI4)",
+      "referencia_fuente": "Proyecto Curricular Institucional - Educacion Tecnológica (2025), párr 2-4,",
+      "codigos": [
+        "ROLPCI3",
+        "ESTPCI3",
+        "DESPCI4"
+      ]
+    },
+    {
+      "id": "doc-acta-01",
+      "fuente": "Acta N.º 01/2025",
+      "grado": "7° “B”",
+      "area": "Cs. Sociales / Artística",
+      "tema": "La moda y los estereotipos en la época colonial",
+      "descripcion_desarrollo": "Clima respetuoso y participativo. Se trabajó con imágenes y exposición oral grupal.",
+      "recursos": "Láminas, imágenes (TIC limitada)",
+      "rol_gestion": "Seguimiento directivo a la secuencia y sugerencias sobre evaluación. (ROLACT1)",
+      "estrategias_tic": "Uso de imágenes como recurso visual; TIC implícita. (ESTACT1)",
+      "desafios_oportunidades": "Oportunidad: fortalecer el trabajo grupal y uso de herramientas digitales. (DESACT1)",
+      "referencia_fuente": "Acta N.º 01/2025",
+      "codigos": [
+        "ROLACT1",
+        "ESTACT1",
+        "DESACT1"
+      ]
+    },
+    {
+      "id": "doc-acta-02",
+      "fuente": "Acta N° 02/2025",
+      "grado": "3° “A”",
+      "area": "Cs. Naturales",
+      "tema": "El cuerpo humano – partes externas",
+      "descripcion_desarrollo": "Clase organizada en tres momentos. Juego inicial, desarrollo en cuaderno y cierre con repaso.",
+      "recursos": "Láminas, hojas papel",
+      "rol_gestion": "Supervisión del proceso de enseñanza; valoración positiva del clima. (ROLACT2)",
+      "estrategias_tic": "No se observan TIC; metodología activa. (ESTACT2)",
+      "desafios_oportunidades": "Desafío: integrar TIC en la práctica científica. (DESACT2)",
+      "referencia_fuente": "Acta N° 02/2025",
+      "codigos": [
+        "ROLACT2",
+        "ESTACT2",
+        "DESACT2"
+      ]
+    },
+    {
+      "id": "doc-acta-03",
+      "fuente": "Acta N.º 03/2025",
+      "grado": "6° “B”",
+      "area": "Cs. Sociales",
+      "tema": "La lectura y comprensión de textos históricos",
+      "descripcion_desarrollo": "Lectura grupal, debate y exposición. Buen clima de trabajo.",
+      "recursos": "Láminas, mapas, hojas papel",
+      "rol_gestion": "Intervención directiva: sugerencias para guiar comprensión lectora. (ROLACT3)",
+      "estrategias_tic": "No se evidencian TIC digitales; recursos tradicionales. (ESTACT3)",
+      "desafios_oportunidades": "Desafío: incorporar recursos digitales para enriquecer el debate. (DESACT3)",
+      "referencia_fuente": "Acta N.º 03/2025",
+      "codigos": [
+        "ROLACT3",
+        "ESTACT3",
+        "DESACT3"
+      ]
+    },
+    {
+      "id": "doc-acta-04",
+      "fuente": "Actas N.º 04/2025",
+      "grado": "2° “C”",
+      "area": "Ed. Física",
+      "tema": null,
+      "descripcion_desarrollo": "Actividad física en SUM; participación activa.",
+      "recursos": "Pelotas, sin TIC",
+      "rol_gestion": "Observación de clima y respeto; acompañamiento docente. (ROLACT4)",
+      "estrategias_tic": "No aplica.",
+      "desafios_oportunidades": "Oportunidad: uso de TIC para registro o análisis de movimientos. (DESACT4)",
+      "referencia_fuente": "Actas N.º 04/2025",
+      "codigos": [
+        "ROLACT4",
+        "DESACT4"
+      ]
+    },
+    {
+      "id": "doc-acta-05",
+      "fuente": "Actas N.º 05/2025",
+      "grado": "3° A",
+      "area": "Ed. Tecnológica",
+      "tema": "Solucionando problemas",
+      "descripcion_desarrollo": "Trabajo en grupos, análisis de materiales y resolución de problemas.",
+      "recursos": "Papel glasé, materiales escolares",
+      "rol_gestion": "Acompañamiento y felicitación a la docente. (ROLACT5)",
+      "estrategias_tic": "Trabajo en contexto tecnológico (energía, materiales). (ESTACT4)",
+      "desafios_oportunidades": "Oportunidad: fortalecer uso de dispositivos o simulaciones digitales. (DESACT5)",
+      "referencia_fuente": "Actas N.º 05/2025",
+      "codigos": [
+        "ROLACT5",
+        "ESTACT4",
+        "DESACT5"
+      ]
+    },
+    {
+      "id": "doc-acta-06",
+      "fuente": "Actas N.º 06/2025",
+      "grado": "4° “A”",
+      "area": "Folklore",
+      "tema": "La chacarera",
+      "descripcion_desarrollo": "Práctica de danza en el SUM. Uso de parlantes y música digital.",
+      "recursos": "Parlante (TIC)",
+      "rol_gestion": "Seguimiento y retroalimentación positiva. (ROLACT6)",
+      "estrategias_tic": "Integración de TIC a través de recursos musicales. (ESTACT4)",
+      "desafios_oportunidades": "Oportunidad: ampliar el uso de TIC a registros audiovisuales. (DESACT6)",
+      "referencia_fuente": "Actas N.º 06/2025",
+      "codigos": [
+        "ROLACT6",
+        "ESTACT4",
+        "DESACT6"
+      ]
+    },
+    {
+      "id": "doc-acta-07",
+      "fuente": "Actas N.º 07/2025",
+      "grado": "1.º “B”",
+      "area": "Ciencias Sociales",
+      "tema": "Mi escuela y su historia",
+      "descripcion_desarrollo": "Se abordó la identidad institucional y el sentido de pertenencia a la comunidad escolar. Se trabajó con relatos de las familias y documentos históricos.",
+      "recursos": "Fotografías antiguas, cuaderno digital, mural colectivo",
+      "rol_gestion": "La dirección facilitó materiales y promovió la socialización de producciones en redes escolares. (ROLACT7)",
+      "estrategias_tic": "Uso de imágenes digitalizadas para reconstruir la historia. (ESTACT6)",
+      "desafios_oportunidades": "Dificultad en el acceso a material digitalizado; alto interés del alumnado. (DESACT7)",
+      "referencia_fuente": "Actas N.º 07/2025",
+      "codigos": [
+        "ROLACT7",
+        "ESTACT6",
+        "DESACT7"
+      ]
+    },
+    {
+      "id": "doc-acta-08",
+      "fuente": "Actas N.º 08/2025",
+      "grado": "2.º “A”",
+      "area": "Prácticas del Lenguaje",
+      "tema": "La carta",
+      "descripcion_desarrollo": "Lectura y escritura de cartas entre pares y con estudiantes de otra escuela.",
+      "recursos": "Procesador de texto, impresora",
+      "rol_gestion": "Coordinación del intercambio y autorización de envío. (ROLACT8)",
+      "estrategias_tic": "Introducción al formato digital de correspondencia. (ESTACT7)",
+      "desafios_oportunidades": "Problemas técnicos en la impresión; fortalecimiento del vínculo comunicativo. (DESACT8)",
+      "referencia_fuente": "Actas N.º 08/2025",
+      "codigos": [
+        "ROLACT8",
+        "ESTACT7",
+        "DESACT8"
+      ]
+    },
+    {
+      "id": "doc-acta-09",
+      "fuente": "Actas N.º 09/2025",
+      "grado": "3.º “C”",
+      "area": "Ciencias Naturales",
+      "tema": "Los estados del agua",
+      "descripcion_desarrollo": "Experimentos guiados sobre los cambios de estado del agua.",
+      "recursos": "Videos educativos, proyector, material de laboratorio",
+      "rol_gestion": "Apoyo logístico y acompañamiento pedagógico. (ROLACT9)",
+      "estrategias_tic": "Búsqueda de videos y recursos visuales en línea. (ESTACT8)",
+      "desafios_oportunidades": "Limitaciones de conectividad; motivación en la experimentación. (DESACT9)",
+      "referencia_fuente": "Actas N.º 09/2025",
+      "codigos": [
+        "ROLACT9",
+        "ESTACT8",
+        "DESACT9"
+      ]
+    },
+    {
+      "id": "doc-acta-11",
+      "fuente": "Actas N.º 11/2025",
+      "grado": "5.º “C”",
+      "area": "Ciencias Sociales",
+      "tema": "Las provincias argentinas",
+      "descripcion_desarrollo": "Elaboración de mapas y presentaciones grupales.",
+      "recursos": "Mapas digitales, PowerPoint",
+      "rol_gestion": "Orientación en la selección de software educativo. (ROLACT11)",
+      "estrategias_tic": "Integración del trabajo colaborativo digital. (ESTACT10)",
+      "desafios_oportunidades": "Desafío en la gestión del tiempo para exponer. (DESACT11)",
+      "referencia_fuente": "Actas N.º 11/2025",
+      "codigos": [
+        "ROLACT11",
+        "ESTACT10",
+        "DESACT11"
+      ]
+    },
+    {
+      "id": "doc-acta-12",
+      "fuente": "Actas N.º 12/2025",
+      "grado": "6.º “C”",
+      "area": "Educación Artística",
+      "tema": "Mural identitario",
+      "descripcion_desarrollo": "Creación colectiva de un mural sobre la identidad del barrio y la escuela.",
+      "recursos": "Cámara fotográfica, proyector",
+      "rol_gestion": "Facilitación de materiales y gestión de permisos. (ROLACT12)",
+      "estrategias_tic": "Documentación visual del proceso. (ESTACT11).",
+      "desafios_oportunidades": "Falta de recursos técnicos; alta participación comunitaria. (DESACT12)",
+      "referencia_fuente": "Actas N.º 12/2025",
+      "codigos": [
+        "ROLACT12",
+        "ESTACT11",
+        "DESACT12"
+      ]
+    },
+    {
+      "id": "doc-acta-13",
+      "fuente": "Actas N.º 13/2025",
+      "grado": "7.º “B”",
+      "area": "Ciencias Naturales",
+      "tema": "Cuidado del ambiente",
+      "descripcion_desarrollo": "Proyecto de investigación sobre la contaminación del río Arenales.",
+      "recursos": "Internet, celulares, planillas digitales",
+      "rol_gestion": "Acompañamiento y gestión de articulación con organismos externos. (ROLACT13)",
+      "estrategias_tic": "Registro de datos y fotografías digitales. (ESTACT12)",
+      "desafios_oportunidades": "Problemas de conectividad; fortalecimiento de la conciencia ambiental. (DESACT13)",
+      "referencia_fuente": "Actas N.º 13/2025",
+      "codigos": [
+        "ROLACT13",
+        "ESTACT12",
+        "DESACT13"
+      ]
+    },
+    {
+      "id": "doc-acta-19",
+      "fuente": "Actas N.º 19/2025",
+      "grado": "6.º “A”",
+      "area": "Ciencias Sociales",
+      "tema": "Derechos y deberes de los ciudadanos",
+      "descripcion_desarrollo": "Debate y exposición sobre la convivencia democrática.",
+      "recursos": "Videos institucionales, documentos digitales",
+      "rol_gestion": "Apoyo en la organización de la muestra escolar. (ROLACT19)",
+      "estrategias_tic": "Integración de material audiovisual y presentación digital. (ESTACT18)",
+      "desafios_oportunidades": "Escasez de recursos digitales; fortalecimiento del sentido cívico. (DESACT19)",
+      "referencia_fuente": "Actas N.º 19/2025",
+      "codigos": [
+        "ROLACT19",
+        "ESTACT18",
+        "DESACT19"
+      ]
+    },
+    {
+      "id": "doc-acta-20",
+      "fuente": "Actas N.º 20/2025",
+      "grado": "7.º “B”",
+      "area": "Educación Artística",
+      "tema": "Expresamos emociones a través del arte",
+      "descripcion_desarrollo": "Producción de obras plásticas inspiradas en música.",
+      "recursos": "Parlantes, proyector, grabaciones de audio",
+      "rol_gestion": "Facilita espacios y materiales de exposición. (ROLACT20)",
+      "estrategias_tic": "Uso de música digital para estimular la creatividad. (ESTACT19)",
+      "desafios_oportunidades": "Falta de equipos de sonido; alto compromiso expresivo. (DESACT20)",
+      "referencia_fuente": "Actas N.º 20/2025",
+      "codigos": [
+        "ROLACT20",
+        "ESTACT19",
+        "DESACT20"
+      ]
+    },
+    {
+      "id": "doc-acta-09-fracciones",
+      "fuente": "Actas N.º 09/2025",
+      "grado": null,
+      "area": null,
+      "tema": "Las fracciones en la vida cotidiana",
+      "descripcion_desarrollo": null,
+      "recursos": null,
+      "rol_gestion": null,
+      "estrategias_tic": "Simulación de fracciones en programas educativos. (ESTACT9)",
+      "desafios_oportunidades": "Dificultades en el uso autónomo de los recursos digitales. (DESACT10)",
+      "referencia_fuente": "Actas N.º 09/2025",
+      "codigos": [
+        "ESTACT9",
+        "DESACT10"
+      ],
+      "estado": "registro_parcial_en_fuente"
+    },
+    {
+      "id": "doc-acta-14",
+      "fuente": "Actas N.º 14/2025",
+      "grado": "1° B",
+      "area": "Lengua y Literatura",
+      "tema": null,
+      "descripcion_desarrollo": "Se trabajó la comprensión lectora mediante dramatizaciones y grabaciones de voz.",
+      "recursos": null,
+      "rol_gestion": null,
+      "estrategias_tic": null,
+      "desafios_oportunidades": null,
+      "referencia_fuente": "Actas N.º 14/2025, 1° B, Lengua y Literatura.",
+      "codigos": [],
+      "estado": "registro_parcial_en_fuente"
+    },
+    {
+      "id": "doc-acta-15",
+      "fuente": "Actas N.º 15/2025",
+      "grado": null,
+      "area": null,
+      "tema": null,
+      "descripcion_desarrollo": "Se abordaron los oficios del barrio y la historia local mediante entrevistas.",
+      "recursos": null,
+      "rol_gestion": null,
+      "estrategias_tic": null,
+      "desafios_oportunidades": null,
+      "referencia_fuente": "Actas N.º 15/2025",
+      "codigos": [],
+      "estado": "registro_parcial_en_fuente"
+    },
+    {
+      "id": "doc-acta-16",
+      "fuente": "Actas N.º 16/2025",
+      "grado": "3° C",
+      "area": "Matemática",
+      "tema": null,
+      "descripcion_desarrollo": "Recolección de datos sobre hábitos de consumo y su representación.",
+      "recursos": null,
+      "rol_gestion": null,
+      "estrategias_tic": null,
+      "desafios_oportunidades": null,
+      "referencia_fuente": "Actas N.º 16/2025, 3° C, Matemática.",
+      "codigos": [],
+      "estado": "registro_parcial_en_fuente"
+    },
+    {
+      "id": "doc-acta-17",
+      "fuente": "Actas N.º 17/2025",
+      "grado": "4° A",
+      "area": "Cs. Naturales",
+      "tema": null,
+      "descripcion_desarrollo": "Observación y análisis de fuentes de energía limpia en el entorno.",
+      "recursos": null,
+      "rol_gestion": null,
+      "estrategias_tic": null,
+      "desafios_oportunidades": null,
+      "referencia_fuente": "Actas N.º 17/2025, 4° A, Cs. Naturales.",
+      "codigos": [],
+      "estado": "registro_parcial_en_fuente"
+    },
+    {
+      "id": "doc-acta-18",
+      "fuente": "Actas N.º 18/2025",
+      "grado": "5° C",
+      "area": "Ed. Tecnológica",
+      "tema": null,
+      "descripcion_desarrollo": "Introducción al uso de recursos tecnológicos básicos en el aula.",
+      "recursos": null,
+      "rol_gestion": null,
+      "estrategias_tic": null,
+      "desafios_oportunidades": null,
+      "referencia_fuente": "Actas N.º 18/2025, 5° C, Ed. Tecnológica.",
+      "codigos": [],
+      "estado": "registro_parcial_en_fuente"
+    }
+  ],
+  "triangulaciones": [
+    {
+      "id": "tri-liderazgo-pedagogico",
+      "unidad_id": "rol-liderazgo-pedagogico",
+      "categoria": "Liderazgo pedagógico",
+      "teoria": [
+        "Fullan",
+        "Blejmar"
+      ],
+      "entrevistas": [
+        "ROLDIRE1",
+        "ROLVICE1"
+      ],
+      "encuestas": [
+        "ROLDOCE1"
+      ],
+      "interpretacion": "La gestión adapta decisiones TIC al contexto institucional."
+    }
+  ]
+}

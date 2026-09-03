@@ -1,8 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import categorias from "../data/categorias.json";
-import entrevistas from "../data/entrevistas.json";
-import triangulacion from "../data/triangulacion.json";
-import teoria from "../data/teoria.json";
+import matrizAnalisis from "../data/matrizAnalisis.json";
 
 export default function CategoriaGestion() {
   const { id } = useParams();
@@ -12,7 +10,9 @@ export default function CategoriaGestion() {
   if (!categoria) {
     return (
       <div className="min-h-screen bg-slate-950 text-white p-8">
-        <h1 className="text-2xl font-bold">Categoría no encontrada</h1>
+        <h1 className="text-2xl font-bold">
+          Categoría no encontrada
+        </h1>
 
         <Link
           to="/"
@@ -24,68 +24,65 @@ export default function CategoriaGestion() {
     );
   }
 
-  /*
-   * Relación entre el ID de la categoría general
-   * y la categoría utilizada actualmente en la base
-   * de entrevistas.
-   */
-  const categoriasEntrevistas = {
-    1: "contextualizacion",
-    2: "gestion-directiva",
-    3: "estrategias",
-    4: "desafios-oportunidades",
-  };
-
-  const categoriaEntrevista = categoriasEntrevistas[categoria.id];
-
-  /*
-   * Recuperamos las entrevistas correspondientes
-   * a la categoría seleccionada.
-   */
-  const entrevistasRelacionadas = entrevistas.filter(
-    (e) => e.categoria === categoriaEntrevista
+  const categoriaMatriz = (matrizAnalisis.categorias || []).find(
+    (c) => c.id === categoria.id
   );
 
-  /*
-   * Subcategorías reales provenientes de los datos.
-   * No las inventamos desde la interfaz.
-   */
-  const subcategoriasEntrevistas = [
-    ...new Set(
-      entrevistasRelacionadas
-        .map((e) => e.subcategoria)
-        .filter(Boolean)
-    ),
-  ];
+  const unidades = categoriaMatriz?.unidades || [];
 
-  /*
-   * También buscamos las categorías/unidades analíticas
-   * presentes en la triangulación.
-   */
-  const triangulacionesRelacionadas = triangulacion.filter((t) =>
-    subcategoriasEntrevistas.includes(t.categoria)
+  // ---------------------------------------------------------
+  // DOCUMENTOS
+  // Los documentos están en matrizAnalisis.documentos
+  // y se relacionan con las categorías mediante sus códigos.
+  // ---------------------------------------------------------
+
+  const documentos = matrizAnalisis.documentos || [];
+
+  const documentosCategoria = documentos.filter((documento) => {
+    const codigos = documento.codigos || [];
+
+    if (categoria.id === 2) {
+      return codigos.some((codigo) => codigo.startsWith("ROL"));
+    }
+
+    if (categoria.id === 3) {
+      return codigos.some((codigo) => codigo.startsWith("EST"));
+    }
+
+    if (categoria.id === 4) {
+      return codigos.some((codigo) => codigo.startsWith("DES"));
+    }
+
+    return false;
+  });
+
+  // ---------------------------------------------------------
+  // ENTREVISTAS Y ENCUESTAS
+  // ---------------------------------------------------------
+
+  const totalEntrevistas = unidades.reduce(
+    (total, unidad) => total + (unidad.entrevistas?.length || 0),
+    0
   );
 
-  /*
-   * Unimos las subcategorías provenientes de entrevistas
-   * y triangulación.
-   */
-  const subcategoriasTriangulacion = triangulacion
-    .map((t) => t.categoria)
-    .filter(Boolean);
+  const totalEncuestas = unidades.reduce(
+    (total, unidad) => total + (unidad.encuesta?.length || 0),
+    0
+  );
 
-  const subcategorias = [
-    ...new Set([
-      ...subcategoriasEntrevistas,
-      ...subcategoriasTriangulacion,
-    ]),
-  ];
+  const totalDocumentos = documentosCategoria.length;
+
+  // ---------------------------------------------------------
+  // CATEGORÍA 1 - CONTEXTUALIZACIÓN
+  // ---------------------------------------------------------
+
+  const esContextualizacion = categoria.id === 1;
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       <main className="max-w-7xl mx-auto px-6 py-10">
 
-        {/* ENCABEZADO */}
+        {/* VOLVER */}
         <div className="mb-10">
           <Link
             to="/"
@@ -115,243 +112,341 @@ export default function CategoriaGestion() {
           </p>
         </div>
 
-        {/* RESUMEN DE DATOS */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+        {/* -------------------------------------------------
+            MÉTRICAS
+        ------------------------------------------------- */}
 
-          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
-            <p className="text-sm text-slate-400">
-              Subcategorías / unidades analíticas
+        <section className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-10">
+
+          {/* UNIDADES */}
+          <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+            <p className="text-sm text-slate-400 mb-2">
+              Unidades de análisis
             </p>
 
-            <p className="text-3xl font-bold mt-2 text-cyan-400">
-              {subcategorias.length}
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
-            <p className="text-sm text-slate-400">
-              Evidencias de entrevistas
+            <p className="text-3xl font-bold text-white">
+              {esContextualizacion ? "—" : unidades.length}
             </p>
 
-            <p className="text-3xl font-bold mt-2 text-violet-400">
-              {entrevistasRelacionadas.length}
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
-            <p className="text-sm text-slate-400">
-              Triangulaciones
-            </p>
-
-            <p className="text-3xl font-bold mt-2 text-emerald-400">
-              {triangulacionesRelacionadas.length}
+            <p className="text-xs text-slate-500 mt-1">
+              {esContextualizacion
+                ? "Capítulo contextual"
+                : "Subcategorías"}
             </p>
           </div>
 
+          {/* ENTREVISTAS */}
+          <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+            <p className="text-sm text-slate-400 mb-2">
+              Entrevistas
+            </p>
+
+            <p className="text-3xl font-bold text-white">
+              {esContextualizacion ? "—" : totalEntrevistas}
+            </p>
+
+            <p className="text-xs text-slate-500 mt-1">
+              Evidencias cualitativas
+            </p>
+          </div>
+
+          {/* ENCUESTAS */}
+          <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+            <p className="text-sm text-slate-400 mb-2">
+              Encuestas
+            </p>
+
+            <p className="text-3xl font-bold text-white">
+              {esContextualizacion ? "—" : totalEncuestas}
+            </p>
+
+            <p className="text-xs text-slate-500 mt-1">
+              Evidencias cuantitativas
+            </p>
+          </div>
+
+          {/* DOCUMENTOS */}
+          <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+            <p className="text-sm text-slate-400 mb-2">
+              Documentos
+            </p>
+
+            <p className="text-3xl font-bold text-white">
+              {esContextualizacion ? "—" : totalDocumentos}
+            </p>
+
+            <p className="text-xs text-slate-500 mt-1">
+              Evidencias documentales
+            </p>
+          </div>
         </section>
 
-        {/* SUBCATEGORÍAS */}
-        <section className="mb-12">
+        {/* -------------------------------------------------
+            CATEGORÍA 1
+        ------------------------------------------------- */}
 
-          <div className="mb-6">
-            <p className="text-sm text-cyan-400 uppercase tracking-wider">
-              Reducción de datos
-            </p>
+        {esContextualizacion ? (
+          <section className="mb-12">
 
-            <h2 className="text-2xl font-bold mt-1">
-              Subcategorías y unidades de análisis
-            </h2>
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold">
+                Contextualización de la investigación
+              </h2>
 
-            <p className="text-slate-400 mt-2">
-              Estas unidades se recuperan de los datos analizados y permiten
-              avanzar desde las evidencias empíricas hacia la interpretación.
-            </p>
-          </div>
-
-          {subcategorias.length === 0 ? (
-            <div className="rounded-2xl border border-dashed border-slate-700 bg-slate-900/50 p-8 text-center">
-              <p className="text-slate-400">
-                Todavía no hay subcategorías registradas para esta categoría.
+              <p className="text-slate-400 mt-2">
+                Esta categoría presenta el contexto institucional,
+                social y territorial en el que se desarrolla la
+                investigación.
               </p>
             </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-              {subcategorias.map((subcategoria) => {
+            <Link
+              to="/capitulo/1"
+              className="group block rounded-2xl border border-slate-800 bg-slate-900/70 p-6 hover:border-cyan-500/50 hover:bg-slate-900 transition"
+            >
+              <div className="flex items-start justify-between gap-4">
 
-                const evidencias = entrevistasRelacionadas.filter(
-                  (e) => e.subcategoria === subcategoria
-                );
+                <div>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 font-bold">
+                      01
+                    </span>
 
-                const triangulacionItem = triangulacion.find(
-                  (t) => t.categoria === subcategoria
-                );
+                    <h3 className="text-xl font-semibold group-hover:text-cyan-400 transition">
+                      Contextualización
+                    </h3>
+                  </div>
 
-                return (
-                 <Link
-                      key={subcategoria}
-                      to={`/analisis/${encodeURIComponent(subcategoria)}`}
-                      className="group block rounded-2xl border border-slate-800 bg-slate-900 p-6 hover:border-cyan-500/50 hover:bg-slate-900/80 transition"
+                  <p className="text-slate-400 leading-relaxed">
+                    Contexto de la Escuela Primaria N.º 4774
+                    “General Juan José Valle”, características
+                    institucionales, sociales y territoriales que
+                    permiten comprender las condiciones en las que
+                    se desarrolla la investigación.
+                  </p>
+                </div>
+
+                <span className="text-cyan-400 text-xl">
+                  →
+                </span>
+              </div>
+            </Link>
+          </section>
+        ) : (
+          /* -------------------------------------------------
+             CATEGORÍAS 2, 3 Y 4
+          ------------------------------------------------- */
+
+          <section className="mb-12">
+
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold">
+                Unidades de análisis
+              </h2>
+
+              <p className="text-slate-400 mt-2">
+                Cada unidad permite seguir la trazabilidad entre
+                evidencias, teoría e interpretación.
+              </p>
+            </div>
+
+            {unidades.length === 0 ? (
+              <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-8">
+                <p className="text-slate-400">
+                  Todavía no hay unidades de análisis registradas
+                  para esta categoría.
+                </p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                {unidades.map((unidad) => {
+
+                  const entrevistas = unidad.entrevistas || [];
+                  const encuestas = unidad.encuesta || [];
+                  const evidencias =
+                    unidad.evidencias_adicionales || [];
+                  const teorias = unidad.teoria || [];
+
+                  return (
+                    <Link
+                      key={unidad.id}
+                      to={`/analisis/${encodeURIComponent(
+                        unidad.subcategoria
+                      )}`}
+                      className="group block rounded-2xl border border-slate-800 bg-slate-900/70 p-6 hover:border-cyan-500/50 hover:bg-slate-900 transition"
                     >
 
-                    <div className="flex items-start justify-between gap-4">
+                      {/* TÍTULO */}
+                      <div className="flex items-start justify-between gap-4 mb-5">
 
-                      <div>
-                        <p className="text-xs uppercase tracking-wider text-cyan-400">
-                          Unidad de análisis
+                        <div>
+                          <p className="text-xs uppercase tracking-wider text-cyan-400 mb-2">
+                            Unidad de análisis
+                          </p>
+
+                          <h3 className="text-xl font-semibold group-hover:text-cyan-400 transition">
+                            {unidad.subcategoria}
+                          </h3>
+                        </div>
+
+                        <span className="text-cyan-400 text-xl">
+                          →
+                        </span>
+                      </div>
+
+                      {/* DEFINICIÓN */}
+                      {unidad.definicion_teorica && (
+                        <p className="text-sm text-slate-400 leading-relaxed mb-5">
+                          {unidad.definicion_teorica}
                         </p>
+                      )}
 
-                        <h3 className="text-xl font-semibold mt-2">
-                          {subcategoria}
-                        </h3>
-                      </div>
+                      {/* MÉTRICAS */}
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
 
-                      <div className="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center">
-                        🔎
-                      </div>
+                        <div className="rounded-xl bg-slate-950/70 p-3">
+                          <p className="text-xs text-slate-500">
+                            Entrevistas
+                          </p>
 
-                    </div>
+                          <p className="text-lg font-semibold mt-1">
+                            {entrevistas.length}
+                          </p>
+                        </div>
 
-                    <div className="mt-5 space-y-2 text-sm">
+                        <div className="rounded-xl bg-slate-950/70 p-3">
+                          <p className="text-xs text-slate-500">
+                            Encuestas
+                          </p>
 
-                      <div className="flex justify-between">
-                        <span className="text-slate-400">
-                          Entrevistas
-                        </span>
+                          <p className="text-lg font-semibold mt-1">
+                            {encuestas.length}
+                          </p>
+                        </div>
 
-                        <span className="font-semibold text-white">
-                          {evidencias.length}
-                        </span>
-                      </div>
+                        <div className="rounded-xl bg-slate-950/70 p-3">
+                          <p className="text-xs text-slate-500">
+                            Evidencias
+                          </p>
 
-                      <div className="flex justify-between">
-                        <span className="text-slate-400">
-                          Teoría
-                        </span>
+                          <p className="text-lg font-semibold mt-1">
+                            {evidencias.length}
+                          </p>
+                        </div>
 
-                        <span className="font-semibold text-white">
-                          {triangulacionItem?.teoria?.length || 0}
-                        </span>
-                      </div>
+                        <div className="rounded-xl bg-slate-950/70 p-3">
+                          <p className="text-xs text-slate-500">
+                            Teoría
+                          </p>
 
-                      <div className="flex justify-between">
-                        <span className="text-slate-400">
-                          Encuestas
-                        </span>
-
-                        <span className="font-semibold text-white">
-                          {triangulacionItem?.encuestas?.length || 0}
-                        </span>
-                      </div>
-
-                    </div>
-
-                    {/* EVIDENCIAS */}
-                    {evidencias.length > 0 && (
-                      <div className="mt-5 pt-5 border-t border-slate-800">
-
-                        <p className="text-xs uppercase tracking-wider text-slate-500 mb-3">
-                          Evidencias
-                        </p>
-
-                        <div className="space-y-3">
-
-                          {evidencias.map((evidencia) => (
-                            <div
-                              key={evidencia.codigo}
-                              className="rounded-xl bg-slate-950/70 p-3"
-                            >
-                              <div className="flex justify-between gap-3 mb-1">
-
-                                <span className="text-xs font-semibold text-violet-400">
-                                  {evidencia.codigo}
-                                </span>
-
-                                <span className="text-xs text-slate-500">
-                                  {evidencia.actor}
-                                </span>
-
-                              </div>
-
-                              <p className="text-sm text-slate-300 leading-relaxed">
-                                “{evidencia.cita}”
-                              </p>
-
-                              <p className="text-xs text-slate-600 mt-2">
-                                {evidencia.fuente}
-                              </p>
-                            </div>
-                          ))}
-
+                          <p className="text-lg font-semibold mt-1">
+                            {teorias.length}
+                          </p>
                         </div>
 
                       </div>
-                    )}
 
-                    {/* TRIANGULACIÓN */}
-                    {triangulacionItem && (
-                      <div className="mt-5 pt-5 border-t border-slate-800">
+                    </Link>
+                  );
+                })}
 
-                        <p className="text-xs uppercase tracking-wider text-emerald-400 mb-2">
-                          Interpretación
-                        </p>
-
-                        <p className="text-sm text-slate-300 leading-relaxed">
-                          {triangulacionItem.interpretacion}
-                        </p>
-
-                      </div>
-                    )}
-
-                 </Link>
-                );
-              })}
-
-            </div>
-          )}
-
-        </section>
-
-        {/* TRAZABILIDAD */}
-        <section className="rounded-2xl border border-cyan-500/20 bg-cyan-500/5 p-6 md:p-8">
-
-          <p className="text-sm text-cyan-400 uppercase tracking-wider">
-            Trazabilidad del análisis
-          </p>
-
-          <h2 className="text-2xl font-bold mt-2 mb-6">
-            ¿Cómo se realizó la reducción de datos?
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
-
-            {[
-              ["01", "Datos", "Entrevistas y encuestas"],
-              ["02", "Codificación", "Categorías y subcategorías"],
-              ["03", "Contraste", "Teoría y documentos"],
-              ["04", "Triangulación", "Cruce de evidencias"],
-              ["05", "Hallazgo", "Interpretación"],
-            ].map(([numero, titulo, descripcion]) => (
-              <div
-                key={numero}
-                className="rounded-xl bg-slate-900 border border-slate-800 p-4"
-              >
-                <span className="text-xs text-cyan-400">
-                  {numero}
-                </span>
-
-                <h3 className="font-semibold mt-2">
-                  {titulo}
-                </h3>
-
-                <p className="text-xs text-slate-400 mt-1">
-                  {descripcion}
-                </p>
               </div>
-            ))}
+            )}
 
+          </section>
+        )}
+
+        {/* -------------------------------------------------
+            TRAZABILIDAD
+        ------------------------------------------------- */}
+
+        <section className="mb-12">
+
+          <div className="mb-6">
+            <h2 className="text-2xl font-bold">
+              Trazabilidad del análisis
+            </h2>
+
+            <p className="text-slate-400 mt-2">
+              Recorrido metodológico de la información hasta la
+              construcción de los hallazgos.
+            </p>
           </div>
 
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <p className="text-cyan-400 font-bold text-sm mb-2">
+                01
+              </p>
+
+              <h3 className="font-semibold mb-2">
+                Datos
+              </h3>
+
+              <p className="text-sm text-slate-400">
+                Entrevistas y encuestas
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <p className="text-cyan-400 font-bold text-sm mb-2">
+                02
+              </p>
+
+              <h3 className="font-semibold mb-2">
+                Codificación
+              </h3>
+
+              <p className="text-sm text-slate-400">
+                Categorías y subcategorías
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <p className="text-cyan-400 font-bold text-sm mb-2">
+                03
+              </p>
+
+              <h3 className="font-semibold mb-2">
+                Contraste
+              </h3>
+
+              <p className="text-sm text-slate-400">
+                Teoría y documentos
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <p className="text-cyan-400 font-bold text-sm mb-2">
+                04
+              </p>
+
+              <h3 className="font-semibold mb-2">
+                Triangulación
+              </h3>
+
+              <p className="text-sm text-slate-400">
+                Cruce de evidencias
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <p className="text-cyan-400 font-bold text-sm mb-2">
+                05
+              </p>
+
+              <h3 className="font-semibold mb-2">
+                Hallazgo
+              </h3>
+
+              <p className="text-sm text-slate-400">
+                Interpretación
+              </p>
+            </div>
+
+          </div>
         </section>
 
       </main>
