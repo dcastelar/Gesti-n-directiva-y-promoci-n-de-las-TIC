@@ -156,7 +156,9 @@ export default function TesisDashboard() {
   // MÉTRICAS
   // ============================================================
 
-  const totalCategorias = categorias.length;
+const totalCategorias = categorias.filter(
+  (categoria) => categoria.id !== 1
+).length;
 
   const totalUnidades = matrizAnalisis.categorias.reduce(
     (total, categoria) => total + categoria.unidades.length,
@@ -615,7 +617,9 @@ export default function TesisDashboard() {
   </button>
 {categoriasAbiertas && (
   <div className="grid md:grid-cols-2 gap-4">
-    {categorias.map((cat, index) => {
+    {categorias
+  .filter((cat) => cat.id !== 1)
+  .map((cat, index) => {
       const gradientes = [
         colores.cyan,
         colores.violet,
