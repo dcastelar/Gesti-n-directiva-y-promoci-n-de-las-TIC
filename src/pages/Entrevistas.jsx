@@ -41,10 +41,16 @@ export default function Entrevistas() {
         setError("");
         setContenido("");
 
-        const respuesta = await fetch(
-          entrevistaSeleccionada.archivo
-        );
+       const respuesta = await fetch(entrevistaSeleccionada.archivo);
 
+console.log("Archivo solicitado:", entrevistaSeleccionada.archivo);
+console.log("Estado:", respuesta.status);
+
+if (!respuesta.ok) {
+  throw new Error(
+    `No se encontró el archivo: ${entrevistaSeleccionada.archivo} | Estado: ${respuesta.status}`
+  );
+}
         if (!respuesta.ok) {
           throw new Error(
             `No se encontró el archivo: ${entrevistaSeleccionada.archivo}`
