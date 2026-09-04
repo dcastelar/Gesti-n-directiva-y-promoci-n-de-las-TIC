@@ -478,68 +478,102 @@ export default function TesisDashboard() {
               </div>
             </div>
 
-            {/* =================================================
-                MÉTRICAS
-            ================================================= */}
+  {/* =================================================
+    MÉTRICAS
+================================================= */}
 
-            <div className="grid grid-cols-3 gap-2 mt-6 pt-4 border-t border-slate-800">
-              <a
-                href="#categorias"
-                className="group rounded-xl px-3 py-2 hover:bg-slate-900 transition-all"
-              >
-                <p className="text-[9px] text-slate-500 uppercase tracking-widest">
-                  Categorías
-                </p>
+<div className="grid md:grid-cols-3 gap-3 mt-6 pt-4 border-t border-slate-800">
 
-                <div className="flex items-baseline gap-2 mt-1">
-                  <h3 className="text-2xl font-black group-hover:text-cyan-300 transition-colors">
-                    {totalCategorias}
-                  </h3>
+  {/* CATEGORÍAS */}
+  <div className="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4 hover:border-cyan-500/30 transition-all">
 
-                  <span className="hidden sm:inline text-[10px] text-slate-600">
-                    analizadas
-                  </span>
-                </div>
-              </a>
+    <p className="text-[9px] text-slate-500 uppercase tracking-widest">
+      Categorías
+    </p>
 
-              <a
-                href="#categorias"
-                className="group rounded-xl px-3 py-2 hover:bg-slate-900 transition-all"
-              >
-                <p className="text-[9px] text-slate-500 uppercase tracking-widest">
-                  Unidades de análisis
-                </p>
+    <div className="flex items-end gap-2 mt-1">
+      <h3 className="text-3xl font-black text-cyan-300">
+        {totalCategorias}
+      </h3>
 
-                <div className="flex items-baseline gap-2 mt-1">
-                  <h3 className="text-2xl font-black group-hover:text-violet-300 transition-colors">
-                    {totalUnidades}
-                  </h3>
+      <span className="text-[10px] text-slate-500 mb-1">
+        analizadas
+      </span>
+    </div>
 
-                  <span className="hidden sm:inline text-[10px] text-slate-600">
-                    organizadas
-                  </span>
-                </div>
-              </a>
+    <a
+      href="#categorias"
+      className="mt-3 inline-flex items-center gap-2 rounded-lg border border-cyan-500/30 bg-cyan-500/10 px-3 py-2 text-xs font-semibold text-cyan-300 hover:bg-cyan-500/20 hover:border-cyan-400/50 transition-all"
+    >
+      Explorar categorías
+      <span className="group-hover:translate-x-1 transition-transform">
+        →
+      </span>
+    </a>
 
-              <a
-                href="#base-datos"
-                className="group rounded-xl px-3 py-2 hover:bg-slate-900 transition-all"
-              >
-                <p className="text-[9px] text-slate-500 uppercase tracking-widest">
-                  Documentos analizados
-                </p>
+  </div>
 
-                <div className="flex items-baseline gap-2 mt-1">
-                  <h3 className="text-2xl font-black group-hover:text-emerald-300 transition-colors">
-                    {totalDocumentos}
-                  </h3>
 
-                  <span className="hidden sm:inline text-[10px] text-slate-600">
-                    registrados
-                  </span>
-                </div>
-              </a>
-            </div>
+  {/* UNIDADES DE ANÁLISIS */}
+  <div className="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4 hover:border-violet-500/30 transition-all">
+
+    <p className="text-[9px] text-slate-500 uppercase tracking-widest">
+      Unidades de análisis
+    </p>
+
+    <div className="flex items-end gap-2 mt-1">
+      <h3 className="text-3xl font-black text-violet-300">
+        {totalUnidades}
+      </h3>
+
+      <span className="text-[10px] text-slate-500 mb-1">
+        organizadas
+      </span>
+    </div>
+
+    <a
+      href="#categorias"
+      className="mt-3 inline-flex items-center gap-2 rounded-lg border border-violet-500/30 bg-violet-500/10 px-3 py-2 text-xs font-semibold text-violet-300 hover:bg-violet-500/20 hover:border-violet-400/50 transition-all"
+    >
+      Explorar análisis
+      <span className="group-hover:translate-x-1 transition-transform">
+        →
+      </span>
+    </a>
+
+  </div>
+
+
+  {/* DOCUMENTOS */}
+  <div className="group rounded-2xl border border-slate-800 bg-slate-900/60 p-4 hover:border-emerald-500/30 transition-all">
+
+    <p className="text-[9px] text-slate-500 uppercase tracking-widest">
+      Documentos analizados
+    </p>
+
+    <div className="flex items-end gap-2 mt-1">
+      <h3 className="text-3xl font-black text-emerald-300">
+        {totalDocumentos}
+      </h3>
+
+      <span className="text-[10px] text-slate-500 mb-1">
+        registrados
+      </span>
+    </div>
+
+    <a
+      href="#base-datos"
+      className="mt-3 inline-flex items-center gap-2 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-xs font-semibold text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-400/50 transition-all"
+    >
+      Explorar documentos
+      <span className="group-hover:translate-x-1 transition-transform">
+        →
+      </span>
+    </a>
+
+  </div>
+
+</div>
           </div>
         </section>
 
@@ -579,68 +613,215 @@ export default function TesisDashboard() {
       ›
     </span>
   </button>
+{categoriasAbiertas && (
+  <div className="grid md:grid-cols-2 gap-4">
+    {categorias.map((cat, index) => {
+      const gradientes = [
+        colores.cyan,
+        colores.violet,
+        colores.emerald,
+        "from-orange-500 to-amber-500",
+      ];
 
-  {categoriasAbiertas && (
-    <div className="grid md:grid-cols-2 gap-3">
-      {categorias.map((cat, index) => {
+      return (
+        <Link
+          key={cat.id || index}
+          to={`/categoria/${cat.id}`}
+          className="group relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 p-5 hover:-translate-y-1 hover:border-slate-600 transition-all"
+        >
+          {/* Línea superior */}
+          <div
+            className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${
+              gradientes[index % gradientes.length]
+            }`}
+          />
 
-        const gradientes = [
-          colores.cyan,
-          colores.violet,
-          colores.emerald,
-          "from-orange-500 to-amber-500",
-        ];
+          {/* Encabezado */}
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.2em] text-slate-600">
+                Categoría {index + 1}
+              </p>
 
-        return (
-          <Link
-            key={cat.id || index}
-            to={`/categoria/${cat.id}`}
-            className="group relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 p-4 hover:-translate-y-0.5 hover:border-slate-700 transition-all"
-          >
+              <h3 className="text-xl md:text-2xl font-bold mt-1 group-hover:text-cyan-300 transition-colors">
+                {cat.titulo || cat.nombre}
+              </h3>
+            </div>
 
-            <div
-              className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${
-                gradientes[index % gradientes.length]
-              }`}
-            />
+            <span className="text-slate-600 text-xl group-hover:text-cyan-300 group-hover:translate-x-1 transition-all">
+              →
+            </span>
+          </div>
 
-            <div className="flex items-start justify-between gap-3">
-              <div>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-slate-600">
-                  Categoría {index + 1}
-                </p>
+          {/* Descripción */}
+          {cat.descripcion && (
+            <p className="text-sm text-slate-400 leading-relaxed mt-3">
+              {cat.descripcion}
+            </p>
+          )}
 
-                <h3 className="text-lg md:text-xl font-bold mt-1 group-hover:text-cyan-300 transition-colors">
-                  {cat.titulo || cat.nombre}
-                </h3>
-              </div>
+          {/* Indicador */}
+          <div className="mt-5 rounded-xl bg-slate-950 border border-slate-800 p-4">
+            <p className="text-[9px] uppercase tracking-[0.15em] text-slate-500">
+              Unidad de análisis
+            </p>
 
-              <span className="text-slate-600 group-hover:text-cyan-300 transition-colors">
+            <div className="flex items-end gap-2 mt-1">
+              <span className="text-3xl font-black text-cyan-300">
+                {unidadesPorCategoria[cat.id] || 0}
+              </span>
+
+              <span className="text-xs text-slate-500 mb-1">
+                unidades organizadas
+              </span>
+            </div>
+          </div>
+
+          {/* Botón explorar */}
+          <div className="mt-4">
+            <span className="w-full inline-flex items-center justify-center gap-2 rounded-xl border border-cyan-500/30 bg-cyan-500/10 px-4 py-3 text-sm font-semibold text-cyan-300 group-hover:bg-cyan-500/20 group-hover:border-cyan-400/50 transition-all">
+              Explorar categoría
+              <span className="text-lg group-hover:translate-x-1 transition-transform">
                 →
               </span>
-            </div>
+            </span>
+          </div>
+        </Link>
+      );
+    })}
+  </div>
+)}
+</section>
+{/* =================================================
+    ORIGEN DE LA INVESTIGACIÓN
+================================================= */}
 
-            {cat.descripcion && (
-              <p className="text-sm text-slate-400 leading-relaxed mt-2">
-                {cat.descripcion}
-              </p>
-            )}
+<section id="por-que-este-tema" className="mb-8 scroll-mt-6">
 
-            <div className="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
-              <span className="text-xs text-slate-500">
-                {unidadesPorCategoria[cat.id] || 0} unidades de análisis
-              </span>
+  <div className="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 p-6">
 
-              <span className="text-xs text-cyan-400/80 group-hover:text-cyan-300 transition-colors">
-                Explorar análisis →
-              </span>
-            </div>
+    {/* Línea superior */}
+    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-amber-400 via-orange-400 to-cyan-400" />
 
-          </Link>
-        );
-      })}
+    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+
+      <div className="max-w-3xl">
+
+        <p className="text-amber-300 text-[10px] uppercase tracking-[0.25em] mb-2">
+          Origen de la investigación
+        </p>
+
+        <h2 className="text-2xl md:text-3xl font-black tracking-tight">
+          ¿Por qué este tema?
+        </h2>
+
+        <p className="text-sm text-slate-400 leading-relaxed mt-3">
+          La elección del tema surge del interés por comprender el rol de la
+          gestión directiva en la promoción de las TIC, considerando su
+          relevancia educativa, la posibilidad concreta de abordarlo y la
+          factibilidad de desarrollarlo dentro de los tiempos y recursos
+          disponibles.
+        </p>
+
+        {/* Criterios */}
+        <div className="flex flex-wrap gap-2 mt-4">
+
+          <span className="rounded-lg bg-amber-500/10 border border-amber-500/20 px-3 py-1.5 text-xs text-amber-300">
+            Interés
+          </span>
+
+          <span className="rounded-lg bg-orange-500/10 border border-orange-500/20 px-3 py-1.5 text-xs text-orange-300">
+            Relevancia
+          </span>
+
+          <span className="rounded-lg bg-cyan-500/10 border border-cyan-500/20 px-3 py-1.5 text-xs text-cyan-300">
+            Factibilidad
+          </span>
+
+          <span className="rounded-lg bg-violet-500/10 border border-violet-500/20 px-3 py-1.5 text-xs text-violet-300">
+            Delimitación
+          </span>
+
+        </div>
+
+      </div>
+
+      {/* Botón */}
+      <Link
+        to="/por-que-este-tema"
+        className="shrink-0 inline-flex items-center justify-center gap-2 rounded-xl border border-amber-500/30 bg-amber-500/10 px-5 py-3 text-sm font-semibold text-amber-300 hover:bg-amber-500/20 hover:border-amber-400/50 transition-all"
+      >
+        Explorar fundamento
+        <span className="text-lg">
+          →
+        </span>
+      </Link>
+
     </div>
-  )}
+
+  </div>
+
+</section>
+{/* MARCO METODOLÓGICO */}
+<section id="metodologia" className="mb-8 scroll-mt-6">
+
+  <div className="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 p-6">
+
+    {/* Línea superior */}
+    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cyan-400 via-violet-400 to-emerald-400" />
+
+    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+
+      <div className="max-w-3xl">
+
+        <p className="text-cyan-300 text-[10px] uppercase tracking-[0.25em] mb-2">
+          Diseño de la investigación
+        </p>
+
+        <h2 className="text-2xl md:text-3xl font-black tracking-tight">
+          Marco metodológico
+        </h2>
+
+        <p className="text-sm text-slate-400 leading-relaxed mt-3">
+          La investigación adopta un enfoque cualitativo y un estudio de caso,
+          articulando diferentes técnicas y fuentes para comprender el rol de
+          la gestión directiva en la promoción de las TIC.
+        </p>
+
+        {/* Indicadores */}
+        <div className="flex flex-wrap gap-2 mt-4">
+
+          <span className="rounded-lg bg-cyan-500/10 border border-cyan-500/20 px-3 py-1.5 text-xs text-cyan-300">
+            Enfoque cualitativo
+          </span>
+
+          <span className="rounded-lg bg-violet-500/10 border border-violet-500/20 px-3 py-1.5 text-xs text-violet-300">
+            Estudio de caso
+          </span>
+
+          <span className="rounded-lg bg-emerald-500/10 border border-emerald-500/20 px-3 py-1.5 text-xs text-emerald-300">
+            Triangulación metodológica
+          </span>
+
+        </div>
+
+      </div>
+
+      {/* Botón */}
+      <Link
+        to="/metodologia"
+        className="shrink-0 inline-flex items-center justify-center gap-2 rounded-xl border border-cyan-500/30 bg-cyan-500/10 px-5 py-3 text-sm font-semibold text-cyan-300 hover:bg-cyan-500/20 hover:border-cyan-400/50 transition-all"
+      >
+        Explorar metodología
+        <span className="text-lg">
+          →
+        </span>
+      </Link>
+
+    </div>
+
+  </div>
+
 </section>
 
         {/* =====================================================

@@ -8,6 +8,8 @@ import Capitulo from "./pages/Capitulo";
 import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
 import AnalisisSubcategoria from "./pages/AnalisisSubcategoria";
+import Metodologia from "./pages/Metodologia";
+import PorQueEsteTema from "./pages/PorQueEsteTema";
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -50,6 +52,8 @@ export default function App() {
         path="/analisis/:nombre"
         element={<AnalisisSubcategoria />}
       />
+      <Route path="/metodologia" element={<Metodologia />} />
+      <Route path="/por-que-este-tema" element={<PorQueEsteTema />} />
       </Routes>
 
       
