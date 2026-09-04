@@ -14,6 +14,7 @@ export default function TesisDashboard() {
   const [autorSeleccionado, setAutorSeleccionado] = useState(null);
   const [herramientasAbiertas, setHerramientasAbiertas] = useState({});
   const [citasAbiertas, setCitasAbiertas] = useState(false);
+  const [categoriasAbiertas, setCategoriasAbiertas] = useState(true);
 
   const location = useLocation();
 
@@ -59,7 +60,56 @@ export default function TesisDashboard() {
     },
   ];
 
-  const citasDestacadas = entrevistas.slice(0, 3);
+  const citasDestacadas = [
+  {
+    categoria: "Contexto y territorio",
+    cita: "La escuela cumple una función social importante; cuando hay que tomar decisiones e incorporar recursos tecnológicos, siempre pensamos en la realidad de las familias y los estudiantes; estamos atravesados por el contexto, y eso marca cómo acompañamos a los docentes.",
+    entrevistado: "Vicedirectora",
+    parrafo: "párr. 8"
+  },
+  {
+    categoria: "Gestión y sostenibilidad",
+    cita: "Tratamos siempre de que los proyectos sean posibles de sostener en el tiempo, que no dependan de factores externos o recursos que no podamos garantizar; buscamos que puedan mantenerse con lo que tenemos en la escuela y con el compromiso del equipo docente.",
+    entrevistado: "Directora",
+    parrafo: "párr. 9"
+  },
+  {
+    categoria: "Trabajo colaborativo",
+    cita: "A veces organizamos talleres internos donde los propios docentes que tienen mayor manejo de las herramientas digitales comparten sus conocimientos con quienes recién comienzan, generando espacios de colaboración, aprendizaje colectivo y fortalecimiento del trabajo en equipo dentro de la escuela.",
+    entrevistado: "Vicedirectora",
+    parrafo: "párr. 24"
+  },
+  {
+    categoria: "Adaptación ante la escasez",
+    cita: "A veces recurrimos a nuestros propios celulares o notebooks para poder trabajar, ya que los equipos disponibles en la escuela son antiguos y presentan limitaciones; de esta manera, buscamos garantizar la continuidad de las actividades y aprovechar los recursos personales disponibles.",
+    entrevistado: "Vicedirectora",
+    parrafo: "párr. 48"
+  },
+  {
+    categoria: "Resiliencia institucional",
+    cita: "La escuela también sufrió robos y destrozos; se llevaron materiales y rompieron equipamiento que usábamos para trabajar con los chicos, lo que nos obliga a reorganizar todo el tiempo y a volver a empezar con muy pocos recursos.",
+    entrevistado: "Vicedirectora",
+    parrafo: "párr. 53"
+  },
+  {
+    categoria: "Innovación y gestión",
+    cita: "Sí usamos herramientas tecnológicas como la inteligencia artificial para redactar proyectos institucionales; por ejemplo, el de normas de convivencia. La inteligencia artificial ayudó a estructurar ideas, y luego adaptamos el contenido al contexto escolar. Actualmente, estamos actualizando el PEI con ese apoyo.",
+    entrevistado: "Vicedirectora",
+    parrafo: "párr. 36"
+  },
+  {
+    categoria: "Formación docente",
+    cita: "Hay docentes que todavía sienten miedo de equivocarse frente a los alumnos cuando usan la computadora; les preocupa no saber resolver un problema técnico en el momento o quedar expuestos frente al grupo, y eso les genera inseguridad para incorporar las TIC.",
+    entrevistado: "Vicedirectora",
+    parrafo: "párr. 40"
+  },
+  {
+    categoria: "Sentido pedagógico de las TIC",
+    cita: "No se trata solo de tener computadoras, sino de pensar cómo las usamos para enseñar mejor. La tecnología debe integrarse con sentido pedagógico, orientando su uso hacia la construcción de conocimiento, la participación activa y el desarrollo de competencias críticas y reflexivas en los estudiantes.",
+    entrevistado: "Vicedirectora",
+    parrafo: "párr. 50"
+  }
+];
 
   const colores = {
     cyan: "from-cyan-500 to-blue-500",
@@ -183,11 +233,7 @@ export default function TesisDashboard() {
               >
                 ←
               </button>
-            </div>
-
-            <p className="text-xs text-slate-600 mt-2 leading-relaxed">
-              Experiencia interactiva de investigación
-            </p>
+            </div>            
           </div>
         ) : (
           <button
@@ -375,35 +421,35 @@ export default function TesisDashboard() {
                 </h1>
 
                 <p className="text-slate-500 mt-4 max-w-2xl text-sm leading-relaxed">
-                  Una propuesta para visualizar el recorrido metodológico,
-                  los datos, las categorías de análisis y los principales
-                  hallazgos de la investigación.
+                  La investigación no solamente tiene un resultado, sino que tiene un recorrido. La aplicación busca hacer visible ese recorrido: de dónde salen los datos, cómo fueron reducidos y categorizados, cómo se contrastaron con la teoría y cómo se llegó finalmente a los hallazgos.
                 </p>
               </div>
 
               {/* HALLAZGO */}
 
               <div className="rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden">
-                <button
-                  onClick={() => setHallazgoAbierto(!hallazgoAbierto)}
-                  className="w-full flex items-center justify-between gap-3 p-4 text-left hover:bg-slate-900 transition-all"
-                >
-                  <div>
-                    <p className="text-cyan-400 text-[10px] uppercase tracking-[0.25em]">
-                      Hallazgo central
-                    </p>
+               <button
+  onClick={() => setHallazgoAbierto(!hallazgoAbierto)}
+  className="w-full flex items-center justify-between p-5 text-left hover:bg-slate-800/50 transition-all"
+>
+  <div>
+    <p className="text-cyan-300 text-[10px] uppercase tracking-[0.25em]">
+      Resultado central
+    </p>
 
-                    {!hallazgoAbierto && (
-                      <p className="text-xs text-slate-500 mt-1">
-                        Ver síntesis del hallazgo
-                      </p>
-                    )}
-                  </div>
+    <h2 className="text-2xl font-black tracking-tight mt-1">
+      Hallazgo principal
+    </h2>
+  </div>
 
-                  <span className="text-cyan-400 text-lg">
-                    {hallazgoAbierto ? "−" : "+"}
-                  </span>
-                </button>
+  <span
+    className={`text-cyan-400 text-xl transition-transform duration-300 ${
+      hallazgoAbierto ? "rotate-90" : ""
+    }`}
+  >
+    ›
+  </span>
+</button>
 
                 {hallazgoAbierto && (
                   <div className="px-4 pb-4">
@@ -497,7 +543,192 @@ export default function TesisDashboard() {
           </div>
         </section>
 
+      {/* =====================================================
+    CATEGORÍAS
+===================================================== */}
+
+<section
+  id="categorias"
+  className="mb-8 scroll-mt-6"
+>
+  <button
+    onClick={() => setCategoriasAbiertas(!categoriasAbiertas)}
+    className="w-full flex items-center justify-between mb-4 text-left hover:bg-slate-900/40 rounded-xl p-2 -m-2 transition-all"
+  >
+    <div>
+      <p className="text-cyan-300 text-[10px] uppercase tracking-[0.25em] mb-1">
+        Análisis de la investigación
+      </p>
+
+      <h2 className="text-2xl md:text-3xl font-black tracking-tight">
+        Categorías de análisis
+      </h2>
+
+      <p className="text-sm text-slate-400 mt-2 max-w-3xl">
+        Las categorías organizan la información producida a partir
+        de las entrevistas, encuestas y análisis documental.
+      </p>
+    </div>
+
+    {/* FLECHA TIPO ÍNDICE */}
+    <span
+      className={`text-cyan-400 text-xl transition-transform duration-300 ${
+        categoriasAbiertas ? "rotate-90" : ""
+      }`}
+    >
+      ›
+    </span>
+  </button>
+
+  {categoriasAbiertas && (
+    <div className="grid md:grid-cols-2 gap-3">
+      {categorias.map((cat, index) => {
+
+        const gradientes = [
+          colores.cyan,
+          colores.violet,
+          colores.emerald,
+          "from-orange-500 to-amber-500",
+        ];
+
+        return (
+          <Link
+            key={cat.id || index}
+            to={`/categoria/${cat.id}`}
+            className="group relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 p-4 hover:-translate-y-0.5 hover:border-slate-700 transition-all"
+          >
+
+            <div
+              className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${
+                gradientes[index % gradientes.length]
+              }`}
+            />
+
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-slate-600">
+                  Categoría {index + 1}
+                </p>
+
+                <h3 className="text-lg md:text-xl font-bold mt-1 group-hover:text-cyan-300 transition-colors">
+                  {cat.titulo || cat.nombre}
+                </h3>
+              </div>
+
+              <span className="text-slate-600 group-hover:text-cyan-300 transition-colors">
+                →
+              </span>
+            </div>
+
+            {cat.descripcion && (
+              <p className="text-sm text-slate-400 leading-relaxed mt-2">
+                {cat.descripcion}
+              </p>
+            )}
+
+            <div className="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+              <span className="text-xs text-slate-500">
+                {unidadesPorCategoria[cat.id] || 0} unidades de análisis
+              </span>
+
+              <span className="text-xs text-cyan-400/80 group-hover:text-cyan-300 transition-colors">
+                Explorar análisis →
+              </span>
+            </div>
+
+          </Link>
+        );
+      })}
+    </div>
+  )}
+</section>
+
         {/* =====================================================
+            BASE DE DATOS
+        ===================================================== */}
+
+        <section
+          id="base-datos"
+          className="mb-8 scroll-mt-6"
+        >
+          <div className="mb-4">
+            <p className="text-violet-300 text-[10px] uppercase tracking-[0.25em] mb-1">
+              Fuentes empíricas
+            </p>
+
+            <h2 className="text-2xl md:text-3xl font-black tracking-tight">
+              Base de datos
+            </h2>
+
+            <p className="text-sm text-slate-400 mt-2 max-w-3xl">
+              Organización de las principales fuentes utilizadas para la
+              construcción y análisis de los datos de la investigación.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-3">
+            <Link
+              to="/base-datos/entrevistas"
+              className="rounded-2xl border border-slate-800 bg-slate-900 p-4 hover:bg-slate-800 hover:border-violet-400/30 transition-all"
+            >
+              <div className="text-2xl mb-3">🎙️</div>
+
+              <h3 className="text-lg font-bold">
+                Entrevistas
+              </h3>
+
+              <p className="text-sm text-slate-400 mt-2 leading-relaxed">
+                Entrevistas semiestructuradas realizadas a integrantes
+                del equipo directivo.
+              </p>
+
+              <div className="text-violet-300 text-xs font-semibold mt-4">
+                Ver entrevistas →
+              </div>
+            </Link>
+
+            <Link
+              to="/base-datos/encuestas"
+              className="rounded-2xl border border-slate-800 bg-slate-900 p-4 hover:bg-slate-800 hover:border-violet-400/30 transition-all"
+            >
+              <div className="text-2xl mb-3">📊</div>
+
+              <h3 className="text-lg font-bold">
+                Encuestas
+              </h3>
+
+              <p className="text-sm text-slate-400 mt-2 leading-relaxed">
+                Información obtenida mediante el instrumento aplicado a
+                los actores institucionales.
+              </p>
+
+              <div className="text-violet-300 text-xs font-semibold mt-4">
+                Ver base de datos →
+              </div>
+            </Link>
+
+            <Link
+              to="/base-datos/documental"
+              className="rounded-2xl border border-slate-800 bg-slate-900 p-4 hover:bg-slate-800 hover:border-violet-400/30 transition-all"
+            >
+              <div className="text-2xl mb-3">📚</div>
+
+              <h3 className="text-lg font-bold">
+                Análisis documental
+              </h3>
+
+              <p className="text-sm text-slate-400 mt-2 leading-relaxed">
+                Documentos institucionales analizados para triangular los
+                hallazgos.
+              </p>
+
+              <div className="text-violet-300 text-xs font-semibold mt-4">
+                Ver documentos →
+              </div>
+            </Link>
+          </div>
+        </section>
+          {/* =====================================================
             AUTORES
         ===================================================== */}
 
@@ -681,173 +912,106 @@ export default function TesisDashboard() {
             )}
           </div>
         </section>
+       {/* =====================================================
+    CITAS DESTACADAS
+===================================================== */}
 
-        {/* =====================================================
-            CATEGORÍAS
-        ===================================================== */}
+<section className="mb-8">
+  <div className="rounded-2xl border border-slate-800 bg-slate-900/80 overflow-hidden">
 
-        <section
-          id="categorias"
-          className="mb-8 scroll-mt-6"
-        >
-          <div className="mb-4">
-            <p className="text-cyan-300 text-[10px] uppercase tracking-[0.25em] mb-1">
-              Análisis de la investigación
-            </p>
+    {/* ENCABEZADO */}
+    <button
+  onClick={() => setCitasAbiertas(!citasAbiertas)}
+  className="w-full flex items-center justify-between p-5 text-left hover:bg-slate-800/50 transition-all"
+>
+  <div>
+    <p className="text-cyan-300 text-[10px] uppercase tracking-[0.25em]">
+      Voces de los actores institucionales
+    </p>
 
-            <h2 className="text-2xl md:text-3xl font-black tracking-tight">
-              Categorías de análisis
-            </h2>
+    <h2 className="text-2xl font-black tracking-tight mt-1">
+      Citas destacadas
+    </h2>
 
-            <p className="text-sm text-slate-400 mt-2 max-w-3xl">
-              Las categorías organizan la información producida a partir
-              de las entrevistas, encuestas y análisis documental.
-            </p>
-          </div>
+    <p className="text-xs text-slate-500 mt-2">
+      Evidencias cualitativas de los principales hallazgos.
+    </p>
+  </div>
 
-          <div className="grid md:grid-cols-2 gap-3">
-            {categorias.map((cat, index) => {
-              const gradientes = [
-                colores.cyan,
-                colores.violet,
-                colores.emerald,
-                "from-orange-500 to-amber-500",
-              ];
+  <span
+    className={`text-cyan-400 text-xl transition-transform duration-300 ${
+      citasAbiertas ? "rotate-90" : ""
+    }`}
+  >
+    ›
+  </span>
+</button>
 
-              return (
-                <Link
-                  key={cat.id || index}
-                  to={`/categoria/${cat.id}`}
-                  className="group relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 p-4 hover:-translate-y-0.5 hover:border-slate-700 transition-all"
-                >
-                  <div
-                    className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${
-                      gradientes[index % gradientes.length]
-                    }`}
-                  />
+    {/* CONTENIDO */}
+    {citasAbiertas && (
+      <div className="border-t border-slate-800 p-4">
 
-                  <div className="flex items-start justify-between gap-3">
-                    <div>
-                      <p className="text-[10px] uppercase tracking-[0.2em] text-slate-600">
-                        Categoría {index + 1}
-                      </p>
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4">
 
-                      <h3 className="text-lg md:text-xl font-bold mt-1 group-hover:text-cyan-300 transition-colors">
-                        {cat.titulo || cat.nombre}
-                      </h3>
-                    </div>
-
-                    <span className="text-slate-600 group-hover:text-cyan-300 transition-colors">
-                      →
-                    </span>
-                  </div>
-
-                  {cat.descripcion && (
-                    <p className="text-sm text-slate-400 leading-relaxed mt-2">
-                      {cat.descripcion}
-                    </p>
-                  )}
-
-                  <div className="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
-                    <span className="text-xs text-slate-500">
-                      {unidadesPorCategoria[cat.id] || 0} unidades de análisis
-                    </span>
-
-                    <span className="text-xs text-cyan-400/80 group-hover:text-cyan-300 transition-colors">
-                      Explorar análisis →
-                    </span>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </section>
-
-        {/* =====================================================
-            BASE DE DATOS
-        ===================================================== */}
-
-        <section
-          id="base-datos"
-          className="mb-8 scroll-mt-6"
-        >
-          <div className="mb-4">
-            <p className="text-violet-300 text-[10px] uppercase tracking-[0.25em] mb-1">
-              Fuentes empíricas
-            </p>
-
-            <h2 className="text-2xl md:text-3xl font-black tracking-tight">
-              Base de datos
-            </h2>
-
-            <p className="text-sm text-slate-400 mt-2 max-w-3xl">
-              Organización de las principales fuentes utilizadas para la
-              construcción y análisis de los datos de la investigación.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-3">
-            <Link
-              to="/base-datos/entrevistas"
-              className="rounded-2xl border border-slate-800 bg-slate-900 p-4 hover:bg-slate-800 hover:border-violet-400/30 transition-all"
+          {citasDestacadas.map((entrevista, index) => (
+            <div
+              key={index}
+              className="group rounded-xl border border-slate-800 bg-slate-950 p-5 hover:border-cyan-500/40 hover:bg-slate-900 transition-all duration-300"
             >
-              <div className="text-2xl mb-3">🎙️</div>
 
-              <h3 className="text-lg font-bold">
-                Entrevistas
-              </h3>
+              {/* CATEGORÍA */}
+              <div className="flex items-center justify-between mb-4">
 
-              <p className="text-sm text-slate-400 mt-2 leading-relaxed">
-                Entrevistas semiestructuradas realizadas a integrantes
-                del equipo directivo.
+                <span className="inline-flex items-center rounded-full border border-cyan-500/20 bg-cyan-500/10 px-2.5 py-1 text-[9px] uppercase tracking-[0.15em] text-cyan-300">
+                  {entrevista.categoria}
+                </span>
+
+                <span className="text-slate-700 text-xs">
+                  #{index + 1}
+                </span>
+
+              </div>
+
+
+              {/* COMILLAS */}
+              <div className="text-cyan-400 text-3xl leading-none mb-2">
+                “
+              </div>
+
+
+              {/* CITA */}
+              <p className="text-sm text-slate-300 leading-relaxed">
+                {entrevista.cita}
               </p>
 
-              <div className="text-violet-300 text-xs font-semibold mt-4">
-                Ver entrevistas →
+
+              {/* FUENTE */}
+              <div className="mt-5 pt-4 border-t border-slate-800">
+
+                <p className="text-[9px] uppercase tracking-[0.2em] text-slate-600">
+                  Voz institucional
+                </p>
+
+                <p className="text-xs text-slate-400 mt-1">
+                  {entrevista.entrevistado}
+                </p>
+
+                <p className="text-[10px] text-slate-600 mt-1">
+                  {entrevista.parrafo}
+                </p>
+
               </div>
-            </Link>
 
-            <Link
-              to="/base-datos/encuestas"
-              className="rounded-2xl border border-slate-800 bg-slate-900 p-4 hover:bg-slate-800 hover:border-violet-400/30 transition-all"
-            >
-              <div className="text-2xl mb-3">📊</div>
+            </div>
+          ))}
 
-              <h3 className="text-lg font-bold">
-                Encuestas
-              </h3>
+        </div>
 
-              <p className="text-sm text-slate-400 mt-2 leading-relaxed">
-                Información obtenida mediante el instrumento aplicado a
-                los actores institucionales.
-              </p>
+      </div>
+    )}
 
-              <div className="text-violet-300 text-xs font-semibold mt-4">
-                Ver base de datos →
-              </div>
-            </Link>
-
-            <Link
-              to="/base-datos/documental"
-              className="rounded-2xl border border-slate-800 bg-slate-900 p-4 hover:bg-slate-800 hover:border-violet-400/30 transition-all"
-            >
-              <div className="text-2xl mb-3">📚</div>
-
-              <h3 className="text-lg font-bold">
-                Análisis documental
-              </h3>
-
-              <p className="text-sm text-slate-400 mt-2 leading-relaxed">
-                Documentos institucionales analizados para triangular los
-                hallazgos.
-              </p>
-
-              <div className="text-violet-300 text-xs font-semibold mt-4">
-                Ver documentos →
-              </div>
-            </Link>
-          </div>
-        </section>
+  </div>
+</section>
 
         {/* =====================================================
             HERRAMIENTAS
@@ -942,70 +1106,7 @@ export default function TesisDashboard() {
           </div>
         </section>
 
-        {/* =====================================================
-            CITAS DESTACADAS
-        ===================================================== */}
-
-        <section className="mb-8">
-          <div className="rounded-2xl border border-slate-800 bg-slate-900/80 overflow-hidden">
-            <button
-              onClick={() => setCitasAbiertas(!citasAbiertas)}
-              className="w-full flex items-center justify-between p-5 text-left hover:bg-slate-800/50 transition-all"
-            >
-              <div>
-                <p className="text-cyan-300 text-[10px] uppercase tracking-[0.25em]">
-                  Voces de los actores institucionales
-                </p>
-
-                <h2 className="text-2xl font-black tracking-tight mt-1">
-                  Citas destacadas
-                </h2>
-              </div>
-
-              <span className="text-cyan-400 text-lg">
-                {citasAbiertas ? "−" : "+"}
-              </span>
-            </button>
-
-            {citasAbiertas && (
-              <div className="border-t border-slate-800 p-4">
-                <div className="grid md:grid-cols-3 gap-3">
-                  {citasDestacadas.map((entrevista, index) => (
-                    <div
-                      key={index}
-                      className="rounded-xl border border-slate-800 bg-slate-950 p-4"
-                    >
-                      <div className="text-cyan-400 text-2xl mb-3">
-                        “
-                      </div>
-
-                      <p className="text-sm text-slate-300 leading-relaxed">
-                        {entrevista.cita ||
-                          entrevista.texto ||
-                          entrevista.respuesta ||
-                          "Registro de entrevista"}
-                      </p>
-
-                      <div className="mt-4 pt-3 border-t border-slate-800">
-                        <p className="text-[10px] uppercase tracking-[0.2em] text-slate-600">
-                          Fuente
-                        </p>
-
-                        <p className="text-xs text-slate-400 mt-1">
-                          {entrevista.entrevistado ||
-                            entrevista.nombre ||
-                            entrevista.rol ||
-                            "Entrevista"}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-        </section>
-
+        
         {/* =====================================================
             FOOTER
         ===================================================== */}
@@ -1014,16 +1115,16 @@ export default function TesisDashboard() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
             <div>
               <p className="text-sm font-semibold">
-                Investigación de Licenciatura en Gestión Educativa
+                Licenciatura en Gestión Educativa 
               </p>
 
               <p className="text-xs text-slate-600 mt-1">
-                Escuela Primaria N.° 4774 “General Juan José Valle”
+                Universidad Católica de Salta
               </p>
             </div>
 
             <div className="text-xs text-slate-600">
-              Barrio Libertad · Salta Capital
+              Diego Castellanos
             </div>
           </div>
         </footer>

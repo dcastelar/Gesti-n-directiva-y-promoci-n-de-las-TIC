@@ -107,7 +107,18 @@
           "nombre": "Vertex AI / Gemini",
           "descripcion": "Herramientas de IA generativa para investigación y educación.",
           "url": "https://console.cloud.google.com/vertex-ai/"
+        },
+          {
+          "nombre": "Chatgpt",
+          "descripcion": "Herramientas de IA generativa para investigación y educación.",
+          "url": "https://chatgpt.com/"
+        },
+          {
+          "nombre": "cloudflare",
+          "descripcion": "Herramientas de IA generativa para investigación y educación.",
+          "url": "https://dash.cloudflare.com/"
         }
+
       ]
     },
     {
