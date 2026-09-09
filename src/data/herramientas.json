@@ -117,6 +117,11 @@
           "nombre": "cloudflare",
           "descripcion": "Herramientas de IA generativa para investigación y educación.",
           "url": "https://dash.cloudflare.com/"
+        },
+          {
+          "nombre": "Atlas TI",
+          "descripcion": "Herramientas para obtener información cualitativa.",
+          "url": "https://atlasti.com/es"
         }
 
       ]
@@ -160,6 +165,17 @@
           "nombre": "Vercel",
           "descripcion": "Plataforma para desplegar aplicaciones web.",
           "url": "https://vercel.com/"
+        }
+      ]
+    },
+    {
+      "nombre": "Bibliografia y referencias",
+      "icono": "📖",
+      "herramientas": [
+        {
+          "nombre": "Google Drive",
+          "descripcion": "Material de apoyo para la investigación.",
+          "url": "https://drive.google.com/drive/u/1/folders/1BIxVir7nXH0NLcCztPgEhz84BF6hw9CB"
         }
       ]
     }

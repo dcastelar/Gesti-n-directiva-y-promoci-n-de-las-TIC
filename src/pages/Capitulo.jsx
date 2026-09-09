@@ -260,7 +260,310 @@ switch (numero) {
     ))}
   </main>
 )}
+{/* =====================================================
+    ANEXO 1 — MATRIZ DE ENTREVISTAS Y ENCUESTAS
+===================================================== */}
 
+{capitulo.registros?.length > 0 && (
+  <section className="mt-12">
+    <div className="mb-6">
+      <p className="text-xs text-emerald-300 uppercase tracking-widest mb-2">
+        Matriz de análisis
+      </p>
+
+      <h2 className="text-2xl md:text-3xl font-bold">
+        Encuestas y entrevistas
+      </h2>
+
+      <p className="text-slate-400 mt-3 leading-relaxed">
+        Matriz de triangulación de la información obtenida mediante
+        entrevistas, encuestas y análisis interpretativo.
+      </p>
+    </div>
+
+    {/* Contenedor con desplazamiento horizontal */}
+    <div className="overflow-x-auto rounded-3xl border border-slate-800 bg-slate-900/60 shadow-xl">
+      <table className="min-w-[2200px] w-full border-collapse text-sm">
+        <thead>
+          <tr className="bg-slate-800/80 text-left">
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Categoría
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Subcategoría
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Definición teórica
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Extracto Directora
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Código
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Fuente
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Extracto Vicedirectora
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Código
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Fuente
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Extracto Docente
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Código
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Fuente
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Interpretación preliminar
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {capitulo.registros.map((registro, index) => (
+            <tr
+              key={index}
+              className="border-b border-slate-800 hover:bg-slate-800/40 transition-colors align-top"
+            >
+              <td className="px-4 py-5 text-slate-200 font-semibold">
+                {registro.categoria || "–"}
+              </td>
+
+              <td className="px-4 py-5 text-emerald-300 font-medium">
+                {registro.subcategoria || "–"}
+              </td>
+
+              <td className="px-4 py-5 text-slate-300 leading-relaxed whitespace-normal">
+                {registro.definicion_teorica || "–"}
+              </td>
+
+              <td className="px-4 py-5 text-slate-300 leading-relaxed">
+                {registro.extracto_directora || "–"}
+              </td>
+
+              <td className="px-4 py-5 text-amber-300 font-mono text-xs">
+                {registro.codigo_dire || "–"}
+              </td>
+
+              <td className="px-4 py-5 text-slate-400 text-xs">
+                {registro.fuente_dire || "–"}
+              </td>
+
+              <td className="px-4 py-5 text-slate-300 leading-relaxed">
+                {registro.extracto_vicedirectora || "–"}
+              </td>
+
+              <td className="px-4 py-5 text-amber-300 font-mono text-xs">
+                {registro.codigo_vice || "–"}
+              </td>
+
+              <td className="px-4 py-5 text-slate-400 text-xs">
+                {registro.fuente_vice || "–"}
+              </td>
+
+              <td className="px-4 py-5 text-slate-300 leading-relaxed">
+                {registro.extracto_docente || "–"}
+              </td>
+
+              <td className="px-4 py-5 text-amber-300 font-mono text-xs">
+                {registro.codigo_doc || "–"}
+              </td>
+
+              <td className="px-4 py-5 text-slate-400 text-xs">
+                {registro.fuente_doc || "–"}
+              </td>
+
+              <td className="px-4 py-5 text-slate-300 leading-relaxed">
+                {registro.interpretacion_preliminar || "–"}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p className="mt-4 text-xs text-slate-500">
+      La matriz puede desplazarse horizontalmente para consultar la
+      totalidad de las variables.
+    </p>
+  </section>
+)}
+{/* =====================================================
+    ANEXO 2 — ANÁLISIS DOCUMENTAL
+===================================================== */}
+
+{capitulo.documentos?.length > 0 && (
+  <section className="mt-12">
+
+    <div className="mb-6">
+      <p className="text-xs text-emerald-300 uppercase tracking-widest mb-2">
+        Matriz de análisis documental
+      </p>
+
+      <h2 className="text-2xl md:text-3xl font-bold">
+        Documentos analizados
+      </h2>
+
+      <p className="text-slate-400 mt-3 leading-relaxed">
+        Registro y vaciado analítico de documentos institucionales,
+        planificaciones y actas de observación de clases, en relación
+        con el rol de la gestión directiva, las estrategias de
+        incorporación de las TIC y los desafíos y oportunidades
+        identificados.
+      </p>
+    </div>
+
+    {/* =====================================================
+        TABLA — DESPLAZAMIENTO HORIZONTAL
+    ===================================================== */}
+
+    <div className="overflow-x-auto rounded-3xl border border-slate-800 bg-slate-900/60 shadow-xl">
+
+      <table className="min-w-[2200px] w-full border-collapse text-sm">
+
+        <thead>
+          <tr className="bg-slate-800/80 text-left">
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Fuente
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Grado
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Área
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Tema
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Desarrollo / clase
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Recursos
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Rol de la gestión
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Estrategias TIC
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Desafíos y oportunidades
+            </th>
+
+            <th className="px-4 py-4 border-b border-slate-700 text-emerald-300">
+              Referencia
+            </th>
+
+          </tr>
+        </thead>
+
+        <tbody>
+
+          {capitulo.documentos.map((documento, index) => (
+
+            <tr
+              key={index}
+              className="border-b border-slate-800 hover:bg-slate-800/40 transition-colors align-top"
+            >
+
+              {/* FUENTE */}
+              <td className="px-4 py-5 text-slate-200 font-semibold">
+                {documento.fuente || "–"}
+              </td>
+
+              {/* GRADO */}
+              <td className="px-4 py-5 text-slate-300 whitespace-nowrap">
+                {documento.grado || "–"}
+              </td>
+
+              {/* ÁREA */}
+              <td className="px-4 py-5 text-slate-300">
+                {documento.area || "–"}
+              </td>
+
+              {/* TEMA */}
+              <td className="px-4 py-5 text-emerald-300 font-medium">
+                {documento.tema || "–"}
+              </td>
+
+              {/* DESARROLLO */}
+              <td className="px-4 py-5 text-slate-300 leading-relaxed whitespace-normal">
+                {documento.desarrollo_clase || "–"}
+              </td>
+
+              {/* RECURSOS */}
+              <td className="px-4 py-5 text-slate-300 leading-relaxed">
+                {documento.recursos || "–"}
+              </td>
+
+              {/* ROL DE GESTIÓN */}
+              <td className="px-4 py-5 text-slate-300 leading-relaxed">
+                {documento.rol_gestion || "–"}
+              </td>
+
+              {/* ESTRATEGIAS TIC */}
+              <td className="px-4 py-5 text-slate-300 leading-relaxed">
+                {documento.estrategias_tic || "–"}
+              </td>
+
+              {/* DESAFÍOS / OPORTUNIDADES */}
+              <td className="px-4 py-5 text-slate-300 leading-relaxed">
+                {documento.desafios_oportunidades || "–"}
+              </td>
+
+              {/* REFERENCIA */}
+              <td className="px-4 py-5 text-slate-400 text-xs leading-relaxed">
+                {documento.referencia || "–"}
+              </td>
+
+            </tr>
+
+          ))}
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+    <p className="mt-4 text-xs text-slate-500">
+      La matriz puede desplazarse horizontalmente para consultar
+      la totalidad de las variables del análisis documental.
+    </p>
+
+  </section>
+)}
         <div className="border-t border-slate-800 pt-8 mt-16">
           <Link
             to="/"
