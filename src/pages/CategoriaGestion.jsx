@@ -168,7 +168,138 @@ export default function CategoriaGestion() {
 
         </section>
 
-        {/* UNIDADES DE ANÁLISIS */}
+        {/* =====================================================
+            PLAN DE MEJORA
+            Solo aparece en Categoría 2
+        ===================================================== */}
+
+        {categoria.id === 2 && (
+          <section className="mb-12">
+
+            <div className="mb-6">
+              <p className="text-sm text-violet-400 uppercase tracking-wider font-semibold mb-2">
+                Evidencia documental destacada
+              </p>
+
+              <h2 className="text-2xl font-bold">
+                Decisiones situadas de la gestión directiva
+              </h2>
+
+              <p className="text-slate-400 mt-2 max-w-4xl">
+                El Plan de Mejora Institucional permite observar cómo las
+                necesidades identificadas en el diagnóstico se transforman
+                en decisiones, acciones y estrategias concretas de mejora.
+              </p>
+            </div>
+
+            <Link
+              to="/plan-mejora"
+              className="group block rounded-3xl border border-violet-500/30 bg-gradient-to-br from-violet-950/50 via-slate-900/80 to-slate-900/70 p-7 md:p-8 hover:border-violet-400/60 hover:shadow-xl hover:shadow-violet-950/20 transition-all duration-300"
+            >
+
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+
+                <div className="flex items-start gap-5">
+
+                  <div className="w-14 h-14 shrink-0 rounded-2xl bg-violet-500/10 border border-violet-500/30 flex items-center justify-center text-2xl">
+                    📋
+                  </div>
+
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-violet-400 font-semibold mb-2">
+                      Plan de Mejora Institucional · 2025
+                    </p>
+
+                    <h3 className="text-2xl font-bold group-hover:text-violet-300 transition">
+                      “Rutas, hacia una nueva escuela”
+                    </h3>
+
+                    <p className="text-slate-300 mt-3 leading-relaxed max-w-3xl">
+                      Una expresión concreta de la gestión situada que
+                      articula diagnóstico, planificación y acción para
+                      fortalecer las prácticas pedagógicas y las capacidades
+                      institucionales.
+                    </p>
+                  </div>
+
+                </div>
+
+                <div className="shrink-0 text-violet-400 text-2xl group-hover:translate-x-1 transition">
+                  →
+                </div>
+
+              </div>
+
+              {/* RECORRIDO */}
+              <div className="mt-7 pt-6 border-t border-slate-800">
+
+                <div className="flex flex-wrap items-center gap-2 text-sm">
+
+                  <span className="px-3 py-2 rounded-lg bg-slate-950/70 text-slate-300">
+                    Diagnóstico
+                  </span>
+
+                  <span className="text-violet-400">
+                    →
+                  </span>
+
+                  <span className="px-3 py-2 rounded-lg bg-slate-950/70 text-slate-300">
+                    Decisión situada
+                  </span>
+
+                  <span className="text-violet-400">
+                    →
+                  </span>
+
+                  <span className="px-3 py-2 rounded-lg bg-violet-500/10 border border-violet-500/20 text-violet-300">
+                    Plan de Mejora
+                  </span>
+
+                  <span className="text-violet-400">
+                    →
+                  </span>
+
+                  <span className="px-3 py-2 rounded-lg bg-slate-950/70 text-slate-300">
+                    Repositorio institucional
+                  </span>
+
+                  <span className="text-violet-400">
+                    →
+                  </span>
+
+                  <span className="px-3 py-2 rounded-lg bg-slate-950/70 text-slate-300">
+                    Fortalecimiento institucional
+                  </span>
+
+                </div>
+
+              </div>
+
+              {/* PIE */}
+              <div className="mt-6 flex flex-wrap gap-3">
+
+                <span className="text-xs px-3 py-1.5 rounded-full bg-violet-500/10 text-violet-300 border border-violet-500/20">
+                  Evidencia documental
+                </span>
+
+                <span className="text-xs px-3 py-1.5 rounded-full bg-slate-800 text-slate-300">
+                  Gestión situada
+                </span>
+
+                <span className="text-xs px-3 py-1.5 rounded-full bg-slate-800 text-slate-300">
+                  Mejora institucional
+                </span>
+
+              </div>
+
+            </Link>
+          </section>
+        )}
+
+        {/* =====================================================
+            UNIDADES DE ANÁLISIS
+        ===================================================== */}
+
         <section className="mb-12">
 
           <div className="mb-6">
@@ -183,16 +314,20 @@ export default function CategoriaGestion() {
           </div>
 
           {unidades.length === 0 ? (
+
             <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-8">
               <p className="text-slate-400">
                 Todavía no hay unidades de análisis registradas
                 para esta categoría.
               </p>
             </div>
+
           ) : (
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
 
               {unidades.map((unidad) => {
+
                 const entrevistas = unidad.entrevistas || [];
                 const encuestas = unidad.encuesta || [];
                 const evidencias =
@@ -288,7 +423,10 @@ export default function CategoriaGestion() {
 
         </section>
 
-        {/* TRAZABILIDAD */}
+        {/* =====================================================
+            TRAZABILIDAD
+        ===================================================== */}
+
         <section className="mb-12">
 
           <div className="mb-6">
@@ -311,10 +449,12 @@ export default function CategoriaGestion() {
               ["04", "Triangulación", "Cruce de evidencias"],
               ["05", "Hallazgo", "Interpretación"],
             ].map(([numero, titulo, descripcion]) => (
+
               <div
                 key={numero}
                 className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
               >
+
                 <p className="text-cyan-400 font-bold text-sm mb-2">
                   {numero}
                 </p>
@@ -326,7 +466,9 @@ export default function CategoriaGestion() {
                 <p className="text-sm text-slate-400">
                   {descripcion}
                 </p>
+
               </div>
+
             ))}
 
           </div>

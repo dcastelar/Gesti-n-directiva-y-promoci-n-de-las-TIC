@@ -10,6 +10,7 @@ import { useLocation } from "react-router-dom"
 import AnalisisSubcategoria from "./pages/AnalisisSubcategoria";
 import Metodologia from "./pages/Metodologia";
 import PorQueEsteTema from "./pages/PorQueEsteTema";
+import PlanMejora from "./pages/PlanMejora";
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -54,6 +55,10 @@ export default function App() {
       />
       <Route path="/metodologia" element={<Metodologia />} />
       <Route path="/por-que-este-tema" element={<PorQueEsteTema />} />
+      <Route
+  path="/plan-mejora"
+  element={<PlanMejora />}
+/>
       </Routes>
 
       
