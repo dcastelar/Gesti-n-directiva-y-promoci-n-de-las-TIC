@@ -155,22 +155,32 @@ export default function Capitulo() {
                   id={`seccion-${seccion.id}`}
                   className="mb-16 scroll-mt-10"
                 >
-                  <div className="flex items-start gap-4 mb-6">
-                    <span className="flex-shrink-0 w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-400/20 flex items-center justify-center text-emerald-300 font-bold">
-                      {seccion.id}
-                    </span>
+   {/* =================================================*
+    CABECERA DE SECCIÓN
+================================================= */}
+{numero === "6" ? (
+  <div className="mb-8">
+    <h2 className="text-2xl md:text-3xl font-bold text-white">
+      {seccion.titulo}
+    </h2>
+  </div>
+) : (
+  <div className="flex items-start gap-4 mb-6">
+    <span className="flex-shrink-0 w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-400/20 flex items-center justify-center text-emerald-300 font-bold">
+      {seccion.id}
+    </span>
 
-                    <div>
-                      <p className="text-xs text-emerald-300 uppercase tracking-widest mb-1">
-                        Sección
-                      </p>
+    <div>
+      <p className="text-xs text-emerald-300 uppercase tracking-widest mb-1">
+        Sección
+      </p>
 
-                      <h2 className="text-2xl md:text-3xl font-bold">
-                        {seccion.titulo}
-                      </h2>
-                    </div>
-                  </div>
-
+      <h2 className="text-2xl md:text-3xl font-bold">
+        {seccion.titulo}
+      </h2>
+    </div>
+  </div>
+)}
                   {/* =================================================
                       PÁRRAFOS
                   ================================================= */}
@@ -185,6 +195,46 @@ export default function Capitulo() {
                       </p>
                     ))}
                   </div>
+                  {/* =================================================*
+    REFERENCIAS BIBLIOGRÁFICAS
+================================================= */}
+{seccion.autores?.length > 0 && (
+  <div className="mt-8 space-y-4">
+    {seccion.autores.map((autor) => {
+      const partes = autor.cita.split(
+        /(https?:\/\/[^\s]+)/
+      );
+
+      return (
+        <div
+          key={autor.id}
+          className="border-b border-slate-800 pb-4 text-slate-300 text-base md:text-lg leading-8"
+        >
+          {partes.map((parte, index) => {
+            if (
+              parte.startsWith("http://") ||
+              parte.startsWith("https://")
+            ) {
+              return (
+                <a
+                  key={index}
+                  href={parte}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-300 hover:text-emerald-200 underline break-all"
+                >
+                  {parte}
+                </a>
+              );
+            }
+
+            return <span key={index}>{parte}</span>;
+          })}
+        </div>
+      );
+    })}
+  </div>
+)}
 
                   {/* =================================================
                       CITAS

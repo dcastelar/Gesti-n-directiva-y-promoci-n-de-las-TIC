@@ -1,59 +1,347 @@
 {
   "id": "capitulo-6",
-  "numero": "",   
+  "numero": "",
   "titulo": "Referencias Bibliográficas",
-  "autores": [
+  "secciones": [
     {
-      "id": "anijovich-2010",
-      "cita": "Anijovich, R. (2010). Estrategias de enseñanza: otra mirada al quehacer en el aula. Aique Grupo Editor."
+      "id": "bibliografia",
+      "titulo": "Referencias Bibliográficas",
+      "autores": [
+        {
+          "id": "adell-2004",
+          "cita": "Adell, J. (2004). Internet en educación. Comunicación y Pedagogía, (200), 25–28. https://elbonia.cent.uji.es/jordi/wp-content/uploads/2012/08/Internet-en-educacion.pdf"
+        },
+        {
+          "id": "adell-2011",
+          "cita": "Adell, J. (2011). Evolución de la tecnología educativa y el papel de las TIC en la educación. Universidad de Murcia. http://hdl.handle.net/10201/22416"
+        },
+        {
+          "id": "anijovich-2010",
+          "cita": "Anijovich, R. (Comp.). (2010). La evaluación significativa. Paidós."
+        },
+        {
+          "id": "anijovich-cappelletti-2017",
+          "cita": "Anijovich, R., & Cappelletti, G. (2017). La evaluación como oportunidad. Paidós."
+        },
+        {
+          "id": "area-moreira-2012",
+          "cita": "Area Moreira, M. (2012). Sociedad de la información y alfabetización múltiple. Graó."
+        },
+        {
+          "id": "area-moreira-2021",
+          "cita": "Area Moreira, M. (2021). De la enseñanza presencial a la educación digital: Modelos, medios y competencias. RIED. Revista Iberoamericana de Educación a Distancia, 24(1), 17–38. https://doi.org/10.5944/ried.24.1.27511"
+        },
+        {
+          "id": "azzerboni-harf-2003",
+          "cita": "Azzerboni, D., & Harf, R. (2003). Conduciendo la escuela: Manual de gestión directiva y evaluación institucional. Noveduc."
+        },
+        {
+          "id": "badut-alvarez-2005",
+          "cita": "Badut de Álvarez, M., Bendersky, B., & Buitron, B. (2005). La gestión educativa en tiempos de cambio: Acuerdos, consensos y participación en las instituciones. Homo Sapiens Ediciones."
+        },
+        {
+          "id": "bauman-2003",
+          "cita": "Bauman, Z. (2003). Modernidad líquida. Fondo de Cultura Económica."
+        },
+        {
+          "id": "blejmar-2005",
+          "cita": "Blejmar, B. (2005). Gestionar es hacer que las cosas sucedan: Competencias, actitudes y dispositivos para la gestión educativa. Noveduc."
+        },
+        {
+          "id": "bolivar-2012",
+          "cita": "Bolívar, A. (2012). Mejorar los aprendizajes en la educación primaria: Liderazgo pedagógico y prácticas docentes. Graó."
+        },
+        {
+          "id": "buckingham-2008",
+          "cita": "Buckingham, D. (2008). Más allá de la tecnología: Aprendizaje infantil en la era de la cultura digital. Manantial."
+        },
+        {
+          "id": "burbules-2012",
+          "cita": "Burbules, N. C. (2012). El aprendizaje ubicuo y el futuro de la enseñanza. Encuentros en Educación, 13(1), 3–14. https://doi.org/10.24908/eie.v13i1.4475"
+        },
+        {
+          "id": "cabero-2004",
+          "cita": "Cabero Almenara, J. (2004). Reflexiones sobre la brecha digital y la educación. CB-Revista Digital de Educación, 2(4), 1–18. https://redined.educacion.gob.es/xmlui/handle/11162/22134"
+        },
+        {
+          "id": "castells-2001",
+          "cita": "Castells, M. (2001). La galaxia Internet: Reflexiones sobre Internet, empresa y sociedad. Plaza & Janés."
+        },
+        {
+          "id": "castells-2006",
+          "cita": "Castells, M. (2006). La era de la información: Economía, sociedad y cultura (Vol. 1: La sociedad red, 2.ª ed.). Alianza Editorial."
+        },
+        {
+          "id": "chachagua-2019",
+          "cita": "Chachagua, M. (2019). Políticas de diseminación tecnológica, escuelas y jóvenes: Los sentidos de las TIC en el campo y en la ciudad. Salta, Argentina (2015-2017) [Tesis de doctorado, Universidad Nacional de La Plata]. SEDICI - Repositorio Institucional de la UNLP. https://doi.org/10.35537/10915/74182"
+        },
+        {
+          "id": "coll-2009",
+          "cita": "Coll, C. (2009). Aprender y enseñar con las TIC: Del aprendizaje acumulativo al aprendizaje transformativo. Teoría de la Educación. Educación y Cultura en la Sociedad de la Información, 10(1), 74–101. https://www.redalyc.org/articulo.oa?id=201017352006"
+        },
+        {
+          "id": "coll-monereo-2008",
+          "cita": "Coll, C., & Monereo, C. (Coords.). (2008). Psicología de la educación virtual: Aprender y enseñar con las tecnologías de la información y la comunicación. Morata."
+        },
+        {
+          "id": "crow-2002",
+          "cita": "Crow, R. (2002). The case for institutional repositories: A SPARC position paper. Scholarly Publishing and Academic Resources Coalition. https://sparcopen.org/wp-content/uploads/2016/01/sparc-institutional-repositories-paper.pdf"
+        },
+        {
+          "id": "diaz-barriga-2006",
+          "cita": "Díaz Barriga, F. (2006). Enseñanza situada: Vínculo entre la escuela y la vida. McGraw-Hill."
+        },
+        {
+          "id": "dubet-2006",
+          "cita": "Dubet, F. (2006). La escuela de las oportunidades: ¿Qué es una escuela justa? Gedisa."
+        },
+        {
+          "id": "dussel-2018",
+          "cita": "Dussel, I. (2018). Sobre la precariedad de la escuela y la pedagogía en la era digital. UNAM."
+        },
+        {
+          "id": "elmore-2000",
+          "cita": "Elmore, R. F. (2000). Building a new structure for school leadership. Albert Shanker Institute. https://www.shankerinstitute.org/sites/default/files/1999_building_new_structure.pdf"
+        },
+        {
+          "id": "fullan-2015",
+          "cita": "Fullan, M. (2015). The new meaning of educational change (5th ed.). Teachers College Press."
+        },
+        {
+          "id": "goleman-boyatzis-mckee-2016",
+          "cita": "Goleman, D., Boyatzis, R., & McKee, A. (2016). El líder resonante crea más: El poder de la inteligencia emocional. Plaza & Janés."
+        },
+        {
+          "id": "gvirtz-podesta-2004",
+          "cita": "Gvirtz, S., & Podestá, M. E. (Comps.). (2004). El rol del supervisor en la mejora escolar. Santillana."
+        },
+        {
+          "id": "hanna-jona-2012",
+          "cita": "Hanna, D. E., & Jona, K. (2012). Addressing intrinsic barriers to technology adoption in K-12 education. Journal of Interactive Online Learning, 11(2), 45–58."
+        },
+        {
+          "id": "hargreaves-2003",
+          "cita": "Hargreaves, A. (2003). Enseñar en la sociedad del conocimiento: La educación en la era de la inseguridad. Octaedro."
+        },
+        {
+          "id": "hargreaves-fullan-2015",
+          "cita": "Hargreaves, A., & Fullan, M. (2015). Capital profesional: Transformar la enseñanza en cada escuela. Morata."
+        },
+        {
+          "id": "hargreaves-shirley-2009",
+          "cita": "Hargreaves, A., & Shirley, D. (2009). La cuarta vía: El futuro del cambio educativo. Octaedro."
+        },
+        {
+          "id": "heifetz-1997",
+          "cita": "Heifetz, R. A. (1997). Liderazgo sin respuestas fáciles: Propuestas para un nuevo diálogo social. Paidós."
+        },
+        {
+          "id": "imbernon-2017",
+          "cita": "Imbernón, F. (2017). Ser docente en una sociedad compleja: Formación, práctica y profesionalización. Graó."
+        },
+        {
+          "id": "jackson-2016",
+          "cita": "Jackson, P. W. (2016). La vida en las aulas (2.ª ed.). Morata."
+        },
+        {
+          "id": "kaplan-2015",
+          "cita": "Kaplan, C. V. (2015). Inclusión y convivencia escolar: Aportes para pensar la gestión directiva. Noveduc."
+        },
+        {
+          "id": "kaplan-2016",
+          "cita": "Kaplan, C. V. (2016). Subjetividades, emociones y escuela: Reflexiones sobre la sociología de la educación. Miño y Dávila."
+        },
+        {
+          "id": "kaplun-2005",
+          "cita": "Kaplún, M. (2005). Una pedagogía de la comunicación: El comunicador popular. Ediciones de la UNESCO."
+        },
+        {
+          "id": "krichesky-murillo-2018",
+          "cita": "Krichesky, G. J., & Murillo, F. J. (2018). La colaboración docente como factor de eficacia y mejora escolar. Revista Internacional de Educación para la Justicia Social, 7(1), 135–154. https://doi.org/10.15366/riejs2018.7.1.008"
+        },
+        {
+          "id": "lion-2006",
+          "cita": "Lion, C. (2006). Imaginarios interactivos: Mente, tecnología y cultura. Paidós."
+        },
+        {
+          "id": "lion-2017",
+          "cita": "Lion, C. (2017). Los desafíos de la inclusión digital en la educación pública. Santillana."
+        },
+        {
+          "id": "litwin-2005",
+          "cita": "Litwin, E. (2005). Tecnologías educativas en tiempos de Internet. Amorrortu."
+        },
+        {
+          "id": "levy-2004",
+          "cita": "Lévy, P. (2004). Inteligencia colectiva: Por una antropología del ciberespacio. Organización Panamericana de la Salud. https://ciberduoc.wordpress.com/wp-content/uploads/2012/03/inteligencia-colectiva-pierre-levy.pdf"
+        },
+        {
+          "id": "lugo-kelly-2011",
+          "cita": "Lugo, M. T., & Kelly, V. (2011). El modelo 1 a 1: Un horizonte para la inclusión educativa y digital. IIPE-UNESCO. https://unesdoc.unesco.org/ark:/48223/pf0000214890"
+        },
+        {
+          "id": "maggio-2012",
+          "cita": "Maggio, M. (2012). Enriquece tu enseñanza: Creatividad y tecnologías en las aulas. Paidós."
+        },
+        {
+          "id": "maggio-2018",
+          "cita": "Maggio, M. (2018). Reinventar la clase en la universidad. Paidós."
+        },
+        {
+          "id": "maggio-2021",
+          "cita": "Maggio, M. (2021). Educación en pandemias: Enseñar en la incertidumbre. Paidós."
+        },
+        {
+          "id": "majo-marques-2002",
+          "cita": "Majó, J., & Marquès, P. (2002). La revolución educativa en la era de la Internet. CISSPRAXIS."
+        },
+        {
+          "id": "maria-laura-2020",
+          "cita": "María Laura, M. (2020). La gestión del director en una escuela rural de la provincia de Salta: Su implicancia en el área Lengua [Tesis de doctorado, Universidad Nacional de Salta]. Repositorio Institucional UNSa. http://rid.unsa.edu.ar/handle/unsa/2311"
+        },
+        {
+          "id": "medina-2020",
+          "cita": "Medina, M. N. (2020). TIC en la gestión curricular. La implementación de las TIC en la gestión curricular en el Hogar Escuela N.º 4660 Carmen Puch de Güemes, Salta [Tesis de licenciatura, Universidad Católica de Salta]. Repositorio UCASAL. http://bibliotecas.ucasal.edu.ar/opac_css/index.php?lvl=notice_display&id=72104"
+        },
+        {
+          "id": "mishra-koehler-2006",
+          "cita": "Mishra, P., & Koehler, M. J. (2006). Technological pedagogical content knowledge: A framework for teacher knowledge. Teachers College Record, 108(6), 1017–1054. https://doi.org/10.1111/j.1467-9620.2006.00684.x"
+        },
+        {
+          "id": "morin-1990",
+          "cita": "Morin, E. (1990). Introducción al pensamiento complejo. Gedisa."
+        },
+        {
+          "id": "murillo-2006",
+          "cita": "Murillo, F. J. (2006). Una dirección escolar para el cambio: Del liderazgo transformacional al liderazgo distribuido. REICE. Revista Iberoamericana sobre Calidad, Eficacia y Cambio en Educación, 4(4e), 11–24. https://www.redalyc.org/articulo.oa?id=55140403"
+        },
+        {
+          "id": "murillo-2007",
+          "cita": "Murillo, F. J. (2007). Liderazgo para la mejora escolar. Wolters Kluwer."
+        },
+        {
+          "id": "murillo-krichesky-2015",
+          "cita": "Murillo, F. J., & Krichesky, G. J. (2015). Mejora de la escuela: Aportes desde la investigación y la práctica. Revista Iberoamericana de Educación, 67(1), 47–68. https://doi.org/10.35362/rie671261"
+        },
+        {
+          "id": "nobile-tobena-2023",
+          "cita": "Nobile, M., & Tobeña, V. (2023). Los desafíos de la gestión directiva en pandemia como claves para pensar la configuración desigual del sistema educativo del nivel secundario en CABA. Propuesta Educativa, (59), 35–52. http://propuestaeducativa.flacso.org.ar/index.php/pe/article/view/1280"
+        },
+        {
+          "id": "perkins-2010",
+          "cita": "Perkins, D. (2010). El aprendizaje pleno: Principios de la educación para transformar la enseñanza. Paidós."
+        },
+        {
+          "id": "prensky-2010",
+          "cita": "Prensky, M. (2010). Nativos e inmigrantes digitales. Institución Educativa SEK."
+        },
+        {
+          "id": "reig-2012",
+          "cita": "Reig, D. (2012). Socionomía: ¿Vas a perderte la revolución social? Deusto."
+        },
+        {
+          "id": "robinson-2011",
+          "cita": "Robinson, V. (2011). Student-centered leadership. Jossey-Bass."
+        },
+        {
+          "id": "romero-2018",
+          "cita": "Romero, C. (2018). Hacer de una escuela una buena escuela: Evaluación y mejora de la gestión escolar. Aique."
+        },
+        {
+          "id": "sanchez-serrano-2020",
+          "cita": "Sánchez Serrano, S. (2020). Uso de WhatsApp como herramienta pedagógica y de comunicación escolar. Edutec. Revista Electrónica de Tecnología Educativa, (73), 112–126. https://doi.org/10.21556/edutec.2020.73.1685"
+        },
+        {
+          "id": "sanchez-carrero-contani-2017",
+          "cita": "Sánchez-Carrero, H., & Contani, M. L. (2017). De espectadores a prosumidores: La educación en medios en la era digital. Comunicar, 25(52), 19–28. https://doi.org/10.3916/C52-2017-02"
+        },
+        {
+          "id": "senge-1990",
+          "cita": "Senge, P. M. (1990). La quinta disciplina: El arte y la práctica de la organización abierta al aprendizaje. Granica."
+        },
+        {
+          "id": "simbana-2022",
+          "cita": "Simbaña Marcatoma, P. A., Simbaña Marcatoma, M. E., & Simbaña Marcatoma, R. F. (2022). La transformación digital en la gestión educativa: Desafíos y oportunidades. Revista Científica Dominio de las Ciencias, 8(3), 415–432. https://doi.org/10.23857/dc.v8i3.2840"
+        },
+        {
+          "id": "simbana-2025",
+          "cita": "Simbaña Marcatoma, P. A., Simbaña Marcatoma, M. E., & Simbaña Marcatoma, R. F. (2025). Desafíos y resistencias en la inclusión digital en instituciones de educación básica. Revista Latinoamericana de Tecnología Educativa, 24(1), 89–104. https://doi.org/10.17398/1695-288X.24.1.89"
+        },
+        {
+          "id": "southwell-2015",
+          "cita": "Southwell, M. (2015). La escuela y sus transformaciones contemporáneas. UNLP."
+        },
+        {
+          "id": "spinetta-2025",
+          "cita": "Spinetta, M. (2025). Cambios y continuidades en la gestión directiva de escuelas primarias y secundarias argentinas durante la pospandemia. Revista Argentina de Educación, 43(1), 112–135. https://doi.org/10.35362/rae431420"
+        },
+        {
+          "id": "suber-2012",
+          "cita": "Suber, P. (2012). Open access. MIT Press. https://doi.org/10.7551/mitpress/9286.001.0001"
+        },
+        {
+          "id": "tedesco-2000",
+          "cita": "Tedesco, J. C. (2000). Educar en la sociedad del conocimiento. Fondo de Cultura Económica."
+        },
+        {
+          "id": "tenti-2005",
+          "cita": "Tenti Fanfani, E. (2005). La condición docente: Análisis comparado de la Argentina, Brasil, Perú y Uruguay. Siglo XXI Editores."
+        },
+        {
+          "id": "tenti-2007",
+          "cita": "Tenti Fanfani, E. (2007). La escuela y la cuestión social: Ensayos de sociología de la educación. Siglo XXI Editores."
+        },
+        {
+          "id": "tenti-2015",
+          "cita": "Tenti Fanfani, E. (2015). Mitomanías de la educación argentina: Necesitamos un debate libre de prejuicios para orientar los cambios que se vienen. Siglo XXI Editores."
+        },
+        {
+          "id": "terigi-2010",
+          "cita": "Terigi, F. (2010). Las cronologías de aprendizaje: Un concepto para pensar las trayectorias escolares. Ministerio de Educación de la Nación. http://www.uncuyo.edu.ar/ingreso/upload/terigi-las-cronologias-de-aprendizaje.pdf"
+        },
+        {
+          "id": "tyack-cuban-2001",
+          "cita": "Tyack, D., & Cuban, L. (2001). En busca de la utopía: Un siglo de reformas de las escuelas públicas. Fondo de Cultura Económica."
+        },
+        {
+          "id": "vaillant-2019",
+          "cita": "Vaillant, D. (2019). Liderazgo escolar y formación docente en América Latina. PREAL / Diálogo Interamericano."
+        },
+        {
+          "id": "van-dijk-2016",
+          "cita": "Van Dijk, J. A. G. M. (2016). The deeping divide: Inequality in the information society. SAGE Publications."
+        },
+        {
+          "id": "vivancos-2013",
+          "cita": "Vivancos, J. (2013). Tratamiento de la información y competencia digital. Alianza Editorial."
+        }
+      ]
     },
     {
-      "id": "area-2012",
-      "cita": "Area, M. (2012). Sociedad de la información, tecnologías digitales y educación. Ediciones Pirámide."
-    },
-    {
-      "id": "azzerboni-y-harf-2003",
-      "cita": "Azzerboni, D., & Harf, R. (2003). Conducir la escuela: para una gestión con sentido y comunidad. Noveduc Libros."
-    },
-    {
-      "id": "badut-de-alvarez-2005",
-      "cita": "Badut de Álvarez, M., et al. (2005). El cambio educativo e institucional: tensiones y consensos. Editorial Universidad Nacional de Salta."
-    },
-    {
-      "id": "bauman-2003",
-      "cita": "Bauman, Z. (2003). Modernidad Líquida. Fondo de Cultura Económica."
-    },
-    {
-      "id": "blejmar-2005",
-      "cita": "Blejmar, B. (2005). Gestionar es hacer que las cosas sucedan: competencias, actitudes y dispositivos para diseñar instituciones educativas. Noveduc Libros."
-    },
-    {
-      "id": "coll-y-monereo-2008",
-      "cita": "Coll, C., & Monereo, C. (Eds.). (2008). Psicología de la educación virtual: aprender y enseñar con las tecnologías de la información y la comunicación. Morata."
-    },
-    {
-      "id": "dussel-2018",
-      "cita": "Dussel, I. (2018). Las tecnologías digitales y la escuela: reflexiones sobre los cambios en los soportes de la cultura. FLACSO."
-    },
-    {
-      "id": "hargreaves-y-shirley-2009",
-      "cita": "Hargreaves, A., & Shirley, D. (2009). La cuarta vía: el futuro del cambio educativo. Amorrortu."
-    },
-    {
-      "id": "imbernon-2017",
-      "cita": "Imbernón, F. (2017). Ser docente en una sociedad compleja: formación continua y desarrollo profesional. Graó."
-    },
-    {
-      "id": "jackson-2016",
-      "cita": "Jackson, P. W. (2016). La vida en las aulas. Morata."
-    },
-    {
-      "id": "kaplan-2015",
-      "cita": "Kaplan, C. V. (2015). Culturas escolares y subjetividades: la escucha pedagógica en contextos críticos. Novedades Educativas."
-    },
-    {
-      "id": "tedesco-2000",
-      "cita": "Tedesco, J. C. (2000). Educar en la sociedad del conocimiento. Fondo de Cultura Económica."
+      "id": "documentos-institucionales",
+      "titulo": "Documentos Institucionales Internos",
+      "autores": [
+        {
+          "id": "pei-2015",
+          "cita": "Escuela Primaria N.° 4774 “General Juan José Valle”. (2015). Proyecto Educativo Institucional (PEI) [Documento institucional inédito]. Salta, Argentina."
+        },
+        {
+          "id": "pdm-2025",
+          "cita": "Escuela Primaria N.° 4774 “General Juan José Valle”. (2025a). Plan de Mejora Institucional “Rutas, hacia una nueva escuela” (PDM) [Documento institucional inédito]. Salta, Argentina."
+        },
+        {
+          "id": "pci-2025",
+          "cita": "Escuela Primaria N.° 4774 “General Juan José Valle”. (2025b). Proyecto Curricular Institucional (PCI) [Documento institucional inédito]. Salta, Argentina."
+        },
+        {
+          "id": "rolact-2025",
+          "cita": "Escuela Primaria N.° 4774 “General Juan José Valle”. (2025c). Registros y actas de seguimiento pedagógico (ROLACT1–ROLACT20) [Documento institucional inédito]. Salta, Argentina."
+        },
+        {
+          "id": "base-datos-2025",
+          "cita": "Escuela Primaria N.° 4774 “General Juan José Valle”. (2025d). Registros y base de datos de entrevistas y encuestas a personal directivo y docente (ROLDOCE, ESTDOCE, ROLDIRE, ESTVICE, DESDOCE) [Base de datos inédita]. Salta, Argentina."
+        }
+      ]
     }
   ]
 }

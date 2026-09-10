@@ -117,40 +117,44 @@ export default function TesisDashboard() {
     emerald: "from-emerald-500 to-green-500",
   };
 
-  const autoresPrincipales = [
-    {
-      nombre: "Antonio Bolívar",
-      buscar: "Antonio Bolívar",
-    },
-    {
-      nombre: "Bernardo Blejmar",
-      buscar: "Bernardo Blejmar",
-    },
-    {
-      nombre: "Rebeca Anijovich",
-      buscar: "Anijovich",
-    },
-    {
-      nombre: "Carina Lion",
-      buscar: "Carina Lion",
-    },
-    {
-      nombre: "Francisco Imbernón",
-      buscar: "Francisco Imbernón",
-    },
-    {
-      nombre: "Inés Dussel",
-      buscar: "Inés Dussel",
-    },
-    {
-      nombre: "Mariana Maggio",
-      buscar: "Mariana Maggio",
-    },
-    {
-      nombre: "Michael Fullan",
-      buscar: "Michael Fullan",
-    },
-  ];
+const autoresPrincipales = [
+  {
+    nombre: "Antonio Bolívar",
+    buscar: "Antonio Bolívar",
+  },
+  {
+    nombre: "Bernardo Blejmar",
+    buscar: "Bernardo Blejmar",
+  },
+  {
+    nombre: "Rebeca Anijovich",
+    buscar: "Rebeca Anijovich",
+  },
+  {
+    nombre: "Carina Lion",
+    buscar: "Carina Lion",
+  },
+  {
+    nombre: "Francisco Imbernón",
+    buscar: "Francisco Imbernón",
+  },
+  {
+    nombre: "Inés Dussel",
+    buscar: "Inés Dussel",
+  },
+  {
+    nombre: "Mariana Maggio",
+    buscar: "Mariana Maggio",
+  },
+  {
+    nombre: "Michael Fullan",
+    buscar: "Michael Fullan",
+  },
+  {
+    nombre: "Emilio Tenti Fanfani",
+    buscar: "Emilio Tenti Fanfani",
+  },
+];
 
   // ============================================================
   // MÉTRICAS
