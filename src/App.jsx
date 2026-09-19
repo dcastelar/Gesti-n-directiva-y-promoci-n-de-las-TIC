@@ -1,67 +1,49 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Home from "./pages/Home"
-import CategoriaGestion from "./pages/CategoriaGestion"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import CategoriaGestion from "./pages/CategoriaGestion";
 import Encuestas from "./pages/Encuestas";
 import Entrevistas from "./pages/Entrevistas";
 import Documental from "./pages/Documental";
 import Capitulo from "./pages/Capitulo";
-import { useEffect } from "react"
-import { useLocation } from "react-router-dom"
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import AnalisisSubcategoria from "./pages/AnalisisSubcategoria";
 import Metodologia from "./pages/Metodologia";
 import PorQueEsteTema from "./pages/PorQueEsteTema";
 import PlanMejora from "./pages/PlanMejora";
+import { Analytics } from "@vercel/analytics/react"; // ⬅️ Tu importación está perfecta aquí
 
+// Componente auxiliar para subir al inicio al cambiar de página
 function ScrollToTop() {
-  const { pathname } = useLocation()
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
-  return null
+  return null;
 }
 
+// Componente principal unificado
 export default function App() {
   return (
     <BrowserRouter>
-    <ScrollToTop />
+      <ScrollToTop />
+      
       <Routes>
         <Route path="/" element={<Home />} />
-
-        <Route
-          path="/categoria/:id"
-          element={<CategoriaGestion />}          
-        />
-        <Route
-          path="/base-datos/encuestas"
-          element={<Encuestas />}
-        />
-        <Route
-          path="/base-datos/entrevistas"
-          element={<Entrevistas />}
-        />
-
-        <Route
-          path="/base-datos/documental"
-          element={<Documental />}
-        />
-        <Route path="/capitulo/:numero" 
-        element={<Capitulo />} 
-        />
-        <Route
-        path="/analisis/:nombre"
-        element={<AnalisisSubcategoria />}
-      />
-      <Route path="/metodologia" element={<Metodologia />} />
-      <Route path="/por-que-este-tema" element={<PorQueEsteTema />} />
-      <Route
-  path="/plan-mejora"
-  element={<PlanMejora />}
-/>
+        <Route path="/categoria/:id" element={<CategoriaGestion />} />
+        <Route path="/base-datos/encuestas" element={<Encuestas />} />
+        <Route path="/base-datos/entrevistas" element={<Entrevistas />} />
+        <Route path="/base-datos/documental" element={<Documental />} />
+        <Route path="/capitulo/:numero" element={<Capitulo />} />
+        <Route path="/analisis/:nombre" element={<AnalisisSubcategoria />} />
+        <Route path="/metodologia" element={<Metodologia />} />
+        <Route path="/por-que-este-tema" element={<PorQueEsteTema />} />
+        <Route path="/plan-mejora" element={<PlanMejora />} />
       </Routes>
 
-      
+      <Analytics /> {/* ⬅️ Colocado aquí rastreará con éxito todas tus rutas */}
     </BrowserRouter>
-  )
+  );
 }
