@@ -15,6 +15,7 @@ export default function TesisDashboard() {
   const [herramientasAbiertas, setHerramientasAbiertas] = useState({});
   const [citasAbiertas, setCitasAbiertas] = useState(false);
   const [categoriasAbiertas, setCategoriasAbiertas] = useState(true);
+  const [arquitecturaAbierta, setArquitecturaAbierta] = useState(false);
 
   const location = useLocation();
 
@@ -578,6 +579,7 @@ const totalCategorias = categorias.filter(
     </a>
 
   </div>
+  
 
 </div>
           </div>
@@ -829,6 +831,302 @@ const totalCategorias = categorias.filter(
     </div>
 
   </div>
+
+</section>
+
+
+{/* =====================================================
+    ARQUITECTURA DE LA INVESTIGACIÓN
+===================================================== */}
+
+<section className="mb-8">
+
+  {/* TARJETA PRINCIPAL */}
+  <button
+    onClick={() => setArquitecturaAbierta(!arquitecturaAbierta)}
+    className="group relative w-full overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 p-5 text-left hover:border-cyan-400/40 hover:-translate-y-0.5 transition-all"
+  >
+    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cyan-400 via-violet-400 to-emerald-400" />
+
+    <div className="flex items-center justify-between gap-4">
+
+      <div>
+        <p className="text-cyan-300 text-[10px] uppercase tracking-[0.25em] mb-2">
+          Diseño y construcción del conocimiento
+        </p>
+
+        <h2 className="text-xl md:text-2xl font-black">
+          Arquitectura de la investigación
+        </h2>
+
+        <p className="text-sm text-slate-400 mt-2 max-w-3xl">
+          El recorrido metodológico: desde la formulación del problema
+          hasta la construcción de los hallazgos y las conclusiones.
+        </p>
+
+        <p className="text-cyan-300 text-xs font-semibold mt-4">
+          {arquitecturaAbierta
+            ? "Ocultar recorrido ↑"
+            : "Explorar recorrido ↓"}
+        </p>
+      </div>
+
+      <span className={`text-cyan-400 text-3xl transition-transform duration-300 ${
+        arquitecturaAbierta ? "rotate-90" : ""
+      }`}>
+        ›
+      </span>
+
+    </div>
+  </button>
+
+  {/* RECORRIDO DESPLEGABLE */}
+  {arquitecturaAbierta && (
+    <div className="mt-4 rounded-2xl border border-slate-800 bg-slate-900/70 p-4 md:p-6">
+
+      {/* ETAPA 1 */}
+      <div className="text-center">
+        <div className="inline-block rounded-xl border border-cyan-500/30 bg-cyan-500/10 px-5 py-3">
+          <p className="text-[10px] uppercase tracking-widest text-cyan-400">
+            Punto de partida
+          </p>
+          <h3 className="font-bold text-cyan-200 mt-1">
+            TEMA / PROBLEMA DE INVESTIGACIÓN
+          </h3>
+        </div>
+      </div>
+
+      <div className="text-center text-slate-600 text-2xl py-2">↓</div>
+
+      {/* ETAPA 2 */}
+      <div className="text-center">
+        <div className="inline-block rounded-xl border border-cyan-500/30 bg-slate-950 px-5 py-3">
+          <p className="text-[10px] uppercase tracking-widest text-slate-500">
+            Propósito
+          </p>
+          <h3 className="font-bold text-white mt-1">
+            OBJETIVO GENERAL
+          </h3>
+        </div>
+      </div>
+
+      <div className="text-center text-slate-600 text-2xl py-2">↓</div>
+
+      {/* ETAPA 3 */}
+      <div className="text-center">
+        <div className="inline-block rounded-xl border border-violet-500/30 bg-violet-500/10 px-5 py-3">
+          <h3 className="font-bold text-violet-200">
+            OBJETIVOS ESPECÍFICOS
+          </h3>
+        </div>
+      </div>
+
+      <div className="text-center text-slate-600 text-2xl py-2">↓</div>
+
+      {/* ETAPA 4 */}
+      <div className="text-center">
+        <div className="inline-block rounded-xl border border-violet-500/30 bg-slate-950 px-5 py-3">
+          <h3 className="font-bold text-white">
+            PREGUNTAS DE INVESTIGACIÓN
+          </h3>
+        </div>
+      </div>
+
+      <div className="text-center text-slate-600 text-2xl py-2">↓</div>
+
+      {/* ETAPA 5 */}
+      <div className="text-center">
+        <div className="inline-block rounded-xl border border-violet-500/30 bg-violet-500/10 px-5 py-3">
+          <h3 className="font-bold text-violet-200">
+            CATEGORÍAS INICIALES
+          </h3>
+          <p className="text-xs text-slate-400 mt-1">
+            Derivadas de los objetivos de investigación
+          </p>
+        </div>
+      </div>
+
+      <div className="text-center text-slate-600 text-2xl py-2">↓</div>
+
+      {/* ETAPA 6 */}
+      <div className="text-center">
+        <div className="inline-block rounded-xl border border-violet-500/30 bg-slate-950 px-5 py-3">
+          <h3 className="font-bold text-white">
+            SUBCATEGORÍAS
+          </h3>
+          <p className="text-xs text-slate-400 mt-1">
+            Dimensiones para organizar y profundizar el análisis
+          </p>
+        </div>
+      </div>
+
+      <div className="text-center text-slate-600 text-2xl py-2">↓</div>
+
+      {/* ETAPA 7 - INSTRUMENTOS */}
+      <div className="text-center mb-3">
+        <p className="text-[10px] uppercase tracking-widest text-emerald-400">
+          Producción y recopilación de información
+        </p>
+        <h3 className="font-bold text-white mt-1">
+          TÉCNICAS, INSTRUMENTOS Y FUENTES
+        </h3>
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-3">
+
+        <div className="rounded-xl border border-cyan-500/30 bg-cyan-500/5 p-4 text-center">
+          <div className="text-2xl mb-2">🎙️</div>
+          <h4 className="font-bold text-cyan-200">ENTREVISTAS</h4>
+          <p className="text-xs text-slate-400 mt-2">
+            Entrevistas semiestructuradas al equipo directivo
+          </p>
+        </div>
+
+        <div className="rounded-xl border border-violet-500/30 bg-violet-500/5 p-4 text-center">
+          <div className="text-2xl mb-2">📊</div>
+          <h4 className="font-bold text-violet-200">ENCUESTAS</h4>
+          <p className="text-xs text-slate-400 mt-2">
+            Cuestionarios aplicados a docentes
+          </p>
+        </div>
+
+        <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-4 text-center">
+          <div className="text-2xl mb-2">📚</div>
+          <h4 className="font-bold text-emerald-200">
+            ANÁLISIS DOCUMENTAL
+          </h4>
+          <p className="text-xs text-slate-400 mt-2">
+            PEI, PCI, PIA, PDM, actas y otros documentos institucionales
+          </p>
+        </div>
+
+      </div>
+
+      <div className="text-center text-slate-600 text-2xl py-3">↓</div>
+
+      {/* ETAPA 8 */}
+      <div className="text-center">
+        <div className="inline-block rounded-xl border border-cyan-500/30 bg-slate-950 px-5 py-3">
+          <h3 className="font-bold text-white">
+            DATOS EMPÍRICOS
+          </h3>
+          <p className="text-xs text-slate-400 mt-1">
+            Información obtenida de las distintas fuentes
+          </p>
+        </div>
+      </div>
+
+      <div className="text-center text-slate-600 text-2xl py-2">↓</div>
+
+      {/* ETAPA 9 */}
+      <div className="rounded-xl border border-violet-500/30 bg-violet-500/5 p-4 text-center">
+        <p className="text-[10px] uppercase tracking-widest text-violet-400">
+          Organización y procesamiento
+        </p>
+        <h3 className="font-bold text-violet-200 mt-1">
+          CODIFICACIÓN Y REDUCCIÓN DE DATOS
+        </h3>
+        <div className="flex flex-wrap justify-center gap-2 mt-3">
+          <span className="rounded-lg bg-violet-500/10 border border-violet-500/20 px-3 py-1.5 text-xs text-violet-200">
+            Atlas.ti · codificación cualitativa
+          </span>
+          <span className="rounded-lg bg-cyan-500/10 border border-cyan-500/20 px-3 py-1.5 text-xs text-cyan-200">
+            Encuestas · sistematización cuantitativa
+          </span>
+          <span className="rounded-lg bg-emerald-500/10 border border-emerald-500/20 px-3 py-1.5 text-xs text-emerald-200">
+            Documentos · análisis de contenido
+          </span>
+        </div>
+      </div>
+
+      <div className="text-center text-slate-600 text-2xl py-2">↓</div>
+
+      {/* ETAPA 10 */}
+      <div className="text-center">
+        <div className="inline-block rounded-xl border border-violet-500/30 bg-slate-950 px-5 py-3">
+          <h3 className="font-bold text-white">
+            MATRICES DE ANÁLISIS
+          </h3>
+          <p className="text-xs text-slate-400 mt-1">
+            Organización de unidades, categorías y evidencias
+          </p>
+        </div>
+      </div>
+
+      <div className="text-center text-slate-600 text-2xl py-2">↓</div>
+
+      {/* ETAPA 11 */}
+      <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-4">
+
+        <div className="text-center mb-4">
+          <p className="text-[10px] uppercase tracking-widest text-emerald-400">
+            Contraste de evidencias
+          </p>
+          <h3 className="font-bold text-emerald-200 mt-1">
+            TRIANGULACIÓN
+          </h3>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-2 text-center">
+          <div className="rounded-lg bg-slate-950 p-3">
+            <p className="text-sm font-semibold text-cyan-200">Entrevistas</p>
+          </div>
+          <div className="rounded-lg bg-slate-950 p-3">
+            <p className="text-sm font-semibold text-violet-200">Encuestas</p>
+          </div>
+          <div className="rounded-lg bg-slate-950 p-3">
+            <p className="text-sm font-semibold text-emerald-200">Documentos</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="text-center text-slate-600 text-2xl py-2">↓</div>
+
+      {/* ETAPA 12 */}
+      <div className="text-center">
+        <div className="inline-block rounded-xl border border-amber-500/30 bg-amber-500/10 px-5 py-3">
+          <h3 className="font-bold text-amber-200">
+            HALLAZGOS
+          </h3>
+        </div>
+      </div>
+
+      <div className="text-center text-slate-600 text-2xl py-2">↓</div>
+
+      {/* ETAPA 13 */}
+      <div className="text-center">
+        <div className="inline-block rounded-xl border border-amber-500/30 bg-slate-950 px-5 py-3">
+          <h3 className="font-bold text-white">
+            INTERPRETACIÓN
+          </h3>
+          <p className="text-xs text-slate-400 mt-1">
+            Diálogo entre evidencias, categorías y marco teórico
+          </p>
+        </div>
+      </div>
+
+      <div className="text-center text-slate-600 text-2xl py-2">↓</div>
+
+      {/* ETAPA 14 */}
+      <div className="text-center">
+        <div className="inline-block rounded-xl border border-cyan-500/30 bg-cyan-500/10 px-5 py-3">
+          <h3 className="font-bold text-cyan-200">
+            CONCLUSIONES
+          </h3>
+        </div>
+      </div>
+
+      <div className="mt-6 pt-4 border-t border-slate-800">
+        <p className="text-xs text-slate-500 text-center leading-relaxed">
+          El recorrido permite visualizar la trazabilidad de la investigación:
+          cómo las decisiones iniciales orientan la producción de información,
+          cómo se organiza y analiza la evidencia y cómo se construyen
+          finalmente los hallazgos y las conclusiones.
+        </p>
+      </div>
+
+    </div>
+  )}
 
 </section>
 
